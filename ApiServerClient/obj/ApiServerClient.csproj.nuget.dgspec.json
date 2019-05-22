@@ -1,0 +1,78 @@
+{
+  "format": 1,
+  "restore": {
+    "g:\\项目\\AuthticationAndAuthtization\\IndentityServerCenter\\ApiServerClient\\ApiServerClient.csproj": {}
+  },
+  "projects": {
+    "g:\\项目\\AuthticationAndAuthtization\\IndentityServerCenter\\ApiServerClient\\ApiServerClient.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "g:\\项目\\AuthticationAndAuthtization\\IndentityServerCenter\\ApiServerClient\\ApiServerClient.csproj",
+        "projectName": "ApiServerClient",
+        "projectPath": "g:\\项目\\AuthticationAndAuthtization\\IndentityServerCenter\\ApiServerClient\\ApiServerClient.csproj",
+        "packagesPath": "C:\\Users\\RICH-IT-DEV\\.nuget\\packages\\",
+        "outputPath": "g:\\项目\\AuthticationAndAuthtization\\IndentityServerCenter\\ApiServerClient\\obj\\",
+        "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
+        "configFilePaths": [
+          "C:\\Users\\RICH-IT-DEV\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp3.0"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore-tooling/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-aspnetcore/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-entityframeworkcore/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/aspnet-extensions/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-core/index.json": {},
+          "https://dotnetfeed.blob.core.windows.net/dotnet-windowsdesktop/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.0": {
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.0": {
+          "dependencies": {
+            "Microsoft.AspNetCore.Authentication.JwtBearer": {
+              "target": "Package",
+              "version": "(, )"
+            },
+            "Microsoft.AspNetCore.Mvc.NewtonsoftJson": {
+              "target": "Package",
+              "version": "[3.0.0-preview5-19227-01, )"
+            },
+            "Microsoft.NETCore.Platforms": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[3.0.0-preview5.19224.8, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": [
+            "Microsoft.AspNetCore.App",
+            "Microsoft.NETCore.App"
+          ]
+        }
+      }
+    }
+  }
+}
