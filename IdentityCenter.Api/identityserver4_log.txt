@@ -1,0 +1,1164 @@
+2019-05-22 11:59:35.244 +08:00 [FTL] Application startup exception
+System.ArgumentException: Keyword not supported: 'server'.
+   at Microsoft.Data.Sqlite.SqliteConnectionStringBuilder.GetIndex(String keyword)
+   at Microsoft.Data.Sqlite.SqliteConnectionStringBuilder.set_Item(String keyword, Object value)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteRelationalConnection.CreateReadOnlyConnection()
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at IdentityCenter.Api.Startup.InitializeDatabase(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 119
+   at IdentityCenter.Api.Startup.Configure(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-05-22 12:01:33.127 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-22 12:01:33.159 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-22 12:01:33.159 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-22 12:01:33.159 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-22 12:01:33.160 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-22 12:01:33.160 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-22 12:01:33.313 +08:00 [DBG] Starting grant removal
+2019-05-22 12:01:35.919 +08:00 [DBG] TaskCanceledException. Exiting.
+2019-05-22 12:01:35.930 +08:00 [DBG] Stopping grant removal
+2019-05-22 14:10:29.442 +08:00 [FTL] Application startup exception
+System.ArgumentException: Keyword not supported: 'server'.
+   at Microsoft.Data.Sqlite.SqliteConnectionStringBuilder.GetIndex(String keyword)
+   at Microsoft.Data.Sqlite.SqliteConnectionStringBuilder.set_Item(String keyword, Object value)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteRelationalConnection.CreateReadOnlyConnection()
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at IdentityCenter.Api.Startup.InitializeDatabase(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 119
+   at IdentityCenter.Api.Startup.Configure(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-05-22 14:12:17.012 +08:00 [FTL] Application startup exception
+System.ArgumentException: Keyword not supported: 'server'.
+   at Microsoft.Data.Sqlite.SqliteConnectionStringBuilder.GetIndex(String keyword)
+   at Microsoft.Data.Sqlite.SqliteConnectionStringBuilder.set_Item(String keyword, Object value)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteRelationalConnection.CreateReadOnlyConnection()
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at IdentityCenter.Api.Startup.InitializeDatabase(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 119
+   at IdentityCenter.Api.Startup.Configure(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-05-22 14:14:07.750 +08:00 [FTL] Application startup exception
+System.ArgumentException: Keyword not supported: 'database'.
+   at Microsoft.Data.Sqlite.SqliteConnectionStringBuilder.GetIndex(String keyword)
+   at Microsoft.Data.Sqlite.SqliteConnectionStringBuilder.set_Item(String keyword, Object value)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteRelationalConnection.CreateReadOnlyConnection()
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at IdentityCenter.Api.Startup.InitializeDatabase(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 119
+   at IdentityCenter.Api.Startup.Configure(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-05-22 14:16:12.334 +08:00 [FTL] Application startup exception
+System.ArgumentException: Keyword not supported: 'database'.
+   at Microsoft.Data.Sqlite.SqliteConnectionStringBuilder.GetIndex(String keyword)
+   at Microsoft.Data.Sqlite.SqliteConnectionStringBuilder.set_Item(String keyword, Object value)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteRelationalConnection.CreateReadOnlyConnection()
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at IdentityCenter.Api.Startup.InitializeDatabase(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 119
+   at IdentityCenter.Api.Startup.Configure(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-05-22 14:18:18.424 +08:00 [FTL] Application startup exception
+System.ArgumentException: Keyword not supported: 'server'.
+   at Microsoft.Data.Sqlite.SqliteConnectionStringBuilder.GetIndex(String keyword)
+   at Microsoft.Data.Sqlite.SqliteConnectionStringBuilder.set_Item(String keyword, Object value)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteRelationalConnection.CreateReadOnlyConnection()
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at IdentityCenter.Api.Startup.InitializeDatabase(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 119
+   at IdentityCenter.Api.Startup.Configure(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-05-22 14:19:34.174 +08:00 [FTL] Application startup exception
+System.ArgumentException: Keyword not supported: 'initial catalog'.
+   at Microsoft.Data.Sqlite.SqliteConnectionStringBuilder.GetIndex(String keyword)
+   at Microsoft.Data.Sqlite.SqliteConnectionStringBuilder.set_Item(String keyword, Object value)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteRelationalConnection.CreateReadOnlyConnection()
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at IdentityCenter.Api.Startup.InitializeDatabase(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 119
+   at IdentityCenter.Api.Startup.Configure(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-05-22 14:20:29.423 +08:00 [FTL] Application startup exception
+System.ArgumentException: Keyword not supported: 'server'.
+   at Microsoft.Data.Sqlite.SqliteConnectionStringBuilder.GetIndex(String keyword)
+   at Microsoft.Data.Sqlite.SqliteConnectionStringBuilder.set_Item(String keyword, Object value)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteRelationalConnection.CreateReadOnlyConnection()
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at IdentityCenter.Api.Startup.InitializeDatabase(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 119
+   at IdentityCenter.Api.Startup.Configure(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-05-22 14:21:24.636 +08:00 [FTL] Application startup exception
+System.ArgumentException: Keyword not supported: 'server'.
+   at Microsoft.Data.Sqlite.SqliteConnectionStringBuilder.GetIndex(String keyword)
+   at Microsoft.Data.Sqlite.SqliteConnectionStringBuilder.set_Item(String keyword, Object value)
+   at System.Data.Common.DbConnectionStringBuilder.set_ConnectionString(String value)
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteRelationalConnection.CreateReadOnlyConnection()
+   at Microsoft.EntityFrameworkCore.Sqlite.Storage.Internal.SqliteDatabaseCreator.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.HistoryRepository.Exists()
+   at Microsoft.EntityFrameworkCore.Migrations.Internal.Migrator.Migrate(String targetMigration)
+   at Microsoft.EntityFrameworkCore.RelationalDatabaseFacadeExtensions.Migrate(DatabaseFacade databaseFacade)
+   at IdentityCenter.Api.Startup.InitializeDatabase(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 119
+   at IdentityCenter.Api.Startup.Configure(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-05-22 14:26:46.620 +08:00 [ERR] An exception occurred in the database while iterating the results of a query for context type 'IdentityServer4.EntityFramework.DbContexts.ConfigurationDbContext'.
+System.InvalidOperationException: No coercion operator is defined between types 'System.Int16' and 'System.Boolean'.
+   at System.Linq.Expressions.Expression.GetUserDefinedCoercionOrThrow(ExpressionType coercionType, Expression expression, Type convertToType)
+   at System.Linq.Expressions.Expression.Convert(Expression expression, Type type, MethodInfo method)
+   at System.Linq.Expressions.Expression.Convert(Expression expression, Type type)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.CreateGetValueExpression(Expression dataReaderExpression, Expression indexExpression, TypeMaterializationInfo materializationInfo, Boolean box)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.<>c.<CreateArrayInitializer>b__12_0(TypeMaterializationInfo mi, Int32 i)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at System.Dynamic.Utils.CollectionExtensions.ToReadOnly[T](IEnumerable`1 enumerable)
+   at System.Linq.Expressions.Expression.NewArrayInit(Type type, IEnumerable`1 initializers)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.CreateArrayInitializer(CacheKey cacheKey)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.<Create>b__10_0(CacheKey k)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.Create(IReadOnlyList`1 types)
+   at Microsoft.EntityFrameworkCore.Query.Sql.DefaultQuerySqlGenerator.CreateValueBufferFactory(IRelationalValueBufferFactoryFactory relationalValueBufferFactoryFactory, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ShaperCommandContext.<NotifyReaderCreated>b__14_0(FactoryAndReader s)
+   at Microsoft.EntityFrameworkCore.Internal.NonCapturingLazyInitializer.EnsureInitialized[TParam,TValue](TValue& target, TParam param, Func`2 valueFactory)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ShaperCommandContext.NotifyReaderCreated(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider.GetResult[TResult](IEnumerable`1 valueBuffers, Boolean throwOnNullResult)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+System.InvalidOperationException: No coercion operator is defined between types 'System.Int16' and 'System.Boolean'.
+   at System.Linq.Expressions.Expression.GetUserDefinedCoercionOrThrow(ExpressionType coercionType, Expression expression, Type convertToType)
+   at System.Linq.Expressions.Expression.Convert(Expression expression, Type type, MethodInfo method)
+   at System.Linq.Expressions.Expression.Convert(Expression expression, Type type)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.CreateGetValueExpression(Expression dataReaderExpression, Expression indexExpression, TypeMaterializationInfo materializationInfo, Boolean box)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.<>c.<CreateArrayInitializer>b__12_0(TypeMaterializationInfo mi, Int32 i)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at System.Dynamic.Utils.CollectionExtensions.ToReadOnly[T](IEnumerable`1 enumerable)
+   at System.Linq.Expressions.Expression.NewArrayInit(Type type, IEnumerable`1 initializers)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.CreateArrayInitializer(CacheKey cacheKey)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.<Create>b__10_0(CacheKey k)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.Create(IReadOnlyList`1 types)
+   at Microsoft.EntityFrameworkCore.Query.Sql.DefaultQuerySqlGenerator.CreateValueBufferFactory(IRelationalValueBufferFactoryFactory relationalValueBufferFactoryFactory, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ShaperCommandContext.<NotifyReaderCreated>b__14_0(FactoryAndReader s)
+   at Microsoft.EntityFrameworkCore.Internal.NonCapturingLazyInitializer.EnsureInitialized[TParam,TValue](TValue& target, TParam param, Func`2 valueFactory)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ShaperCommandContext.NotifyReaderCreated(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider.GetResult[TResult](IEnumerable`1 valueBuffers, Boolean throwOnNullResult)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+2019-05-22 14:26:46.662 +08:00 [ERR] An exception occurred in the database while iterating the results of a query for context type 'IdentityServer4.EntityFramework.DbContexts.ConfigurationDbContext'.
+System.InvalidOperationException: No coercion operator is defined between types 'System.Int16' and 'System.Boolean'.
+   at System.Linq.Expressions.Expression.GetUserDefinedCoercionOrThrow(ExpressionType coercionType, Expression expression, Type convertToType)
+   at System.Linq.Expressions.Expression.Convert(Expression expression, Type type, MethodInfo method)
+   at System.Linq.Expressions.Expression.Convert(Expression expression, Type type)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.CreateGetValueExpression(Expression dataReaderExpression, Expression indexExpression, TypeMaterializationInfo materializationInfo, Boolean box)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.<>c.<CreateArrayInitializer>b__12_0(TypeMaterializationInfo mi, Int32 i)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at System.Dynamic.Utils.CollectionExtensions.ToReadOnly[T](IEnumerable`1 enumerable)
+   at System.Linq.Expressions.Expression.NewArrayInit(Type type, IEnumerable`1 initializers)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.CreateArrayInitializer(CacheKey cacheKey)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.<Create>b__10_0(CacheKey k)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.Create(IReadOnlyList`1 types)
+   at Microsoft.EntityFrameworkCore.Query.Sql.DefaultQuerySqlGenerator.CreateValueBufferFactory(IRelationalValueBufferFactoryFactory relationalValueBufferFactoryFactory, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ShaperCommandContext.<NotifyReaderCreated>b__14_0(FactoryAndReader s)
+   at Microsoft.EntityFrameworkCore.Internal.NonCapturingLazyInitializer.EnsureInitialized[TParam,TValue](TValue& target, TParam param, Func`2 valueFactory)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ShaperCommandContext.NotifyReaderCreated(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider.GetResult[TResult](IEnumerable`1 valueBuffers, Boolean throwOnNullResult)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+System.InvalidOperationException: No coercion operator is defined between types 'System.Int16' and 'System.Boolean'.
+   at System.Linq.Expressions.Expression.GetUserDefinedCoercionOrThrow(ExpressionType coercionType, Expression expression, Type convertToType)
+   at System.Linq.Expressions.Expression.Convert(Expression expression, Type type, MethodInfo method)
+   at System.Linq.Expressions.Expression.Convert(Expression expression, Type type)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.CreateGetValueExpression(Expression dataReaderExpression, Expression indexExpression, TypeMaterializationInfo materializationInfo, Boolean box)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.<>c.<CreateArrayInitializer>b__12_0(TypeMaterializationInfo mi, Int32 i)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at System.Dynamic.Utils.CollectionExtensions.ToReadOnly[T](IEnumerable`1 enumerable)
+   at System.Linq.Expressions.Expression.NewArrayInit(Type type, IEnumerable`1 initializers)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.CreateArrayInitializer(CacheKey cacheKey)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.<Create>b__10_0(CacheKey k)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.Create(IReadOnlyList`1 types)
+   at Microsoft.EntityFrameworkCore.Query.Sql.DefaultQuerySqlGenerator.CreateValueBufferFactory(IRelationalValueBufferFactoryFactory relationalValueBufferFactoryFactory, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ShaperCommandContext.<NotifyReaderCreated>b__14_0(FactoryAndReader s)
+   at Microsoft.EntityFrameworkCore.Internal.NonCapturingLazyInitializer.EnsureInitialized[TParam,TValue](TValue& target, TParam param, Func`2 valueFactory)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ShaperCommandContext.NotifyReaderCreated(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider.GetResult[TResult](IEnumerable`1 valueBuffers, Boolean throwOnNullResult)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+2019-05-22 14:26:46.730 +08:00 [FTL] Application startup exception
+System.InvalidOperationException: No coercion operator is defined between types 'System.Int16' and 'System.Boolean'.
+   at System.Linq.Expressions.Expression.GetUserDefinedCoercionOrThrow(ExpressionType coercionType, Expression expression, Type convertToType)
+   at System.Linq.Expressions.Expression.Convert(Expression expression, Type type, MethodInfo method)
+   at System.Linq.Expressions.Expression.Convert(Expression expression, Type type)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.CreateGetValueExpression(Expression dataReaderExpression, Expression indexExpression, TypeMaterializationInfo materializationInfo, Boolean box)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.<>c.<CreateArrayInitializer>b__12_0(TypeMaterializationInfo mi, Int32 i)
+   at System.Linq.Enumerable.SelectIterator[TSource,TResult](IEnumerable`1 source, Func`3 selector)+MoveNext()
+   at System.Collections.Generic.LargeArrayBuilder`1.AddRange(IEnumerable`1 items)
+   at System.Collections.Generic.EnumerableHelpers.ToArray[T](IEnumerable`1 source)
+   at System.Linq.Enumerable.ToArray[TSource](IEnumerable`1 source)
+   at System.Dynamic.Utils.CollectionExtensions.ToReadOnly[T](IEnumerable`1 enumerable)
+   at System.Linq.Expressions.Expression.NewArrayInit(Type type, IEnumerable`1 initializers)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.CreateArrayInitializer(CacheKey cacheKey)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.<Create>b__10_0(CacheKey k)
+   at System.Collections.Concurrent.ConcurrentDictionary`2.GetOrAdd(TKey key, Func`2 valueFactory)
+   at Microsoft.EntityFrameworkCore.Storage.TypedRelationalValueBufferFactoryFactory.Create(IReadOnlyList`1 types)
+   at Microsoft.EntityFrameworkCore.Query.Sql.DefaultQuerySqlGenerator.CreateValueBufferFactory(IRelationalValueBufferFactoryFactory relationalValueBufferFactoryFactory, DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ShaperCommandContext.<NotifyReaderCreated>b__14_0(FactoryAndReader s)
+   at Microsoft.EntityFrameworkCore.Internal.NonCapturingLazyInitializer.EnsureInitialized[TParam,TValue](TValue& target, TParam param, Func`2 valueFactory)
+   at Microsoft.EntityFrameworkCore.Query.Internal.ShaperCommandContext.NotifyReaderCreated(DbDataReader dataReader)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.BufferlessMoveNext(DbContext _, Boolean buffer)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryingEnumerable`1.Enumerator.MoveNext()
+   at Microsoft.EntityFrameworkCore.Query.QueryMethodProvider.GetResult[TResult](IEnumerable`1 valueBuffers, Boolean throwOnNullResult)
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ResultEnumerable`1.GetEnumerator()
+   at Microsoft.EntityFrameworkCore.Query.Internal.LinqOperatorProvider.ExceptionInterceptor`1.EnumeratorExceptionInterceptor.MoveNext()
+   at System.Linq.Enumerable.TryGetFirst[TSource](IEnumerable`1 source, Boolean& found)
+   at System.Linq.Enumerable.First[TSource](IEnumerable`1 source)
+   at Microsoft.EntityFrameworkCore.Query.Internal.QueryCompiler.<>c__DisplayClass15_1`1.<CompileQueryCore>b__0(QueryContext qc)
+   at System.Linq.Queryable.Any[TSource](IQueryable`1 source)
+   at IdentityCenter.Api.Startup.InitializeDatabase(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 123
+   at IdentityCenter.Api.Startup.Configure(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-05-22 14:36:24.042 +08:00 [ERR] Failed executing DbCommand (851ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = Int32), @p10='?' (DbType = Boolean), @p11='?' (Size = 2000), @p12='?' (Size = 200), @p13='?' (Size = 200), @p14='?' (Size = 200), @p15='?' (Size = 2000), @p16='?' (DbType = Int32), @p17='?' (DbType = DateTime), @p18='?' (Size = 1000), @p19='?' (DbType = Int32), @p20='?' (DbType = Boolean), @p21='?' (DbType = Boolean), @p22='?' (DbType = Boolean), @p23='?' (Size = 2000), @p24='?' (DbType = Int32), @p25='?' (DbType = Boolean), @p26='?' (DbType = DateTime), @p27='?' (Size = 2000), @p28='?' (DbType = Boolean), @p29='?' (Size = 200), @p30='?' (Size = 200), @p31='?' (DbType = Int32), @p32='?' (DbType = Int32), @p33='?' (DbType = Boolean), @p34='?' (DbType = Boolean), @p35='?' (DbType = Boolean), @p36='?' (DbType = Int32), @p37='?' (DbType = Boolean), @p38='?' (DbType = DateTime), @p39='?' (Size = 100), @p40='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Clients` (`AbsoluteRefreshTokenLifetime`, `AccessTokenLifetime`, `AccessTokenType`, `AllowAccessTokensViaBrowser`, `AllowOfflineAccess`, `AllowPlainTextPkce`, `AllowRememberConsent`, `AlwaysIncludeUserClaimsInIdToken`, `AlwaysSendClientClaims`, `AuthorizationCodeLifetime`, `BackChannelLogoutSessionRequired`, `BackChannelLogoutUri`, `ClientClaimsPrefix`, `ClientId`, `ClientName`, `ClientUri`, `ConsentLifetime`, `Created`, `Description`, `DeviceCodeLifetime`, `EnableLocalLogin`, `Enabled`, `FrontChannelLogoutSessionRequired`, `FrontChannelLogoutUri`, `IdentityTokenLifetime`, `IncludeJwtId`, `LastAccessed`, `LogoUri`, `NonEditable`, `PairWiseSubjectSalt`, `ProtocolType`, `RefreshTokenExpiration`, `RefreshTokenUsage`, `RequireClientSecret`, `RequireConsent`, `RequirePkce`, `SlidingRefreshTokenLifetime`, `UpdateAccessTokenClaimsOnRefresh`, `Updated`, `UserCodeType`, `UserSsoLifetime`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30, @p31, @p32, @p33, @p34, @p35, @p36, @p37, @p38, @p39, @p40);
+SELECT `Id`
+FROM `Clients`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+MySql.Data.MySqlClient.MySqlException (0x80004005): Field 'Id' doesn't have a default value ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Field 'Id' doesn't have a default value
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 44
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 93
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 328
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 313
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 73
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 168
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+2019-05-22 14:36:24.170 +08:00 [ERR] An exception occurred in the database while saving changes for context type 'IdentityServer4.EntityFramework.DbContexts.ConfigurationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Field 'Id' doesn't have a default value ---> MySql.Data.MySqlClient.MySqlException: Field 'Id' doesn't have a default value
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 44
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 93
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 328
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 313
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 73
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 168
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Field 'Id' doesn't have a default value ---> MySql.Data.MySqlClient.MySqlException: Field 'Id' doesn't have a default value
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 44
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 93
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 328
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 313
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 73
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 168
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2019-05-22 14:36:24.197 +08:00 [FTL] Application startup exception
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Field 'Id' doesn't have a default value ---> MySql.Data.MySqlClient.MySqlException: Field 'Id' doesn't have a default value
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 44
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 93
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 328
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 313
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 73
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 168
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at IdentityCenter.Api.Startup.InitializeDatabase(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 129
+   at IdentityCenter.Api.Startup.Configure(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 98
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-05-22 14:42:28.440 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-22 14:42:28.473 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-22 14:42:28.473 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-22 14:42:28.474 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-22 14:42:28.474 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-22 14:42:28.474 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-22 14:42:28.561 +08:00 [DBG] Starting grant removal
+2019-05-22 14:42:30.941 +08:00 [DBG] Login Url: /Account/Login
+2019-05-22 14:42:30.944 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-22 14:42:30.947 +08:00 [DBG] Logout Url: /Account/Logout
+2019-05-22 14:42:30.948 +08:00 [DBG] ConsentUrl Url: /consent
+2019-05-22 14:42:30.954 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-22 14:42:30.954 +08:00 [DBG] Error Url: /home/error
+2019-05-22 14:42:30.956 +08:00 [DBG] Error Id Parameter: errorId
+2019-05-22 14:42:43.146 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-22 14:42:43.150 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-22 14:42:43.151 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-22 14:42:43.155 +08:00 [DBG] Start discovery request
+2019-05-22 14:42:44.384 +08:00 [DBG] Found [] as all scopes in database
+2019-05-22 14:45:57.830 +08:00 [DBG] CORS request made for path: /account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-05-22 14:45:57.897 +08:00 [INF] {"Username":"admin","Endpoint":"UI","Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"invalid credentials","ActivityId":"0HLMUG2KV14S2:00000001","TimeStamp":"2019-05-22T06:45:57.0000000Z","ProcessId":21464,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2019-05-22 14:46:01.284 +08:00 [INF] AuthenticationScheme: Google was challenged.
+2019-05-22 14:49:02.257 +08:00 [INF] AuthenticationScheme: idsrv was challenged.
+2019-05-22 14:49:14.247 +08:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-05-22 14:50:09.759 +08:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-05-22 14:50:09.765 +08:00 [INF] {"Username":"alice","Provider":null,"ProviderUserId":null,"SubjectId":"818727","DisplayName":"alice","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLMUG2KV14S4:00000004","TimeStamp":"2019-05-22T06:50:09.0000000Z","ProcessId":21464,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-05-22 14:50:09.783 +08:00 [DBG] Augmenting SignInContext
+2019-05-22 14:50:09.787 +08:00 [DBG] Adding idp claim with value: local
+2019-05-22 14:50:09.790 +08:00 [DBG] Adding amr claim with value: pwd
+2019-05-22 14:50:09.804 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-05-22 14:50:10.180 +08:00 [DBG] 0 persisted grants found for 818727
+2019-05-22 14:50:26.259 +08:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-05-22 14:50:26.265 +08:00 [INF] {"Username":"bob","Provider":null,"ProviderUserId":null,"SubjectId":"88421113","DisplayName":"bob","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLMUG2KV14S4:00000007","TimeStamp":"2019-05-22T06:50:26.0000000Z","ProcessId":21464,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-05-22 14:50:26.278 +08:00 [DBG] Augmenting SignInContext
+2019-05-22 14:50:26.280 +08:00 [DBG] Adding idp claim with value: local
+2019-05-22 14:50:26.281 +08:00 [DBG] Adding amr claim with value: pwd
+2019-05-22 14:50:26.282 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-05-22 14:50:26.399 +08:00 [DBG] 0 persisted grants found for 88421113
+2019-05-22 15:12:46.672 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-22 15:12:46.675 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-22 15:12:46.675 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-22 15:12:46.676 +08:00 [DBG] Start discovery request
+2019-05-22 15:12:47.080 +08:00 [DBG] Found [] as all scopes in database
+2019-05-22 15:42:28.863 +08:00 [INF] Removing 0 grants
+2019-05-22 15:56:26.910 +08:00 [DBG] TaskCanceledException. Exiting.
+2019-05-22 15:56:26.923 +08:00 [DBG] Stopping grant removal
+2019-05-22 15:57:30.568 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-22 15:57:30.602 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-22 15:57:30.603 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-22 15:57:30.603 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-22 15:57:30.604 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-22 15:57:30.605 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-22 15:57:30.704 +08:00 [DBG] Starting grant removal
+2019-05-22 15:58:55.700 +08:00 [DBG] Login Url: /Account/Login
+2019-05-22 15:58:55.702 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-22 15:58:55.705 +08:00 [DBG] Logout Url: /Account/Logout
+2019-05-22 15:58:55.705 +08:00 [DBG] ConsentUrl Url: /consent
+2019-05-22 15:58:55.706 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-22 15:58:55.706 +08:00 [DBG] Error Url: /home/error
+2019-05-22 15:58:55.706 +08:00 [DBG] Error Id Parameter: errorId
+2019-05-22 15:58:55.728 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-22 15:58:55.739 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-22 15:58:55.741 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-22 15:58:55.745 +08:00 [WRN] Invalid HTTP request for token endpoint
+2019-05-22 16:00:05.818 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-22 16:00:05.824 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-22 16:00:05.825 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-22 16:00:05.832 +08:00 [DBG] Start token request.
+2019-05-22 16:00:05.840 +08:00 [DBG] Start client validation
+2019-05-22 16:00:05.846 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-05-22 16:00:05.850 +08:00 [DBG] Start parsing for secret in post body
+2019-05-22 16:00:05.875 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-05-22 16:00:05.875 +08:00 [DBG] Secret id found: client
+2019-05-22 16:00:07.031 +08:00 [DBG] client found in database: false
+2019-05-22 16:00:07.048 +08:00 [INF] {"ClientId":"client","Category":"Authentication","Name":"Client Authentication Failure","EventType":"Failure","Id":1011,"Message":"Unknown client","ActivityId":"0HLMUHDBB8ME1:00000002","TimeStamp":"2019-05-22T08:00:07.0000000Z","ProcessId":19144,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationFailureEvent"}
+2019-05-22 16:00:07.063 +08:00 [ERR] No client with id 'client' found. aborting
+2019-05-22 16:04:25.847 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-22 16:04:25.849 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-22 16:04:25.849 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-22 16:04:25.850 +08:00 [DBG] Start token request.
+2019-05-22 16:04:25.850 +08:00 [DBG] Start client validation
+2019-05-22 16:04:25.850 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-05-22 16:04:25.851 +08:00 [DBG] Start parsing for secret in post body
+2019-05-22 16:04:25.851 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-05-22 16:04:25.852 +08:00 [DBG] Secret id found: client
+2019-05-22 16:04:26.145 +08:00 [DBG] client found in database: false
+2019-05-22 16:04:26.146 +08:00 [INF] {"ClientId":"client","Category":"Authentication","Name":"Client Authentication Failure","EventType":"Failure","Id":1011,"Message":"Unknown client","ActivityId":"0HLMUHDBB8ME3:00000001","TimeStamp":"2019-05-22T08:04:26.0000000Z","ProcessId":19144,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationFailureEvent"}
+2019-05-22 16:04:26.148 +08:00 [ERR] No client with id 'client' found. aborting
+2019-05-22 16:10:10.912 +08:00 [DBG] TaskCanceledException. Exiting.
+2019-05-22 16:10:10.926 +08:00 [DBG] Stopping grant removal
+2019-05-22 16:10:23.623 +08:00 [ERR] Failed executing DbCommand (69ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = Int32), @p10='?' (DbType = Boolean), @p11='?' (Size = 2000), @p12='?' (Size = 200), @p13='?' (Size = 200), @p14='?' (Size = 200), @p15='?' (Size = 2000), @p16='?' (DbType = Int32), @p17='?' (DbType = DateTime), @p18='?' (Size = 1000), @p19='?' (DbType = Int32), @p20='?' (DbType = Boolean), @p21='?' (DbType = Boolean), @p22='?' (DbType = Boolean), @p23='?' (Size = 2000), @p24='?' (DbType = Int32), @p25='?' (DbType = Boolean), @p26='?' (DbType = DateTime), @p27='?' (Size = 2000), @p28='?' (DbType = Boolean), @p29='?' (Size = 200), @p30='?' (Size = 200), @p31='?' (DbType = Int32), @p32='?' (DbType = Int32), @p33='?' (DbType = Boolean), @p34='?' (DbType = Boolean), @p35='?' (DbType = Boolean), @p36='?' (DbType = Int32), @p37='?' (DbType = Boolean), @p38='?' (DbType = DateTime), @p39='?' (Size = 100), @p40='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Clients` (`AbsoluteRefreshTokenLifetime`, `AccessTokenLifetime`, `AccessTokenType`, `AllowAccessTokensViaBrowser`, `AllowOfflineAccess`, `AllowPlainTextPkce`, `AllowRememberConsent`, `AlwaysIncludeUserClaimsInIdToken`, `AlwaysSendClientClaims`, `AuthorizationCodeLifetime`, `BackChannelLogoutSessionRequired`, `BackChannelLogoutUri`, `ClientClaimsPrefix`, `ClientId`, `ClientName`, `ClientUri`, `ConsentLifetime`, `Created`, `Description`, `DeviceCodeLifetime`, `EnableLocalLogin`, `Enabled`, `FrontChannelLogoutSessionRequired`, `FrontChannelLogoutUri`, `IdentityTokenLifetime`, `IncludeJwtId`, `LastAccessed`, `LogoUri`, `NonEditable`, `PairWiseSubjectSalt`, `ProtocolType`, `RefreshTokenExpiration`, `RefreshTokenUsage`, `RequireClientSecret`, `RequireConsent`, `RequirePkce`, `SlidingRefreshTokenLifetime`, `UpdateAccessTokenClaimsOnRefresh`, `Updated`, `UserCodeType`, `UserSsoLifetime`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30, @p31, @p32, @p33, @p34, @p35, @p36, @p37, @p38, @p39, @p40);
+SELECT `Id`
+FROM `Clients`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+MySql.Data.MySqlClient.MySqlException (0x80004005): Field 'Id' doesn't have a default value ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Field 'Id' doesn't have a default value
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 44
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 93
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 328
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 313
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 73
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 168
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+2019-05-22 16:10:23.817 +08:00 [ERR] An exception occurred in the database while saving changes for context type 'IdentityServer4.EntityFramework.DbContexts.ConfigurationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Field 'Id' doesn't have a default value ---> MySql.Data.MySqlClient.MySqlException: Field 'Id' doesn't have a default value
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 44
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 93
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 328
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 313
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 73
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 168
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Field 'Id' doesn't have a default value ---> MySql.Data.MySqlClient.MySqlException: Field 'Id' doesn't have a default value
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 44
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 93
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 328
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 313
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 73
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 168
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2019-05-22 16:10:23.874 +08:00 [FTL] Application startup exception
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Field 'Id' doesn't have a default value ---> MySql.Data.MySqlClient.MySqlException: Field 'Id' doesn't have a default value
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 44
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 93
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 328
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 313
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 73
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 168
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at IdentityCenter.Api.Startup.InitializeDatabase(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 130
+   at IdentityCenter.Api.Startup.Configure(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 99
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-05-22 16:25:05.992 +08:00 [ERR] Failed executing DbCommand (71ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = Int32), @p10='?' (DbType = Boolean), @p11='?' (Size = 2000), @p12='?' (Size = 200), @p13='?' (Size = 200), @p14='?' (Size = 200), @p15='?' (Size = 2000), @p16='?' (DbType = Int32), @p17='?' (DbType = DateTime), @p18='?' (Size = 1000), @p19='?' (DbType = Int32), @p20='?' (DbType = Boolean), @p21='?' (DbType = Boolean), @p22='?' (DbType = Boolean), @p23='?' (Size = 2000), @p24='?' (DbType = Int32), @p25='?' (DbType = Boolean), @p26='?' (DbType = DateTime), @p27='?' (Size = 2000), @p28='?' (DbType = Boolean), @p29='?' (Size = 200), @p30='?' (Size = 200), @p31='?' (DbType = Int32), @p32='?' (DbType = Int32), @p33='?' (DbType = Boolean), @p34='?' (DbType = Boolean), @p35='?' (DbType = Boolean), @p36='?' (DbType = Int32), @p37='?' (DbType = Boolean), @p38='?' (DbType = DateTime), @p39='?' (Size = 100), @p40='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Clients` (`AbsoluteRefreshTokenLifetime`, `AccessTokenLifetime`, `AccessTokenType`, `AllowAccessTokensViaBrowser`, `AllowOfflineAccess`, `AllowPlainTextPkce`, `AllowRememberConsent`, `AlwaysIncludeUserClaimsInIdToken`, `AlwaysSendClientClaims`, `AuthorizationCodeLifetime`, `BackChannelLogoutSessionRequired`, `BackChannelLogoutUri`, `ClientClaimsPrefix`, `ClientId`, `ClientName`, `ClientUri`, `ConsentLifetime`, `Created`, `Description`, `DeviceCodeLifetime`, `EnableLocalLogin`, `Enabled`, `FrontChannelLogoutSessionRequired`, `FrontChannelLogoutUri`, `IdentityTokenLifetime`, `IncludeJwtId`, `LastAccessed`, `LogoUri`, `NonEditable`, `PairWiseSubjectSalt`, `ProtocolType`, `RefreshTokenExpiration`, `RefreshTokenUsage`, `RequireClientSecret`, `RequireConsent`, `RequirePkce`, `SlidingRefreshTokenLifetime`, `UpdateAccessTokenClaimsOnRefresh`, `Updated`, `UserCodeType`, `UserSsoLifetime`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30, @p31, @p32, @p33, @p34, @p35, @p36, @p37, @p38, @p39, @p40);
+SELECT `Id`
+FROM `Clients`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+MySql.Data.MySqlClient.MySqlException (0x80004005): Field 'Id' doesn't have a default value ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Field 'Id' doesn't have a default value
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 44
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 93
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 328
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 313
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 73
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 168
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+2019-05-22 16:25:06.106 +08:00 [ERR] An exception occurred in the database while saving changes for context type 'IdentityServer4.EntityFramework.DbContexts.ConfigurationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Field 'Id' doesn't have a default value ---> MySql.Data.MySqlClient.MySqlException: Field 'Id' doesn't have a default value
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 44
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 93
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 328
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 313
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 73
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 168
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Field 'Id' doesn't have a default value ---> MySql.Data.MySqlClient.MySqlException: Field 'Id' doesn't have a default value
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 44
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 93
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 328
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 313
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 73
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 168
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2019-05-22 16:25:06.141 +08:00 [FTL] Application startup exception
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Field 'Id' doesn't have a default value ---> MySql.Data.MySqlClient.MySqlException: Field 'Id' doesn't have a default value
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 44
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 93
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 328
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 313
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 73
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 168
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at IdentityCenter.Api.Startup.InitializeDatabase(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 130
+   at IdentityCenter.Api.Startup.Configure(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 99
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-05-22 16:28:45.729 +08:00 [ERR] Failed executing DbCommand (48ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = Int32), @p10='?' (DbType = Boolean), @p11='?' (Size = 2000), @p12='?' (Size = 200), @p13='?' (Size = 200), @p14='?' (Size = 200), @p15='?' (Size = 2000), @p16='?' (DbType = Int32), @p17='?' (DbType = DateTime), @p18='?' (Size = 1000), @p19='?' (DbType = Int32), @p20='?' (DbType = Boolean), @p21='?' (DbType = Boolean), @p22='?' (DbType = Boolean), @p23='?' (Size = 2000), @p24='?' (DbType = Int32), @p25='?' (DbType = Boolean), @p26='?' (DbType = DateTime), @p27='?' (Size = 2000), @p28='?' (DbType = Boolean), @p29='?' (Size = 200), @p30='?' (Size = 200), @p31='?' (DbType = Int32), @p32='?' (DbType = Int32), @p33='?' (DbType = Boolean), @p34='?' (DbType = Boolean), @p35='?' (DbType = Boolean), @p36='?' (DbType = Int32), @p37='?' (DbType = Boolean), @p38='?' (DbType = DateTime), @p39='?' (Size = 100), @p40='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Clients` (`AbsoluteRefreshTokenLifetime`, `AccessTokenLifetime`, `AccessTokenType`, `AllowAccessTokensViaBrowser`, `AllowOfflineAccess`, `AllowPlainTextPkce`, `AllowRememberConsent`, `AlwaysIncludeUserClaimsInIdToken`, `AlwaysSendClientClaims`, `AuthorizationCodeLifetime`, `BackChannelLogoutSessionRequired`, `BackChannelLogoutUri`, `ClientClaimsPrefix`, `ClientId`, `ClientName`, `ClientUri`, `ConsentLifetime`, `Created`, `Description`, `DeviceCodeLifetime`, `EnableLocalLogin`, `Enabled`, `FrontChannelLogoutSessionRequired`, `FrontChannelLogoutUri`, `IdentityTokenLifetime`, `IncludeJwtId`, `LastAccessed`, `LogoUri`, `NonEditable`, `PairWiseSubjectSalt`, `ProtocolType`, `RefreshTokenExpiration`, `RefreshTokenUsage`, `RequireClientSecret`, `RequireConsent`, `RequirePkce`, `SlidingRefreshTokenLifetime`, `UpdateAccessTokenClaimsOnRefresh`, `Updated`, `UserCodeType`, `UserSsoLifetime`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30, @p31, @p32, @p33, @p34, @p35, @p36, @p37, @p38, @p39, @p40);
+SELECT `Id`
+FROM `Clients`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '0' for key 'PRIMARY' ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '0' for key 'PRIMARY'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 44
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 93
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 328
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 313
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 73
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 168
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+2019-05-22 16:28:45.891 +08:00 [ERR] An exception occurred in the database while saving changes for context type 'IdentityServer4.EntityFramework.DbContexts.ConfigurationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry '0' for key 'PRIMARY' ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry '0' for key 'PRIMARY'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 44
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 93
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 328
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 313
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 73
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 168
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry '0' for key 'PRIMARY' ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry '0' for key 'PRIMARY'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 44
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 93
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 328
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 313
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 73
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 168
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2019-05-22 16:28:45.912 +08:00 [FTL] Application startup exception
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry '0' for key 'PRIMARY' ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry '0' for key 'PRIMARY'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 44
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 93
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 328
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 313
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 73
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 168
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at IdentityCenter.Api.Startup.InitializeDatabase(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 130
+   at IdentityCenter.Api.Startup.Configure(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 99
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-05-22 16:31:51.680 +08:00 [ERR] Failed executing DbCommand (36ms) [Parameters=[@p0='?' (DbType = Int32), @p1='?' (DbType = Int32), @p2='?' (DbType = Int32), @p3='?' (DbType = Boolean), @p4='?' (DbType = Boolean), @p5='?' (DbType = Boolean), @p6='?' (DbType = Boolean), @p7='?' (DbType = Boolean), @p8='?' (DbType = Boolean), @p9='?' (DbType = Int32), @p10='?' (DbType = Boolean), @p11='?' (Size = 2000), @p12='?' (Size = 200), @p13='?' (Size = 200), @p14='?' (Size = 200), @p15='?' (Size = 2000), @p16='?' (DbType = Int32), @p17='?' (DbType = DateTime), @p18='?' (Size = 1000), @p19='?' (DbType = Int32), @p20='?' (DbType = Boolean), @p21='?' (DbType = Boolean), @p22='?' (DbType = Boolean), @p23='?' (Size = 2000), @p24='?' (DbType = Int32), @p25='?' (DbType = Boolean), @p26='?' (DbType = DateTime), @p27='?' (Size = 2000), @p28='?' (DbType = Boolean), @p29='?' (Size = 200), @p30='?' (Size = 200), @p31='?' (DbType = Int32), @p32='?' (DbType = Int32), @p33='?' (DbType = Boolean), @p34='?' (DbType = Boolean), @p35='?' (DbType = Boolean), @p36='?' (DbType = Int32), @p37='?' (DbType = Boolean), @p38='?' (DbType = DateTime), @p39='?' (Size = 100), @p40='?' (DbType = Int32)], CommandType='"Text"', CommandTimeout='30']
+INSERT INTO `Clients` (`AbsoluteRefreshTokenLifetime`, `AccessTokenLifetime`, `AccessTokenType`, `AllowAccessTokensViaBrowser`, `AllowOfflineAccess`, `AllowPlainTextPkce`, `AllowRememberConsent`, `AlwaysIncludeUserClaimsInIdToken`, `AlwaysSendClientClaims`, `AuthorizationCodeLifetime`, `BackChannelLogoutSessionRequired`, `BackChannelLogoutUri`, `ClientClaimsPrefix`, `ClientId`, `ClientName`, `ClientUri`, `ConsentLifetime`, `Created`, `Description`, `DeviceCodeLifetime`, `EnableLocalLogin`, `Enabled`, `FrontChannelLogoutSessionRequired`, `FrontChannelLogoutUri`, `IdentityTokenLifetime`, `IncludeJwtId`, `LastAccessed`, `LogoUri`, `NonEditable`, `PairWiseSubjectSalt`, `ProtocolType`, `RefreshTokenExpiration`, `RefreshTokenUsage`, `RequireClientSecret`, `RequireConsent`, `RequirePkce`, `SlidingRefreshTokenLifetime`, `UpdateAccessTokenClaimsOnRefresh`, `Updated`, `UserCodeType`, `UserSsoLifetime`)
+VALUES (@p0, @p1, @p2, @p3, @p4, @p5, @p6, @p7, @p8, @p9, @p10, @p11, @p12, @p13, @p14, @p15, @p16, @p17, @p18, @p19, @p20, @p21, @p22, @p23, @p24, @p25, @p26, @p27, @p28, @p29, @p30, @p31, @p32, @p33, @p34, @p35, @p36, @p37, @p38, @p39, @p40);
+SELECT `Id`
+FROM `Clients`
+WHERE ROW_COUNT() = 1 AND `Id` = LAST_INSERT_ID();
+MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '0' for key 'PRIMARY' ---> MySql.Data.MySqlClient.MySqlException (0x80004005): Duplicate entry '0' for key 'PRIMARY'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 44
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 93
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 328
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 313
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 73
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 168
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+2019-05-22 16:31:51.841 +08:00 [ERR] An exception occurred in the database while saving changes for context type 'IdentityServer4.EntityFramework.DbContexts.ConfigurationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry '0' for key 'PRIMARY' ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry '0' for key 'PRIMARY'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 44
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 93
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 328
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 313
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 73
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 168
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry '0' for key 'PRIMARY' ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry '0' for key 'PRIMARY'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 44
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 93
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 328
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 313
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 73
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 168
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+2019-05-22 16:31:51.882 +08:00 [FTL] Application startup exception
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while updating the entries. See the inner exception for details. ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry '0' for key 'PRIMARY' ---> MySql.Data.MySqlClient.MySqlException: Duplicate entry '0' for key 'PRIMARY'
+   at MySqlConnector.Core.ResultSet.ReadResultSetHeaderAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\Core\ResultSet.cs:line 44
+   --- End of inner exception stack trace ---
+   at MySql.Data.MySqlClient.MySqlDataReader.ActivateResultSet(ResultSet resultSet) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 93
+   at MySql.Data.MySqlClient.MySqlDataReader.ReadFirstResultSetAsync(IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 328
+   at MySql.Data.MySqlClient.MySqlDataReader.CreateAsync(MySqlCommand command, CommandBehavior behavior, IOBehavior ioBehavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlDataReader.cs:line 313
+   at MySqlConnector.Core.TextCommandExecutor.ExecuteReaderAsync(String commandText, MySqlParameterCollection parameterCollection, CommandBehavior behavior, IOBehavior ioBehavior, CancellationToken cancellationToken) in C:\projects\mysqlconnector\src\MySqlConnector\Core\TextCommandExecutor.cs:line 73
+   at MySql.Data.MySqlClient.MySqlCommand.ExecuteDbDataReader(CommandBehavior behavior) in C:\projects\mysqlconnector\src\MySqlConnector\MySql.Data.MySqlClient\MySqlCommand.cs:line 168
+   at System.Data.Common.DbCommand.ExecuteReader()
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.Execute(IRelationalConnection connection, DbCommandMethod executeMethod, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Storage.Internal.RelationalCommand.ExecuteReader(IRelationalConnection connection, IReadOnlyDictionary`2 parameterValues)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.Execute(IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(DbContext _, ValueTuple`2 parameters)
+   at Pomelo.EntityFrameworkCore.MySql.Storage.Internal.MySqlExecutionStrategy.Execute[TState,TResult](TState state, Func`3 operation, Func`3 verifySucceeded)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.Execute(IEnumerable`1 commandBatches, IRelationalConnection connection)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChanges(IReadOnlyList`1 entries)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(IReadOnlyList`1 entriesToSave)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges(Boolean acceptAllChangesOnSuccess)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChanges()
+   at IdentityCenter.Api.Startup.InitializeDatabase(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 130
+   at IdentityCenter.Api.Startup.Configure(IApplicationBuilder app) in G:\项目\NetCoreOAuth2\IdentityCenter.Api\Startup.cs:line 99
+--- End of stack trace from previous location where exception was thrown ---
+   at Microsoft.AspNetCore.Hosting.ConventionBasedStartup.Configure(IApplicationBuilder app)
+   at Microsoft.AspNetCore.HostFilteringStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder app)
+   at Microsoft.AspNetCore.Hosting.Internal.AutoRequestServicesStartupFilter.<>c__DisplayClass0_0.<Configure>b__0(IApplicationBuilder builder)
+   at Microsoft.AspNetCore.Hosting.Internal.WebHost.BuildApplication()
+2019-05-22 16:45:06.166 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-22 16:45:06.194 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-22 16:45:06.195 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-22 16:45:06.195 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-22 16:45:06.195 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-22 16:45:06.196 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-22 16:45:06.267 +08:00 [DBG] Starting grant removal
+2019-05-22 16:45:51.242 +08:00 [DBG] Login Url: /Account/Login
+2019-05-22 16:45:51.245 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-22 16:45:51.246 +08:00 [DBG] Logout Url: /Account/Logout
+2019-05-22 16:45:51.247 +08:00 [DBG] ConsentUrl Url: /consent
+2019-05-22 16:45:51.247 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-22 16:45:51.247 +08:00 [DBG] Error Url: /home/error
+2019-05-22 16:45:51.247 +08:00 [DBG] Error Id Parameter: errorId
+2019-05-22 16:45:51.269 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-22 16:45:51.279 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-22 16:45:51.280 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-22 16:45:51.288 +08:00 [DBG] Start token request.
+2019-05-22 16:45:51.296 +08:00 [DBG] Start client validation
+2019-05-22 16:45:51.301 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-05-22 16:45:51.305 +08:00 [DBG] Start parsing for secret in post body
+2019-05-22 16:45:51.330 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-05-22 16:45:51.330 +08:00 [DBG] Secret id found: client
+2019-05-22 16:45:52.698 +08:00 [DBG] client found in database: true
+2019-05-22 16:45:52.708 +08:00 [DBG] client configuration validation for client client succeeded.
+2019-05-22 16:45:52.719 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-22 16:45:52.719 +08:00 [DBG] Client validation success
+2019-05-22 16:45:52.732 +08:00 [INF] {"ClientId":"client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLMUI7IEESJB:00000001","TimeStamp":"2019-05-22T08:45:52.0000000Z","ProcessId":17792,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-05-22 16:45:52.753 +08:00 [DBG] Start token request validation
+2019-05-22 16:45:52.758 +08:00 [ERR] Grant type is missing, request details: []
+2019-05-22 16:45:52.761 +08:00 [INF] {"ClientId":"client","ClientName":"Client Credentials Client","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":null,"GrantType":null,"Error":"unsupported_grant_type","ErrorDescription":null,"Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLMUI7IEESJB:00000001","TimeStamp":"2019-05-22T08:45:52.0000000Z","ProcessId":17792,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2019-05-22 16:46:38.862 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-22 16:46:38.867 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-22 16:46:38.872 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-22 16:46:38.889 +08:00 [DBG] Start token request.
+2019-05-22 16:46:38.890 +08:00 [DBG] Start client validation
+2019-05-22 16:46:38.890 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-05-22 16:46:38.890 +08:00 [DBG] Start parsing for secret in post body
+2019-05-22 16:46:38.891 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-05-22 16:46:38.891 +08:00 [DBG] Secret id found: client
+2019-05-22 16:46:40.144 +08:00 [DBG] client found in database: true
+2019-05-22 16:46:40.145 +08:00 [DBG] client configuration validation for client client succeeded.
+2019-05-22 16:46:40.146 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-22 16:46:40.147 +08:00 [DBG] Client validation success
+2019-05-22 16:46:40.147 +08:00 [INF] {"ClientId":"client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLMUI7IEESJB:00000002","TimeStamp":"2019-05-22T08:46:40.0000000Z","ProcessId":17792,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-05-22 16:46:40.149 +08:00 [DBG] Start token request validation
+2019-05-22 16:46:40.149 +08:00 [ERR] Grant type is missing, request details: []
+2019-05-22 16:46:40.150 +08:00 [INF] {"ClientId":"client","ClientName":"Client Credentials Client","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":null,"GrantType":null,"Error":"unsupported_grant_type","ErrorDescription":null,"Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLMUI7IEESJB:00000002","TimeStamp":"2019-05-22T08:46:40.0000000Z","ProcessId":17792,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2019-05-22 16:48:16.457 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-22 16:48:16.459 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-22 16:48:16.460 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-22 16:48:16.477 +08:00 [DBG] Start token request.
+2019-05-22 16:48:16.477 +08:00 [DBG] Start client validation
+2019-05-22 16:48:16.477 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-05-22 16:48:16.478 +08:00 [DBG] Start parsing for secret in post body
+2019-05-22 16:48:16.478 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-05-22 16:48:16.480 +08:00 [DBG] Secret id found: client
+2019-05-22 16:48:17.745 +08:00 [DBG] client found in database: true
+2019-05-22 16:48:17.745 +08:00 [DBG] client configuration validation for client client succeeded.
+2019-05-22 16:48:17.749 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-22 16:48:17.749 +08:00 [DBG] Client validation success
+2019-05-22 16:48:17.750 +08:00 [INF] {"ClientId":"client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLMUI7IEESJC:00000001","TimeStamp":"2019-05-22T08:48:17.0000000Z","ProcessId":17792,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-05-22 16:48:17.752 +08:00 [DBG] Start token request validation
+2019-05-22 16:48:17.753 +08:00 [ERR] Grant type is missing, request details: []
+2019-05-22 16:48:17.753 +08:00 [INF] {"ClientId":"client","ClientName":"Client Credentials Client","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":null,"GrantType":null,"Error":"unsupported_grant_type","ErrorDescription":null,"Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLMUI7IEESJC:00000001","TimeStamp":"2019-05-22T08:48:17.0000000Z","ProcessId":17792,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2019-05-22 16:49:12.207 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-22 16:49:12.211 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-22 16:49:12.211 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-22 16:49:12.212 +08:00 [DBG] Start token request.
+2019-05-22 16:49:12.212 +08:00 [DBG] Start client validation
+2019-05-22 16:49:12.212 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-05-22 16:49:12.212 +08:00 [DBG] Start parsing for secret in post body
+2019-05-22 16:49:12.213 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-05-22 16:49:12.214 +08:00 [DBG] Secret id found: client
+2019-05-22 16:49:13.477 +08:00 [DBG] client found in database: true
+2019-05-22 16:49:13.478 +08:00 [DBG] client configuration validation for client client succeeded.
+2019-05-22 16:49:13.482 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-22 16:49:13.483 +08:00 [DBG] Client validation success
+2019-05-22 16:49:13.483 +08:00 [INF] {"ClientId":"client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLMUI7IEESJC:00000002","TimeStamp":"2019-05-22T08:49:13.0000000Z","ProcessId":17792,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-05-22 16:49:13.487 +08:00 [DBG] Start token request validation
+2019-05-22 16:49:13.490 +08:00 [ERR] Grant type is missing, request details: []
+2019-05-22 16:49:13.508 +08:00 [INF] {"ClientId":"client","ClientName":"Client Credentials Client","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":null,"GrantType":null,"Error":"unsupported_grant_type","ErrorDescription":null,"Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLMUI7IEESJC:00000002","TimeStamp":"2019-05-22T08:49:13.0000000Z","ProcessId":17792,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2019-05-22 16:49:47.568 +08:00 [DBG] CORS request made for path: /Account/Logout from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-05-22 16:49:47.610 +08:00 [INF] AuthenticationScheme: idsrv signed out.
+2019-05-22 16:49:47.612 +08:00 [INF] {"SubjectId":"88421113","DisplayName":"bob","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HLMUI7IEESJC:00000008","TimeStamp":"2019-05-22T08:49:47.0000000Z","ProcessId":17792,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
+2019-05-22 16:49:51.567 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-22 16:49:51.571 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-22 16:49:51.572 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-22 16:49:51.580 +08:00 [DBG] Start discovery request
+2019-05-22 16:49:52.498 +08:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-05-22 16:49:54.890 +08:00 [INF] AuthenticationScheme: idsrv was challenged.
+2019-05-22 16:50:01.325 +08:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-05-22 16:50:01.348 +08:00 [INF] {"Username":"bob","Provider":null,"ProviderUserId":null,"SubjectId":"88421113","DisplayName":"bob","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLMUI7IEESJC:0000000D","TimeStamp":"2019-05-22T08:50:01.0000000Z","ProcessId":17792,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-05-22 16:50:01.364 +08:00 [DBG] Augmenting SignInContext
+2019-05-22 16:50:01.367 +08:00 [DBG] Adding idp claim with value: local
+2019-05-22 16:50:01.385 +08:00 [DBG] Adding amr claim with value: pwd
+2019-05-22 16:50:01.393 +08:00 [INF] AuthenticationScheme: idsrv signed in.
+2019-05-22 16:50:01.538 +08:00 [DBG] 0 persisted grants found for 88421113
+2019-05-22 16:50:08.678 +08:00 [DBG] CORS request made for path: /Account/Logout from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-05-22 16:50:08.683 +08:00 [INF] AuthenticationScheme: idsrv signed out.
+2019-05-22 16:50:08.684 +08:00 [INF] {"SubjectId":"88421113","DisplayName":"bob","Category":"Authentication","Name":"User Logout Success","EventType":"Success","Id":1002,"Message":null,"ActivityId":"0HLMUI7IEESJC:00000010","TimeStamp":"2019-05-22T08:50:08.0000000Z","ProcessId":17792,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLogoutSuccessEvent"}
+2019-05-22 16:50:45.515 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-22 16:50:45.519 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-22 16:50:45.520 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-22 16:50:45.520 +08:00 [DBG] Start token request.
+2019-05-22 16:50:45.520 +08:00 [DBG] Start client validation
+2019-05-22 16:50:45.521 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-05-22 16:50:45.521 +08:00 [DBG] Start parsing for secret in post body
+2019-05-22 16:50:45.521 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-05-22 16:50:45.522 +08:00 [DBG] Secret id found: client
+2019-05-22 16:50:46.654 +08:00 [DBG] client found in database: true
+2019-05-22 16:50:46.655 +08:00 [DBG] client configuration validation for client client succeeded.
+2019-05-22 16:50:46.658 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-22 16:50:46.659 +08:00 [DBG] Client validation success
+2019-05-22 16:50:46.659 +08:00 [INF] {"ClientId":"client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLMUI7IEESJG:00000001","TimeStamp":"2019-05-22T08:50:46.0000000Z","ProcessId":17792,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-05-22 16:50:46.682 +08:00 [DBG] Start token request validation
+2019-05-22 16:50:46.682 +08:00 [ERR] Grant type is missing, request details: []
+2019-05-22 16:50:46.685 +08:00 [INF] {"ClientId":"client","ClientName":"Client Credentials Client","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":null,"GrantType":null,"Error":"unsupported_grant_type","ErrorDescription":null,"Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLMUI7IEESJG:00000001","TimeStamp":"2019-05-22T08:50:46.0000000Z","ProcessId":17792,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2019-05-22 16:53:22.101 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-22 16:53:22.103 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-22 16:53:22.104 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-22 16:53:22.105 +08:00 [DBG] Start token request.
+2019-05-22 16:53:22.107 +08:00 [DBG] Start client validation
+2019-05-22 16:53:22.107 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-05-22 16:53:22.107 +08:00 [DBG] Start parsing for secret in post body
+2019-05-22 16:53:22.108 +08:00 [DBG] client id without secret found
+2019-05-22 16:53:22.108 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-05-22 16:53:22.108 +08:00 [DBG] Secret id found: client
+2019-05-22 16:53:23.578 +08:00 [DBG] client found in database: true
+2019-05-22 16:53:23.578 +08:00 [DBG] client configuration validation for client client succeeded.
+2019-05-22 16:53:23.581 +08:00 [DBG] Hashed shared secret validator cannot process NoSecret
+2019-05-22 16:53:23.582 +08:00 [DBG] Secret validators could not validate secret
+2019-05-22 16:53:23.582 +08:00 [INF] {"ClientId":"client","Category":"Authentication","Name":"Client Authentication Failure","EventType":"Failure","Id":1011,"Message":"Invalid client secret","ActivityId":"0HLMUI7IEESJH:00000001","TimeStamp":"2019-05-22T08:53:23.0000000Z","ProcessId":17792,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationFailureEvent"}
+2019-05-22 16:53:23.584 +08:00 [ERR] Client secret validation failed for client: client.
+2019-05-22 16:55:10.042 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-22 16:55:10.045 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-22 16:55:10.048 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-22 16:55:10.049 +08:00 [DBG] Start token request.
+2019-05-22 16:55:10.067 +08:00 [DBG] Start client validation
+2019-05-22 16:55:10.068 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-05-22 16:55:10.068 +08:00 [DBG] Start parsing for secret in post body
+2019-05-22 16:55:10.068 +08:00 [DBG] client id without secret found
+2019-05-22 16:55:10.069 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-05-22 16:55:10.069 +08:00 [DBG] Secret id found: client
+2019-05-22 16:55:11.316 +08:00 [DBG] client found in database: true
+2019-05-22 16:55:11.316 +08:00 [DBG] client configuration validation for client client succeeded.
+2019-05-22 16:55:11.320 +08:00 [DBG] Hashed shared secret validator cannot process NoSecret
+2019-05-22 16:55:11.320 +08:00 [DBG] Secret validators could not validate secret
+2019-05-22 16:55:11.321 +08:00 [INF] {"ClientId":"client","Category":"Authentication","Name":"Client Authentication Failure","EventType":"Failure","Id":1011,"Message":"Invalid client secret","ActivityId":"0HLMUI7IEESJH:00000002","TimeStamp":"2019-05-22T08:55:11.0000000Z","ProcessId":17792,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationFailureEvent"}
+2019-05-22 16:55:11.322 +08:00 [ERR] Client secret validation failed for client: client.
+2019-05-22 16:56:18.668 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-22 16:56:18.670 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-22 16:56:18.673 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-22 16:56:18.674 +08:00 [DBG] Start token request.
+2019-05-22 16:56:18.693 +08:00 [DBG] Start client validation
+2019-05-22 16:56:18.693 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-05-22 16:56:18.693 +08:00 [DBG] Start parsing for secret in post body
+2019-05-22 16:56:18.694 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-05-22 16:56:18.694 +08:00 [DBG] Secret id found: client
+2019-05-22 16:56:19.931 +08:00 [DBG] client found in database: true
+2019-05-22 16:56:19.931 +08:00 [DBG] client configuration validation for client client succeeded.
+2019-05-22 16:56:19.934 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-22 16:56:19.934 +08:00 [DBG] Client validation success
+2019-05-22 16:56:19.935 +08:00 [INF] {"ClientId":"client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLMUI7IEESJH:00000003","TimeStamp":"2019-05-22T08:56:19.0000000Z","ProcessId":17792,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-05-22 16:56:19.940 +08:00 [DBG] Start token request validation
+2019-05-22 16:56:19.940 +08:00 [ERR] Grant type is missing, request details: []
+2019-05-22 16:56:19.960 +08:00 [INF] {"ClientId":"client","ClientName":"Client Credentials Client","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":null,"GrantType":null,"Error":"unsupported_grant_type","ErrorDescription":null,"Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLMUI7IEESJH:00000003","TimeStamp":"2019-05-22T08:56:19.0000000Z","ProcessId":17792,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2019-05-22 16:56:23.626 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-22 16:56:23.627 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-22 16:56:23.628 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-22 16:56:23.628 +08:00 [DBG] Start token request.
+2019-05-22 16:56:23.629 +08:00 [DBG] Start client validation
+2019-05-22 16:56:23.629 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-05-22 16:56:23.629 +08:00 [DBG] Start parsing for secret in post body
+2019-05-22 16:56:23.630 +08:00 [DBG] client id without secret found
+2019-05-22 16:56:23.630 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-05-22 16:56:23.630 +08:00 [DBG] Secret id found: client
+2019-05-22 16:56:24.862 +08:00 [DBG] client found in database: true
+2019-05-22 16:56:24.863 +08:00 [DBG] client configuration validation for client client succeeded.
+2019-05-22 16:56:24.864 +08:00 [DBG] Hashed shared secret validator cannot process NoSecret
+2019-05-22 16:56:24.864 +08:00 [DBG] Secret validators could not validate secret
+2019-05-22 16:56:24.865 +08:00 [INF] {"ClientId":"client","Category":"Authentication","Name":"Client Authentication Failure","EventType":"Failure","Id":1011,"Message":"Invalid client secret","ActivityId":"0HLMUI7IEESJH:00000004","TimeStamp":"2019-05-22T08:56:24.0000000Z","ProcessId":17792,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationFailureEvent"}
+2019-05-22 16:56:24.866 +08:00 [ERR] Client secret validation failed for client: client.
+2019-05-22 16:58:20.517 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-22 16:58:20.519 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-22 16:58:20.520 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-22 16:58:20.520 +08:00 [DBG] Start token request.
+2019-05-22 16:58:20.520 +08:00 [DBG] Start client validation
+2019-05-22 16:58:20.521 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-05-22 16:58:20.521 +08:00 [DBG] Start parsing for secret in post body
+2019-05-22 16:58:20.522 +08:00 [DBG] client id without secret found
+2019-05-22 16:58:20.522 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-05-22 16:58:20.522 +08:00 [DBG] Secret id found: client
+2019-05-22 16:58:21.771 +08:00 [DBG] client found in database: true
+2019-05-22 16:58:21.771 +08:00 [DBG] client configuration validation for client client succeeded.
+2019-05-22 16:58:21.773 +08:00 [DBG] Hashed shared secret validator cannot process NoSecret
+2019-05-22 16:58:21.773 +08:00 [DBG] Secret validators could not validate secret
+2019-05-22 16:58:21.774 +08:00 [INF] {"ClientId":"client","Category":"Authentication","Name":"Client Authentication Failure","EventType":"Failure","Id":1011,"Message":"Invalid client secret","ActivityId":"0HLMUI7IEESJI:00000001","TimeStamp":"2019-05-22T08:58:21.0000000Z","ProcessId":17792,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationFailureEvent"}
+2019-05-22 16:58:21.775 +08:00 [ERR] Client secret validation failed for client: client.
+2019-05-22 17:01:10.319 +08:00 [DBG] TaskCanceledException. Exiting.
+2019-05-22 17:01:10.330 +08:00 [DBG] Stopping grant removal
+2019-05-22 17:01:23.658 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-22 17:01:23.690 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-22 17:01:23.690 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-22 17:01:23.690 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-22 17:01:23.691 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-22 17:01:23.691 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-22 17:01:23.764 +08:00 [DBG] Starting grant removal
+2019-05-22 17:01:48.894 +08:00 [DBG] Login Url: /Account/Login
+2019-05-22 17:01:48.896 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-22 17:01:48.899 +08:00 [DBG] Logout Url: /Account/Logout
+2019-05-22 17:01:48.899 +08:00 [DBG] ConsentUrl Url: /consent
+2019-05-22 17:01:48.899 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-22 17:01:48.900 +08:00 [DBG] Error Url: /home/error
+2019-05-22 17:01:48.900 +08:00 [DBG] Error Id Parameter: errorId
+2019-05-22 17:01:48.941 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-22 17:01:48.967 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-22 17:01:48.969 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-22 17:01:48.985 +08:00 [DBG] Start token request.
+2019-05-22 17:01:48.991 +08:00 [DBG] Start client validation
+2019-05-22 17:01:48.997 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-05-22 17:01:49.001 +08:00 [DBG] Start parsing for secret in post body
+2019-05-22 17:01:49.016 +08:00 [DBG] client id without secret found
+2019-05-22 17:01:49.017 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-05-22 17:01:49.018 +08:00 [DBG] Secret id found: client
+2019-05-22 17:01:50.878 +08:00 [DBG] client found in database: true
+2019-05-22 17:01:50.891 +08:00 [DBG] client configuration validation for client client succeeded.
+2019-05-22 17:01:50.905 +08:00 [DBG] Hashed shared secret validator cannot process NoSecret
+2019-05-22 17:01:50.906 +08:00 [DBG] Secret validators could not validate secret
+2019-05-22 17:01:50.922 +08:00 [INF] {"ClientId":"client","Category":"Authentication","Name":"Client Authentication Failure","EventType":"Failure","Id":1011,"Message":"Invalid client secret","ActivityId":"0HLMUIGFRBCBU:00000001","TimeStamp":"2019-05-22T09:01:50.0000000Z","ProcessId":36956,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationFailureEvent"}
+2019-05-22 17:01:50.931 +08:00 [ERR] Client secret validation failed for client: client.
+2019-05-22 17:02:10.303 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-22 17:02:10.305 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-22 17:02:10.306 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-22 17:02:10.307 +08:00 [DBG] Start token request.
+2019-05-22 17:02:10.308 +08:00 [DBG] Start client validation
+2019-05-22 17:02:10.309 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-05-22 17:02:10.310 +08:00 [DBG] Start parsing for secret in post body
+2019-05-22 17:02:10.322 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-05-22 17:02:10.322 +08:00 [DBG] Secret id found: client
+2019-05-22 17:02:11.462 +08:00 [DBG] client found in database: true
+2019-05-22 17:02:11.463 +08:00 [DBG] client configuration validation for client client succeeded.
+2019-05-22 17:02:11.466 +08:00 [DBG] No matching hashed secret found.
+2019-05-22 17:02:11.466 +08:00 [DBG] Secret validators could not validate secret
+2019-05-22 17:02:11.468 +08:00 [INF] {"ClientId":"client","Category":"Authentication","Name":"Client Authentication Failure","EventType":"Failure","Id":1011,"Message":"Invalid client secret","ActivityId":"0HLMUIGFRBCBU:00000002","TimeStamp":"2019-05-22T09:02:11.0000000Z","ProcessId":36956,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationFailureEvent"}
+2019-05-22 17:02:11.474 +08:00 [ERR] Client secret validation failed for client: client.
+2019-05-22 17:03:48.712 +08:00 [DBG] TaskCanceledException. Exiting.
+2019-05-22 17:03:48.734 +08:00 [DBG] Stopping grant removal
+2019-05-22 17:03:57.770 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-22 17:03:57.800 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-22 17:03:57.801 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-22 17:03:57.801 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-22 17:03:57.801 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-22 17:03:57.801 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-22 17:03:57.871 +08:00 [DBG] Starting grant removal
+2019-05-22 17:04:22.479 +08:00 [DBG] Login Url: /Account/Login
+2019-05-22 17:04:22.482 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-22 17:04:22.485 +08:00 [DBG] Logout Url: /Account/Logout
+2019-05-22 17:04:22.486 +08:00 [DBG] ConsentUrl Url: /consent
+2019-05-22 17:04:22.486 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-22 17:04:22.487 +08:00 [DBG] Error Url: /home/error
+2019-05-22 17:04:22.487 +08:00 [DBG] Error Id Parameter: errorId
+2019-05-22 17:04:22.509 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-22 17:04:22.520 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-22 17:04:22.521 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-22 17:04:22.530 +08:00 [DBG] Start token request.
+2019-05-22 17:04:22.539 +08:00 [DBG] Start client validation
+2019-05-22 17:04:22.563 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-05-22 17:04:22.567 +08:00 [DBG] Start parsing for secret in post body
+2019-05-22 17:04:22.593 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-05-22 17:04:22.594 +08:00 [DBG] Secret id found: client
+2019-05-22 17:04:24.367 +08:00 [DBG] client found in database: true
+2019-05-22 17:04:24.391 +08:00 [DBG] client configuration validation for client client succeeded.
+2019-05-22 17:04:24.414 +08:00 [DBG] No matching hashed secret found.
+2019-05-22 17:04:24.414 +08:00 [DBG] Secret validators could not validate secret
+2019-05-22 17:04:24.429 +08:00 [INF] {"ClientId":"client","Category":"Authentication","Name":"Client Authentication Failure","EventType":"Failure","Id":1011,"Message":"Invalid client secret","ActivityId":"0HLMUIHTK1BMV:00000001","TimeStamp":"2019-05-22T09:04:24.0000000Z","ProcessId":30412,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationFailureEvent"}
+2019-05-22 17:04:24.466 +08:00 [ERR] Client secret validation failed for client: client.
+2019-05-22 17:04:29.806 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-22 17:04:29.811 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-22 17:04:29.812 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-22 17:04:29.812 +08:00 [DBG] Start token request.
+2019-05-22 17:04:29.813 +08:00 [DBG] Start client validation
+2019-05-22 17:04:29.813 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-05-22 17:04:29.813 +08:00 [DBG] Start parsing for secret in post body
+2019-05-22 17:04:29.817 +08:00 [DBG] client id without secret found
+2019-05-22 17:04:29.817 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-05-22 17:04:29.818 +08:00 [DBG] Secret id found: client
+2019-05-22 17:04:30.957 +08:00 [DBG] client found in database: true
+2019-05-22 17:04:30.957 +08:00 [DBG] client configuration validation for client client succeeded.
+2019-05-22 17:04:30.959 +08:00 [DBG] Hashed shared secret validator cannot process NoSecret
+2019-05-22 17:04:30.959 +08:00 [DBG] Secret validators could not validate secret
+2019-05-22 17:04:30.960 +08:00 [INF] {"ClientId":"client","Category":"Authentication","Name":"Client Authentication Failure","EventType":"Failure","Id":1011,"Message":"Invalid client secret","ActivityId":"0HLMUIHTK1BMV:00000002","TimeStamp":"2019-05-22T09:04:30.0000000Z","ProcessId":30412,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationFailureEvent"}
+2019-05-22 17:04:30.961 +08:00 [ERR] Client secret validation failed for client: client.
+2019-05-22 17:04:41.431 +08:00 [DBG] TaskCanceledException. Exiting.
+2019-05-22 17:04:41.451 +08:00 [DBG] Stopping grant removal
+2019-05-22 17:04:50.899 +08:00 [INF] Using the default authentication scheme idsrv for IdentityServer
+2019-05-22 17:04:50.927 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for authentication
+2019-05-22 17:04:50.928 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-in
+2019-05-22 17:04:50.928 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for sign-out
+2019-05-22 17:04:50.928 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for challenge
+2019-05-22 17:04:50.929 +08:00 [DBG] Using idsrv as default ASP.NET Core scheme for forbid
+2019-05-22 17:04:51.001 +08:00 [DBG] Starting grant removal
+2019-05-22 17:05:03.877 +08:00 [DBG] Login Url: /Account/Login
+2019-05-22 17:05:03.880 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-22 17:05:03.881 +08:00 [DBG] Logout Url: /Account/Logout
+2019-05-22 17:05:03.882 +08:00 [DBG] ConsentUrl Url: /consent
+2019-05-22 17:05:03.882 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-22 17:05:03.883 +08:00 [DBG] Error Url: /home/error
+2019-05-22 17:05:03.904 +08:00 [DBG] Error Id Parameter: errorId
+2019-05-22 17:05:03.927 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-22 17:05:03.938 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-22 17:05:03.939 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-22 17:05:03.950 +08:00 [DBG] Start token request.
+2019-05-22 17:05:03.972 +08:00 [DBG] Start client validation
+2019-05-22 17:05:03.978 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-05-22 17:05:03.984 +08:00 [DBG] Start parsing for secret in post body
+2019-05-22 17:05:04.000 +08:00 [DBG] client id without secret found
+2019-05-22 17:05:04.001 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-05-22 17:05:04.003 +08:00 [DBG] Secret id found: client
+2019-05-22 17:05:05.848 +08:00 [DBG] client found in database: true
+2019-05-22 17:05:05.864 +08:00 [DBG] client configuration validation for client client succeeded.
+2019-05-22 17:05:05.874 +08:00 [DBG] Hashed shared secret validator cannot process NoSecret
+2019-05-22 17:05:05.883 +08:00 [DBG] Secret validators could not validate secret
+2019-05-22 17:05:05.898 +08:00 [INF] {"ClientId":"client","Category":"Authentication","Name":"Client Authentication Failure","EventType":"Failure","Id":1011,"Message":"Invalid client secret","ActivityId":"0HLMUII9URHVU:00000001","TimeStamp":"2019-05-22T09:05:05.0000000Z","ProcessId":1296,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationFailureEvent"}
+2019-05-22 17:05:05.911 +08:00 [ERR] Client secret validation failed for client: client.
+2019-05-22 17:49:06.011 +08:00 [DBG] TaskCanceledException. Exiting.
+2019-05-22 17:49:06.030 +08:00 [DBG] Stopping grant removal
