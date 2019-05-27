@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28917.182
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiServerOne", "ApiServerOne\ApiServerOne.csproj", "{45701279-5A14-416A-A5A2-19359C1AFCBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCClient", "MVCClient\MVCClient.csproj", "{ED032AE6-F3A5-4417-84C2-4A7BCB2B2EBF}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{45701279-5A14-416A-A5A2-19359C1AFCBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{45701279-5A14-416A-A5A2-19359C1AFCBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{45701279-5A14-416A-A5A2-19359C1AFCBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{45701279-5A14-416A-A5A2-19359C1AFCBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED032AE6-F3A5-4417-84C2-4A7BCB2B2EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED032AE6-F3A5-4417-84C2-4A7BCB2B2EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED032AE6-F3A5-4417-84C2-4A7BCB2B2EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED032AE6-F3A5-4417-84C2-4A7BCB2B2EBF}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {92DC38D3-6280-4685-B500-F5BA36F94347}
+	EndGlobalSection
+EndGlobal

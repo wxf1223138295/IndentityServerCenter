@@ -35,7 +35,8 @@ namespace IdentityCenter
                 {
                     ClientId = "client",
                     ClientName = "Client Credentials Client",
-
+                    //jwt过期时间
+                    AccessTokenLifetime = 600,
                     AllowedGrantTypes = GrantTypes.ClientCredentials,
                     ClientSecrets = { new Secret("511536EF-F270-4058-80CA-1C89C192F69A".Sha256()) },
 
