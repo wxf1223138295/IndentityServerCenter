@@ -77,7 +77,7 @@ namespace IdentityCenter
                     // this enables automatic token cleanup. this is optional.
                     options.EnableTokenCleanup = true;
                 });
-
+            services.AddTransient<ILoginService<ApplicationUser>, EFLoginService>();
             services.AddAuthentication()
                 .AddGoogle(options =>
                 {
@@ -124,8 +124,8 @@ namespace IdentityCenter
             {
                 serviceScope.ServiceProvider.GetRequiredService<PersistedGrantDbContext>().Database.Migrate();
 
-               var contextapp= serviceScope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
-               contextapp.Database.Migrate();
+                var contextapp = serviceScope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+                contextapp.Database.Migrate();
 
                 var context = serviceScope.ServiceProvider.GetRequiredService<ConfigurationDbContext>();
                 context.Database.Migrate();

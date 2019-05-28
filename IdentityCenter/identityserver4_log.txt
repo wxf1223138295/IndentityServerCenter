@@ -1193,3 +1193,27 @@ System.InvalidOperationException: The partial view '_ValidationScriptsPartial' w
 2019-05-29 00:13:29.694 +08:00 [INF] {"Username":"shawn","Endpoint":"UI","Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"invalid credentials","ActivityId":"0HLN3GRRK0PIC:00000012","TimeStamp":"2019-05-28T16:13:29.0000000Z","ProcessId":41714,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
 2019-05-29 00:14:30.398 +08:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
 2019-05-29 00:14:30.403 +08:00 [INF] {"Username":"1223138295@qq.com","Endpoint":"UI","Category":"Authentication","Name":"User Login Failure","EventType":"Failure","Id":1001,"Message":"invalid credentials","ActivityId":"0HLN3GRRK0PIC:00000013","TimeStamp":"2019-05-28T16:14:30.0000000Z","ProcessId":41714,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginFailureEvent"}
+2019-05-29 00:29:44.025 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-05-29 00:29:44.050 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-05-29 00:29:44.050 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-05-29 00:29:44.050 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-05-29 00:29:44.050 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-05-29 00:29:44.050 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-05-29 00:29:44.242 +08:00 [DBG] Starting grant removal
+2019-05-29 00:29:48.608 +08:00 [DBG] Login Url: /Account/Login
+2019-05-29 00:29:48.611 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-29 00:29:48.611 +08:00 [DBG] Logout Url: /Account/Logout
+2019-05-29 00:29:48.611 +08:00 [DBG] ConsentUrl Url: /consent
+2019-05-29 00:29:48.611 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-29 00:29:48.611 +08:00 [DBG] Error Url: /home/error
+2019-05-29 00:29:48.612 +08:00 [DBG] Error Id Parameter: errorId
+2019-05-29 00:29:59.661 +08:00 [DBG] CORS request made for path: /Account/Login from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-05-29 00:30:00.485 +08:00 [INF] {"Username":"1223138295@qq.com","Provider":null,"ProviderUserId":null,"SubjectId":"1223138295@qq.com","DisplayName":"shawn","Endpoint":"UI","Category":"Authentication","Name":"User Login Success","EventType":"Success","Id":1000,"Message":null,"ActivityId":"0HLN3H6PRHVL3:00000002","TimeStamp":"2019-05-28T16:30:00.0000000Z","ProcessId":42314,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"UserLoginSuccessEvent"}
+2019-05-29 00:30:01.024 +08:00 [DBG] Augmenting SignInContext
+2019-05-29 00:30:01.027 +08:00 [DBG] Adding idp claim with value: local
+2019-05-29 00:30:01.027 +08:00 [DBG] Adding amr claim with value: pwd
+2019-05-29 00:30:01.028 +08:00 [DBG] Adding auth_time claim with value: 1559061001
+2019-05-29 00:30:01.046 +08:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-05-29 00:30:01.320 +08:00 [DBG] 0 persisted grants found for af61726e-716b-4170-8c26-6568bf294215
+2019-05-29 00:30:22.204 +08:00 [DBG] TaskCanceledException. Exiting.
+2019-05-29 00:30:22.246 +08:00 [DBG] Stopping grant removal
