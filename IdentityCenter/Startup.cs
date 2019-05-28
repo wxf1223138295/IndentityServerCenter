@@ -15,6 +15,7 @@ using Microsoft.AspNetCore.Hosting;
 using IdentityServer4;
 using IdentityServer4.EntityFramework.DbContexts;
 using IdentityServer4.EntityFramework.Mappers;
+using Microsoft.AspNetCore.Identity;
 
 namespace IdentityCenter
 {
@@ -39,10 +40,18 @@ namespace IdentityCenter
                 options.AuthenticationDisplayName = "Windows";
             });
 
+            services.AddIdentity<ApplicationUser, IdentityRole>()
+                .AddEntityFrameworkStores<ApplicationDbContext>()
+                .AddDefaultTokenProviders();
+
             var connectionString = Configuration.GetConnectionString("DefaultConnection");
             var migrationsAssembly = typeof(Startup).GetTypeInfo().Assembly.GetName().Name;
 
-            services.AddDbContext<ApplicationDbContext>(p => { p.UseMySql(connectionString); });
+            services.AddDbContext<ApplicationDbContext>(p =>
+            {
+                p.UseMySql(connectionString,
+                    sql => sql.MigrationsAssembly(migrationsAssembly));
+            });
 
             var identityServer = services.AddIdentityServer(options =>
                 {
@@ -51,6 +60,7 @@ namespace IdentityCenter
                     options.Events.RaiseFailureEvents = true;
                     options.Events.RaiseSuccessEvents = true;
                 })
+                .AddAspNetIdentity<ApplicationUser>()
                 .AddTestUsers(TestUsers.Users)
                 // this adds the config data from DB (clients, resources, CORS)
                 .AddConfigurationStore(options =>
@@ -113,6 +123,9 @@ namespace IdentityCenter
             using (var serviceScope = app.ApplicationServices.GetService<IServiceScopeFactory>().CreateScope())
             {
                 serviceScope.ServiceProvider.GetRequiredService<PersistedGrantDbContext>().Database.Migrate();
+
+               var contextapp= serviceScope.ServiceProvider.GetRequiredService<ApplicationDbContext>();
+               contextapp.Database.Migrate();
 
                 var context = serviceScope.ServiceProvider.GetRequiredService<ConfigurationDbContext>();
                 context.Database.Migrate();
