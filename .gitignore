@@ -330,3 +330,12 @@ ASALocalRun/
 /4.3.1/aspnet-core/src/Rich.SMP.Web.Host/Logs
 /4.3.1/aspnet-core/src/Rich.SMP.Web.Host/App_Data/Logs
 /4.3.1/aspnet-core/src/Rich.SMP.Web.Hostlogs
+IdentityCenter/.vscode/solution-explorer/class.cs-template
+IdentityCenter/.vscode/solution-explorer/class.ts-template
+IdentityCenter/.vscode/solution-explorer/class.vb-template
+IdentityCenter/.vscode/solution-explorer/default.ts-template
+IdentityCenter/.vscode/solution-explorer/enum.cs-template
+IdentityCenter/.vscode/solution-explorer/interface.cs-template
+IdentityCenter/.vscode/solution-explorer/interface.ts-template
+IdentityCenter/.vscode/solution-explorer/template-list.json
+IdentityCenter/.vscode/solution-explorer/template-parameters.js
