@@ -16,6 +16,8 @@ using IdentityServer4;
 using IdentityServer4.EntityFramework.DbContexts;
 using IdentityServer4.EntityFramework.Mappers;
 using Microsoft.AspNetCore.Identity;
+using IdentityServer4.Services;
+using IdentityCenter.Servers;
 
 namespace IdentityCenter
 {
@@ -76,7 +78,9 @@ namespace IdentityCenter
                     // this enables automatic token cleanup. this is optional.
                     options.EnableTokenCleanup = true;
                 });
+
             services.AddTransient<ILoginService<ApplicationUser>, EFLoginService>();
+            services.AddTransient<IRedirectService, RedirectService>();
             services.AddAuthentication()
                 .AddGoogle(options =>
                 {
@@ -88,7 +92,7 @@ namespace IdentityCenter
                     options.ClientId = "copy client ID from Google here";
                     options.ClientSecret = "copy client secret from Google here";
                 });
-
+            identityServer.Services.AddTransient<IProfileService, ProfileService>();
             if (Environment.IsDevelopment())
             {
                 identityServer.AddDeveloperSigningCredential();
