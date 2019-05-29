@@ -14,7 +14,7 @@ namespace IdentityCenter.Data
         [Required]
         public string SecurityNumber { get; set; }
         [Required]
-        // [RegularExpression(@"(0[1-9]|1[0-2])\/[0-9]{2}", ErrorMessage = "Expiration should match a valid MM/YY value")]
+        [RegularExpression(@"(0[1-9]|1[0-2])\/[0-9]{2}", ErrorMessage = "Expiration should match a valid MM/YY value")]
         public string Expiration { get; set; }
         [Required]
         public string CardHolderName { get; set; }

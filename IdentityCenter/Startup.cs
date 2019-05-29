@@ -61,7 +61,6 @@ namespace IdentityCenter
                     options.Events.RaiseSuccessEvents = true;
                 })
                 .AddAspNetIdentity<ApplicationUser>()
-                .AddTestUsers(TestUsers.Users)
                 // this adds the config data from DB (clients, resources, CORS)
                 .AddConfigurationStore(options =>
                 {

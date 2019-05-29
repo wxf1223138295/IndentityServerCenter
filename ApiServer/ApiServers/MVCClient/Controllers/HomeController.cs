@@ -20,7 +20,36 @@ namespace MVCClient.Controllers
             _clientFactory = clientFactory;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<ActionResult<string>> Index2()
+        {
+            var client = _clientFactory.CreateClient("getjwt");
+
+            var disco = await client.GetDiscoveryDocumentAsync("");
+
+            var result = await client.RequestPasswordTokenAsync(new PasswordTokenRequest
+            {
+                Address = disco.TokenEndpoint,
+                ClientId = "ro.client",
+                ClientSecret = "secret",
+                UserName = "1223138295@qq.com",
+                Password = "Pass@word123",
+                Scope = "api1"
+            });
+
+            var client1 = _clientFactory.CreateClient("getapiserverone");
+            client1.SetBearerToken(result.AccessToken);
+
+            var t = await client1.GetAsync("");
+
+            if (!t.IsSuccessStatusCode)
+            {
+                var tr = t.StatusCode;
+            }
+
+            return "客户端模式-账号密码";
+        }
+
+        public async Task<ActionResult<string>> Index()
         {
             var client = _clientFactory.CreateClient("getjwt");
 
@@ -45,7 +74,7 @@ namespace MVCClient.Controllers
                 var tr=t.StatusCode;
             }
 
-            return View();
+            return "客户端模式-id";
         }
 
         public IActionResult Privacy()
