@@ -4,6 +4,7 @@
 
 using IdentityServer4.Models;
 using System.Collections.Generic;
+using IdentityServer4;
 
 namespace IdentityCenter
 {
@@ -94,6 +95,25 @@ namespace IdentityCenter
                     AllowedCorsOrigins = { "http://localhost:5002" },
 
                     AllowedScopes = { "openid", "profile", "api1" }
+                },
+                new Client()
+                {
+                    ClientId = "mvcImp",
+                    ClientName = "MVC ClientImp",
+                    AllowedGrantTypes = GrantTypes.Implicit,
+
+                    // 登录成功回调处理地址，处理回调返回的数据
+                    RedirectUris = { "http://localhost:5004/signin-oidc" },
+
+                    // where to redirect to after logout
+                    PostLogoutRedirectUris = { "http://localhost:5004/signout-callback-oidc" },
+                    ClientSecrets = { new Secret("shawn".Sha256()) },
+                    RequireConsent = true,
+                    AllowedScopes = new List<string>
+                    {
+                        IdentityServerConstants.StandardScopes.OpenId,
+                        IdentityServerConstants.StandardScopes.Profile
+                    }
                 }
             };
         }
