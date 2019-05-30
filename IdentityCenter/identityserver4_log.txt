@@ -3314,3 +3314,649 @@ Microsoft.AspNetCore.Connections.ConnectionAbortedException: The connection was 
 2019-05-30 19:49:21.860 +08:00 [DBG] Consent Return Url Parameter: returnUrl
 2019-05-30 19:49:21.860 +08:00 [DBG] Error Url: /home/error
 2019-05-30 19:49:21.861 +08:00 [DBG] Error Id Parameter: errorId
+2019-05-30 19:57:15.201 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-05-30 19:57:15.229 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-05-30 19:57:15.229 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-05-30 19:57:15.229 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-05-30 19:57:15.229 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-05-30 19:57:15.229 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-05-30 19:57:15.418 +08:00 [DBG] Starting grant removal
+2019-05-30 20:24:19.399 +08:00 [DBG] Login Url: /Account/Login
+2019-05-30 20:24:19.404 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-30 20:24:19.405 +08:00 [DBG] Logout Url: /Account/Logout
+2019-05-30 20:24:19.405 +08:00 [DBG] ConsentUrl Url: /consent
+2019-05-30 20:24:19.406 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-30 20:24:19.406 +08:00 [DBG] Error Url: /home/error
+2019-05-30 20:24:19.406 +08:00 [DBG] Error Id Parameter: errorId
+2019-05-30 20:24:19.440 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-30 20:24:19.449 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-30 20:24:19.450 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-30 20:24:19.454 +08:00 [DBG] Start discovery request
+2019-05-30 20:24:21.723 +08:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-05-30 20:24:21.877 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-30 20:24:21.878 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-30 20:24:21.878 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-30 20:24:21.885 +08:00 [DBG] Start key discovery request
+2019-05-30 20:24:22.998 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-05-30 20:24:23.003 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-05-30 20:24:23.003 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-05-30 20:24:23.010 +08:00 [DBG] Start authorize request
+2019-05-30 20:24:23.026 +08:00 [DBG] User in authorize request: af61726e-716b-4170-8c26-6568bf294215
+2019-05-30 20:24:23.033 +08:00 [DBG] Start authorize request protocol validation
+2019-05-30 20:24:25.211 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:24:25.226 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:24:25.231 +08:00 [DBG] Checking for PKCE parameters
+2019-05-30 20:24:25.233 +08:00 [DBG] No PKCE used.
+2019-05-30 20:24:25.672 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:24:25.954 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:24:25.959 +08:00 [ERR] Invalid scope: Email
+2019-05-30 20:24:25.965 +08:00 [ERR] Request validation failed
+2019-05-30 20:24:25.981 +08:00 [INF] {"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","RedirectUri":"http://localhost:5005/signin-oidc","AllowedRedirectUris":["http://localhost:5005/signin-oidc"],"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"openid profile Email","State":"CfDJ8F85EO-pYlJKvNXwUT18ba5sULIk8n67Z7GOBzD9JnlgLq7MPPVOegf6TQYgHJ_KzvDNftNyhKIb4u16MtTqSdZ37K39ojnA4GqqntR8xHg__wJDMRZCZiuvY7pi3e25XTbWE4QEsjFJhRjfyIAof67UR3m0-l5gP25eTKFXYTeyu5b4_irl9bAHQt0qw0p6CQRwHQ0QFz9wKeSzh7rMVCN4kLRV9bVZ-758GGddd-4R_0amawAfrVKhEp8Ersr5Kx_CZXyF1gkZAOxCLKqmAhjd9EybXPiYa3d8V738TRNOAFxE6vzA-EZ4nFFICW5zXoxaOXFgEtYZpNgjSW0y4l0","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"mvcHybrid","redirect_uri":"http://localhost:5005/signin-oidc","response_type":"code id_token","scope":"openid profile Email","response_mode":"form_post","nonce":"636948158619183640.MTNmNTBkNjYtNjE4Yi00YzhmLWEzNzMtZTA0OTUzYjc4MTZkMjhiNGZhZWQtYzg0Yy00ZGU4LWI4ZGEtMTlhMzhlZWU3MjBh","state":"CfDJ8F85EO-pYlJKvNXwUT18ba5sULIk8n67Z7GOBzD9JnlgLq7MPPVOegf6TQYgHJ_KzvDNftNyhKIb4u16MtTqSdZ37K39ojnA4GqqntR8xHg__wJDMRZCZiuvY7pi3e25XTbWE4QEsjFJhRjfyIAof67UR3m0-l5gP25eTKFXYTeyu5b4_irl9bAHQt0qw0p6CQRwHQ0QFz9wKeSzh7rMVCN4kLRV9bVZ-758GGddd-4R_0amawAfrVKhEp8Ersr5Kx_CZXyF1gkZAOxCLKqmAhjd9EybXPiYa3d8V738TRNOAFxE6vzA-EZ4nFFICW5zXoxaOXFgEtYZpNgjSW0y4l0","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-05-30 20:24:26.000 +08:00 [INF] {"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","RedirectUri":"http://localhost:5005/signin-oidc","Endpoint":"Authorize","SubjectId":"af61726e-716b-4170-8c26-6568bf294215","Scopes":"openid profile Email","GrantType":"hybrid","Error":"invalid_scope","ErrorDescription":"Invalid scope","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLN4V6UK03LQ:00000001","TimeStamp":"2019-05-30T12:24:25.0000000Z","ProcessId":45234,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2019-05-30 20:25:15.425 +08:00 [DBG] TaskCanceledException. Exiting.
+2019-05-30 20:25:15.472 +08:00 [DBG] Stopping grant removal
+2019-05-30 20:25:33.853 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-05-30 20:25:33.878 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-05-30 20:25:33.878 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-05-30 20:25:33.878 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-05-30 20:25:33.879 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-05-30 20:25:33.879 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-05-30 20:25:34.064 +08:00 [DBG] Starting grant removal
+2019-05-30 20:25:44.634 +08:00 [DBG] Login Url: /Account/Login
+2019-05-30 20:25:44.636 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-30 20:25:44.636 +08:00 [DBG] Logout Url: /Account/Logout
+2019-05-30 20:25:44.648 +08:00 [DBG] ConsentUrl Url: /consent
+2019-05-30 20:25:44.649 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-30 20:25:44.649 +08:00 [DBG] Error Url: /home/error
+2019-05-30 20:25:44.649 +08:00 [DBG] Error Id Parameter: errorId
+2019-05-30 20:25:44.699 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-05-30 20:25:44.709 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-05-30 20:25:44.709 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-05-30 20:25:44.714 +08:00 [DBG] Start authorize request
+2019-05-30 20:25:44.729 +08:00 [DBG] User in authorize request: af61726e-716b-4170-8c26-6568bf294215
+2019-05-30 20:25:44.737 +08:00 [DBG] Start authorize request protocol validation
+2019-05-30 20:25:48.203 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:25:48.213 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:25:48.219 +08:00 [DBG] Checking for PKCE parameters
+2019-05-30 20:25:48.221 +08:00 [DBG] No PKCE used.
+2019-05-30 20:25:49.251 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:25:49.902 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:25:49.910 +08:00 [ERR] Invalid scope: Email
+2019-05-30 20:25:49.913 +08:00 [ERR] Request validation failed
+2019-05-30 20:25:49.928 +08:00 [INF] {"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","RedirectUri":"http://localhost:5005/signin-oidc","AllowedRedirectUris":["http://localhost:5005/signin-oidc"],"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"openid profile Email","State":"CfDJ8F85EO-pYlJKvNXwUT18ba6LX8ef0VB_y0kE8xTLd3lnFoc-qhe8ffG6A6NDkMwHM0QQfVqwwE88K2QMBPQri-vZKO3FN3WfGpF79xvvhtWYymMpE5DqLD8MvF53L2nTTu38ElNb0NL2RIlR-RSQ07cFKQuZX9AUlEp3A1i5jCgSVtZlZpCtkxM2zd7QNsGLpU8i50y2uP4MG6RKt56vC3cMbVfeqWmnVm5yAwHDRpYouTP1tj3_KerBpwe-zEP9MqbGI6GkvBSyoHxXAnUMzK-PLHpSnElkHbDo2Oqr7TPRgKNTplwYgrmexLCyhj1rTZNj3RxYz0C6yg-Ek-JrzIQ","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"mvcHybrid","redirect_uri":"http://localhost:5005/signin-oidc","response_type":"code id_token","scope":"openid profile Email","response_mode":"form_post","nonce":"636948159445394960.ZjVjMWRjOTgtMTYyMy00NTUwLWE4YTUtYjc5ODFlZDJmZmZhYjAxMTQ1MjgtMmIzNy00MzMxLTkxZTYtZTk0M2U0ZDliZmFk","state":"CfDJ8F85EO-pYlJKvNXwUT18ba6LX8ef0VB_y0kE8xTLd3lnFoc-qhe8ffG6A6NDkMwHM0QQfVqwwE88K2QMBPQri-vZKO3FN3WfGpF79xvvhtWYymMpE5DqLD8MvF53L2nTTu38ElNb0NL2RIlR-RSQ07cFKQuZX9AUlEp3A1i5jCgSVtZlZpCtkxM2zd7QNsGLpU8i50y2uP4MG6RKt56vC3cMbVfeqWmnVm5yAwHDRpYouTP1tj3_KerBpwe-zEP9MqbGI6GkvBSyoHxXAnUMzK-PLHpSnElkHbDo2Oqr7TPRgKNTplwYgrmexLCyhj1rTZNj3RxYz0C6yg-Ek-JrzIQ","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-05-30 20:25:49.943 +08:00 [INF] {"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","RedirectUri":"http://localhost:5005/signin-oidc","Endpoint":"Authorize","SubjectId":"af61726e-716b-4170-8c26-6568bf294215","Scopes":"openid profile Email","GrantType":"hybrid","Error":"invalid_scope","ErrorDescription":"Invalid scope","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLN4V7MF994F:00000001","TimeStamp":"2019-05-30T12:25:49.0000000Z","ProcessId":45995,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2019-05-30 20:27:51.111 +08:00 [DBG] TaskCanceledException. Exiting.
+2019-05-30 20:27:51.145 +08:00 [DBG] Stopping grant removal
+2019-05-30 20:28:06.707 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-05-30 20:28:06.737 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-05-30 20:28:06.737 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-05-30 20:28:06.737 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-05-30 20:28:06.737 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-05-30 20:28:06.737 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-05-30 20:28:06.920 +08:00 [DBG] Starting grant removal
+2019-05-30 20:28:27.970 +08:00 [DBG] Login Url: /Account/Login
+2019-05-30 20:28:27.972 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-30 20:28:27.973 +08:00 [DBG] Logout Url: /Account/Logout
+2019-05-30 20:28:27.974 +08:00 [DBG] ConsentUrl Url: /consent
+2019-05-30 20:28:27.974 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-30 20:28:27.974 +08:00 [DBG] Error Url: /home/error
+2019-05-30 20:28:27.974 +08:00 [DBG] Error Id Parameter: errorId
+2019-05-30 20:28:28.020 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-05-30 20:28:28.028 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-05-30 20:28:28.028 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-05-30 20:28:28.034 +08:00 [DBG] Start authorize request
+2019-05-30 20:28:28.051 +08:00 [DBG] User in authorize request: af61726e-716b-4170-8c26-6568bf294215
+2019-05-30 20:28:28.069 +08:00 [DBG] Start authorize request protocol validation
+2019-05-30 20:28:33.125 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:28:33.141 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:28:33.146 +08:00 [DBG] Checking for PKCE parameters
+2019-05-30 20:28:33.148 +08:00 [DBG] No PKCE used.
+2019-05-30 20:28:33.587 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:28:33.950 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:28:33.961 +08:00 [ERR] Invalid scope: Email
+2019-05-30 20:28:33.966 +08:00 [ERR] Request validation failed
+2019-05-30 20:28:33.978 +08:00 [INF] {"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","RedirectUri":"http://localhost:5005/signin-oidc","AllowedRedirectUris":["http://localhost:5005/signin-oidc"],"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"openid profile Email","State":"CfDJ8F85EO-pYlJKvNXwUT18ba5jM4BNxBebuEX8OsyrJKj5YhMwCYaAoOhu6xyhnWuvae4SAIiNLT8F5yQust13vvuaBDTHml4YAavoukDUXAoCkD1L7_O-CCDzZ9Erys7Hmw_d7ZMXUhFGXRkU_jIUGTGHLvoW9AGTYkFAP8tEipxMdGL-z3Iy_2cDdhkx8pkV77AG2Ve_vgEFY6LphTQn4N563yLDocFTfqMvt-M6xycvkCXluQ-rwXApJoHLZGrrV-pGZJXE1ND_xmYmLhlY-UbXDNpuMWTO1PGbIGFNjU7lCNEMO1enSNPxgH7YGEcfNf03w-6_rGsrb6KvTwe-mNo","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"mvcHybrid","redirect_uri":"http://localhost:5005/signin-oidc","response_type":"code id_token","scope":"openid profile Email","response_mode":"form_post","nonce":"636948161078150860.OWRjYWFjOGItYmMwZS00YmMwLWFhMDYtYzkyMmRmMmQ4NzU2ZGI0YjAwZjgtZDMyMy00ODQ0LTkyZGItNThjMWQwODMyYWQ3","state":"CfDJ8F85EO-pYlJKvNXwUT18ba5jM4BNxBebuEX8OsyrJKj5YhMwCYaAoOhu6xyhnWuvae4SAIiNLT8F5yQust13vvuaBDTHml4YAavoukDUXAoCkD1L7_O-CCDzZ9Erys7Hmw_d7ZMXUhFGXRkU_jIUGTGHLvoW9AGTYkFAP8tEipxMdGL-z3Iy_2cDdhkx8pkV77AG2Ve_vgEFY6LphTQn4N563yLDocFTfqMvt-M6xycvkCXluQ-rwXApJoHLZGrrV-pGZJXE1ND_xmYmLhlY-UbXDNpuMWTO1PGbIGFNjU7lCNEMO1enSNPxgH7YGEcfNf03w-6_rGsrb6KvTwe-mNo","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-05-30 20:28:33.996 +08:00 [INF] {"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","RedirectUri":"http://localhost:5005/signin-oidc","Endpoint":"Authorize","SubjectId":"af61726e-716b-4170-8c26-6568bf294215","Scopes":"openid profile Email","GrantType":"hybrid","Error":"invalid_scope","ErrorDescription":"Invalid scope","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLN4V98MK033:00000001","TimeStamp":"2019-05-30T12:28:33.0000000Z","ProcessId":46114,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2019-05-30 20:29:44.171 +08:00 [DBG] TaskCanceledException. Exiting.
+2019-05-30 20:29:44.212 +08:00 [DBG] Stopping grant removal
+2019-05-30 20:29:59.916 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-05-30 20:29:59.952 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-05-30 20:29:59.952 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-05-30 20:29:59.952 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-05-30 20:29:59.952 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-05-30 20:29:59.953 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-05-30 20:30:00.135 +08:00 [DBG] Starting grant removal
+2019-05-30 20:30:23.265 +08:00 [DBG] TaskCanceledException. Exiting.
+2019-05-30 20:30:23.320 +08:00 [DBG] Stopping grant removal
+2019-05-30 20:30:43.507 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-05-30 20:30:43.545 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-05-30 20:30:43.545 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-05-30 20:30:43.545 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-05-30 20:30:43.545 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-05-30 20:30:43.546 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-05-30 20:30:43.773 +08:00 [DBG] Starting grant removal
+2019-05-30 20:30:57.421 +08:00 [DBG] Login Url: /Account/Login
+2019-05-30 20:30:57.425 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-30 20:30:57.426 +08:00 [DBG] Logout Url: /Account/Logout
+2019-05-30 20:30:57.426 +08:00 [DBG] ConsentUrl Url: /consent
+2019-05-30 20:30:57.426 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-30 20:30:57.427 +08:00 [DBG] Error Url: /home/error
+2019-05-30 20:30:57.427 +08:00 [DBG] Error Id Parameter: errorId
+2019-05-30 20:30:57.456 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-30 20:30:57.465 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-30 20:30:57.466 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-30 20:30:57.469 +08:00 [DBG] Start discovery request
+2019-05-30 20:30:59.443 +08:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-05-30 20:30:59.573 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-30 20:30:59.575 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-30 20:30:59.575 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-30 20:30:59.580 +08:00 [DBG] Start key discovery request
+2019-05-30 20:30:59.671 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-05-30 20:30:59.676 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-05-30 20:30:59.676 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-05-30 20:30:59.680 +08:00 [DBG] Start authorize request
+2019-05-30 20:30:59.694 +08:00 [DBG] User in authorize request: af61726e-716b-4170-8c26-6568bf294215
+2019-05-30 20:30:59.699 +08:00 [DBG] Start authorize request protocol validation
+2019-05-30 20:31:01.949 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:31:01.957 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:31:01.963 +08:00 [DBG] Checking for PKCE parameters
+2019-05-30 20:31:01.965 +08:00 [DBG] No PKCE used.
+2019-05-30 20:31:02.364 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:31:02.598 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:31:02.917 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:31:03.103 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:31:03.117 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-05-30 20:31:03.131 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","RedirectUri":"http://localhost:5005/signin-oidc","AllowedRedirectUris":["http://localhost:5005/signin-oidc"],"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"openid profile","State":"CfDJ8F85EO-pYlJKvNXwUT18ba4S9WCn7zx8mv-Wi41GKKay4prOI4zOchBIRIyyjRshsg9gu0aeT3kwEWay-_8swPZQ_Tv9iyW6NKCGB9MCfMsCcV7sHv2xsnGEfPPpiPbsVFLGRb2WfbtCOuK4evAkcZYHDWN1K0O_T5AOLPl6UI2PPDKbfdNZL11SSyxQB1he8JX50K9YyLMwRHbbLyiSCoNzIrlrY7t_tkqgLjdL3fAt8a6hdtsThqfYSGvkt9ECB3MLMRI1jx6ZHANMS9g_UAk_0Q_eBxZ9pd0SZZxs3j5TeTbZ07Hxqz7gQ04hRGrvvQBKpj5ALUCa2YdPzuKdMAo","UiLocales":null,"Nonce":"636948162596223740.MWFlZTcxM2YtZjg0YS00YTBmLWJiY2UtN2ExYzM0ZWQ3M2E3MGFlOWI0NmQtNzk4Zi00ZWFiLTlkMGQtMmM4NzhhOWE4ZjYy","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"8115527021d4937e613b0f1d59ccf9e0","Raw":{"client_id":"mvcHybrid","redirect_uri":"http://localhost:5005/signin-oidc","response_type":"code id_token","scope":"openid profile","response_mode":"form_post","nonce":"636948162596223740.MWFlZTcxM2YtZjg0YS00YTBmLWJiY2UtN2ExYzM0ZWQ3M2E3MGFlOWI0NmQtNzk4Zi00ZWFiLTlkMGQtMmM4NzhhOWE4ZjYy","state":"CfDJ8F85EO-pYlJKvNXwUT18ba4S9WCn7zx8mv-Wi41GKKay4prOI4zOchBIRIyyjRshsg9gu0aeT3kwEWay-_8swPZQ_Tv9iyW6NKCGB9MCfMsCcV7sHv2xsnGEfPPpiPbsVFLGRb2WfbtCOuK4evAkcZYHDWN1K0O_T5AOLPl6UI2PPDKbfdNZL11SSyxQB1he8JX50K9YyLMwRHbbLyiSCoNzIrlrY7t_tkqgLjdL3fAt8a6hdtsThqfYSGvkt9ECB3MLMRI1jx6ZHANMS9g_UAk_0Q_eBxZ9pd0SZZxs3j5TeTbZ07Hxqz7gQ04hRGrvvQBKpj5ALUCa2YdPzuKdMAo","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-05-30 20:31:03.752 +08:00 [DBG] FiTLcYGBYEV8OnKEgTs+U+128Zy+PdC+Fm2zjauszrc= found in database: false
+2019-05-30 20:31:03.753 +08:00 [DBG] user_consent grant with value: mvcHybrid|af61726e-716b-4170-8c26-6568bf294215 not found in store.
+2019-05-30 20:31:03.755 +08:00 [DBG] Found no prior consent from consent store, consent is required
+2019-05-30 20:31:03.755 +08:00 [INF] Showing consent: User has not yet consented
+2019-05-30 20:31:03.987 +08:00 [DBG] Start authorize request protocol validation
+2019-05-30 20:31:05.803 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:31:05.804 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:31:05.805 +08:00 [DBG] Checking for PKCE parameters
+2019-05-30 20:31:05.807 +08:00 [DBG] No PKCE used.
+2019-05-30 20:31:06.122 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:31:06.308 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:31:06.631 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:31:06.823 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:31:06.824 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-05-30 20:31:08.569 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:31:08.570 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:31:08.876 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:31:09.073 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:31:24.785 +08:00 [DBG] CORS request made for path: /consent from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-05-30 20:31:24.839 +08:00 [DBG] Start authorize request protocol validation
+2019-05-30 20:31:26.582 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:31:26.583 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:31:26.584 +08:00 [DBG] Checking for PKCE parameters
+2019-05-30 20:31:26.585 +08:00 [DBG] No PKCE used.
+2019-05-30 20:31:26.922 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:31:27.120 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:31:27.473 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:31:27.672 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:31:27.674 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-05-30 20:31:27.694 +08:00 [INF] {"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ClientId":"mvcHybrid","RequestedScopes":["openid","profile"],"GrantedScopes":["openid","profile"],"ConsentRemembered":false,"Category":"Grants","Name":"Consent granted","EventType":"Information","Id":4000,"Message":null,"ActivityId":"0HLN4VAJNJGF1:00000004","TimeStamp":"2019-05-30T12:31:27.0000000Z","ProcessId":46241,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ConsentGrantedEvent"}
+2019-05-30 20:31:29.503 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:31:29.503 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:31:29.517 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-05-30 20:31:29.519 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-05-30 20:31:29.520 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-05-30 20:31:29.526 +08:00 [DBG] Start authorize callback request
+2019-05-30 20:31:29.535 +08:00 [DBG] User in authorize request: af61726e-716b-4170-8c26-6568bf294215
+2019-05-30 20:31:29.535 +08:00 [DBG] Start authorize request protocol validation
+2019-05-30 20:31:31.342 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:31:31.342 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:31:31.343 +08:00 [DBG] Checking for PKCE parameters
+2019-05-30 20:31:31.343 +08:00 [DBG] No PKCE used.
+2019-05-30 20:31:31.674 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:31:31.860 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:31:32.195 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:31:32.369 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:31:32.371 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-05-30 20:31:32.372 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","RedirectUri":"http://localhost:5005/signin-oidc","AllowedRedirectUris":["http://localhost:5005/signin-oidc"],"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"openid profile","State":"CfDJ8F85EO-pYlJKvNXwUT18ba4S9WCn7zx8mv-Wi41GKKay4prOI4zOchBIRIyyjRshsg9gu0aeT3kwEWay-_8swPZQ_Tv9iyW6NKCGB9MCfMsCcV7sHv2xsnGEfPPpiPbsVFLGRb2WfbtCOuK4evAkcZYHDWN1K0O_T5AOLPl6UI2PPDKbfdNZL11SSyxQB1he8JX50K9YyLMwRHbbLyiSCoNzIrlrY7t_tkqgLjdL3fAt8a6hdtsThqfYSGvkt9ECB3MLMRI1jx6ZHANMS9g_UAk_0Q_eBxZ9pd0SZZxs3j5TeTbZ07Hxqz7gQ04hRGrvvQBKpj5ALUCa2YdPzuKdMAo","UiLocales":null,"Nonce":"636948162596223740.MWFlZTcxM2YtZjg0YS00YTBmLWJiY2UtN2ExYzM0ZWQ3M2E3MGFlOWI0NmQtNzk4Zi00ZWFiLTlkMGQtMmM4NzhhOWE4ZjYy","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"8115527021d4937e613b0f1d59ccf9e0","Raw":{"client_id":"mvcHybrid","redirect_uri":"http://localhost:5005/signin-oidc","response_type":"code id_token","scope":"openid profile","response_mode":"form_post","nonce":"636948162596223740.MWFlZTcxM2YtZjg0YS00YTBmLWJiY2UtN2ExYzM0ZWQ3M2E3MGFlOWI0NmQtNzk4Zi00ZWFiLTlkMGQtMmM4NzhhOWE4ZjYy","state":"CfDJ8F85EO-pYlJKvNXwUT18ba4S9WCn7zx8mv-Wi41GKKay4prOI4zOchBIRIyyjRshsg9gu0aeT3kwEWay-_8swPZQ_Tv9iyW6NKCGB9MCfMsCcV7sHv2xsnGEfPPpiPbsVFLGRb2WfbtCOuK4evAkcZYHDWN1K0O_T5AOLPl6UI2PPDKbfdNZL11SSyxQB1he8JX50K9YyLMwRHbbLyiSCoNzIrlrY7t_tkqgLjdL3fAt8a6hdtsThqfYSGvkt9ECB3MLMRI1jx6ZHANMS9g_UAk_0Q_eBxZ9pd0SZZxs3j5TeTbZ07Hxqz7gQ04hRGrvvQBKpj5ALUCa2YdPzuKdMAo","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-05-30 20:31:32.756 +08:00 [DBG] FiTLcYGBYEV8OnKEgTs+U+128Zy+PdC+Fm2zjauszrc= found in database: false
+2019-05-30 20:31:32.756 +08:00 [DBG] user_consent grant with value: mvcHybrid|af61726e-716b-4170-8c26-6568bf294215 not found in store.
+2019-05-30 20:31:32.757 +08:00 [DBG] Found no prior consent from consent store, consent is required
+2019-05-30 20:31:32.762 +08:00 [INF] User consented to scopes: ["openid","profile"]
+2019-05-30 20:31:32.766 +08:00 [DBG] Client allows remembering consent, and no scopes provided. Removing consent from consent store for subject: af61726e-716b-4170-8c26-6568bf294215
+2019-05-30 20:31:32.988 +08:00 [DBG] no FiTLcYGBYEV8OnKEgTs+U+128Zy+PdC+Fm2zjauszrc= persisted grant found in database
+2019-05-30 20:31:32.999 +08:00 [DBG] Creating Hybrid Flow response.
+2019-05-30 20:31:33.260 +08:00 [DBG] yF2Z1jIHH/HhQV9bJfIey6zdcXvuKHVEjZjxDzqcD1c= not found in database
+2019-05-30 20:31:34.305 +08:00 [DBG] Creating Implicit Flow response.
+2019-05-30 20:31:34.320 +08:00 [DBG] Getting claims for identity token for subject: af61726e-716b-4170-8c26-6568bf294215 and client: mvcHybrid
+2019-05-30 20:31:34.322 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-05-30 20:31:34.413 +08:00 [INF] {"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","RedirectUri":"http://localhost:5005/signin-oidc","Endpoint":"Authorize","SubjectId":"af61726e-716b-4170-8c26-6568bf294215","Scopes":"openid profile","GrantType":"hybrid","Tokens":[{"TokenType":"id_token","TokenValue":"****fjkw","$type":"Token"},{"TokenType":"code","TokenValue":"****328c","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLN4VAJNJGF1:00000005","TimeStamp":"2019-05-30T12:31:34.0000000Z","ProcessId":46241,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-05-30 20:31:34.416 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ClientId":"mvcHybrid","RedirectUri":"http://localhost:5005/signin-oidc","State":"CfDJ8F85EO-pYlJKvNXwUT18ba4S9WCn7zx8mv-Wi41GKKay4prOI4zOchBIRIyyjRshsg9gu0aeT3kwEWay-_8swPZQ_Tv9iyW6NKCGB9MCfMsCcV7sHv2xsnGEfPPpiPbsVFLGRb2WfbtCOuK4evAkcZYHDWN1K0O_T5AOLPl6UI2PPDKbfdNZL11SSyxQB1he8JX50K9YyLMwRHbbLyiSCoNzIrlrY7t_tkqgLjdL3fAt8a6hdtsThqfYSGvkt9ECB3MLMRI1jx6ZHANMS9g_UAk_0Q_eBxZ9pd0SZZxs3j5TeTbZ07Hxqz7gQ04hRGrvvQBKpj5ALUCa2YdPzuKdMAo","Scope":"openid profile","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-05-30 20:31:34.443 +08:00 [DBG] Augmenting SignInContext
+2019-05-30 20:31:34.456 +08:00 [INF] AuthenticationScheme: Identity.Application signed in.
+2019-05-30 20:31:34.671 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-30 20:31:34.680 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-30 20:31:34.680 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-30 20:31:34.694 +08:00 [DBG] Start token request.
+2019-05-30 20:31:34.702 +08:00 [DBG] Start client validation
+2019-05-30 20:31:34.709 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-05-30 20:31:34.714 +08:00 [DBG] Start parsing for secret in post body
+2019-05-30 20:31:34.716 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-05-30 20:31:34.716 +08:00 [DBG] Secret id found: mvcHybrid
+2019-05-30 20:31:38.736 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:31:38.737 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:31:38.751 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-30 20:31:38.752 +08:00 [DBG] Client validation success
+2019-05-30 20:31:38.752 +08:00 [INF] {"ClientId":"mvcHybrid","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLN4VAJNJGF3:00000003","TimeStamp":"2019-05-30T12:31:38.0000000Z","ProcessId":46241,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-05-30 20:31:38.762 +08:00 [DBG] Start token request validation
+2019-05-30 20:31:38.775 +08:00 [DBG] Start validation of authorization code token request
+2019-05-30 20:31:38.978 +08:00 [DBG] yF2Z1jIHH/HhQV9bJfIey6zdcXvuKHVEjZjxDzqcD1c= found in database: true
+2019-05-30 20:31:39.164 +08:00 [DBG] removing yF2Z1jIHH/HhQV9bJfIey6zdcXvuKHVEjZjxDzqcD1c= persisted grant from database
+2019-05-30 20:31:39.685 +08:00 [DBG] Validation of authorization code token request success
+2019-05-30 20:31:39.689 +08:00 [INF] Token request validation success
+{"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"28a465c2ddf4dc623506d452c11de4d765edaf072cec46f3d22d7e6f7e9a328c","RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"mvcHybrid","client_secret":"***REDACTED***","code":"28a465c2ddf4dc623506d452c11de4d765edaf072cec46f3d22d7e6f7e9a328c","grant_type":"authorization_code","redirect_uri":"http://localhost:5005/signin-oidc"},"$type":"TokenRequestValidationLog"}
+2019-05-30 20:31:41.423 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:31:41.423 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:31:41.734 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:31:41.912 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:31:41.930 +08:00 [DBG] Getting claims for access token for client: mvcHybrid
+2019-05-30 20:31:41.931 +08:00 [DBG] Getting claims for access token for subject: af61726e-716b-4170-8c26-6568bf294215
+2019-05-30 20:31:41.939 +08:00 [DBG] Claim types from profile service that were filtered: ["sub"]
+2019-05-30 20:31:43.628 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:31:43.628 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:31:43.956 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:31:44.139 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:31:44.140 +08:00 [DBG] Getting claims for identity token for subject: af61726e-716b-4170-8c26-6568bf294215 and client: mvcHybrid
+2019-05-30 20:31:44.140 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-05-30 20:31:44.167 +08:00 [INF] {"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"openid profile","GrantType":"authorization_code","Tokens":[{"TokenType":"id_token","TokenValue":"****MWRg","$type":"Token"},{"TokenType":"access_token","TokenValue":"****z-2A","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLN4VAJNJGF3:00000003","TimeStamp":"2019-05-30T12:31:44.0000000Z","ProcessId":46241,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-05-30 20:31:44.170 +08:00 [DBG] Token request success.
+2019-05-30 20:31:44.197 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-05-30 20:31:44.199 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-05-30 20:31:44.200 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-05-30 20:31:44.215 +08:00 [DBG] Start userinfo request
+2019-05-30 20:31:44.223 +08:00 [DBG] Bearer token found in header
+2019-05-30 20:31:46.019 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:31:46.019 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:31:47.707 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:31:47.708 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:31:47.904 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-05-30 20:31:47.908 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1559219501,"exp":1559219561,"iss":"http://localhost:5000","aud":"http://localhost:5000/resources","client_id":"mvcHybrid","sub":"af61726e-716b-4170-8c26-6568bf294215","auth_time":1559134138,"idp":"local","preferred_username":"1223138295@qq.com","unique_name":"1223138295@qq.com","name":"shawn","last_name":"wong","card_number":"12123","card_holder":"王曉鋒","card_security_number":"2323","card_expiration":"20/12","address_city":"shanghai","address_country":"中国","address_state":"canials","address_street":"shanghai","address_zip_code":"226153","email":"1223138295@qq.com","email_verified":false,"phone_number":"17602180068","phone_number_verified":false,"scope":["openid","profile"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-05-30 20:31:47.928 +08:00 [DBG] Creating userinfo response
+2019-05-30 20:31:47.936 +08:00 [DBG] Scopes in access token: openid profile
+2019-05-30 20:31:47.942 +08:00 [DBG] Scopes in access token: openid profile
+2019-05-30 20:31:48.249 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:31:48.251 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at
+2019-05-30 20:31:48.252 +08:00 [DBG] Scopes in access token: openid profile
+2019-05-30 20:31:48.567 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:31:48.569 +08:00 [INF] Profile service returned the following claim types: sub preferred_username unique_name name last_name card_number card_holder card_security_number card_expiration address_city address_country address_state address_street address_zip_code email email_verified phone_number phone_number_verified
+2019-05-30 20:31:48.570 +08:00 [DBG] End userinfo request
+2019-05-30 20:31:49.007 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-30 20:31:49.008 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-30 20:31:49.008 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-30 20:31:49.009 +08:00 [DBG] Start discovery request
+2019-05-30 20:31:50.212 +08:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-05-30 20:31:50.473 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-30 20:31:50.473 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-30 20:31:50.474 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-30 20:31:50.474 +08:00 [DBG] Start key discovery request
+2019-05-30 20:33:20.453 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-30 20:33:20.454 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-30 20:33:20.454 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-30 20:33:20.454 +08:00 [DBG] Start discovery request
+2019-05-30 20:33:21.579 +08:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-05-30 20:33:21.663 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-30 20:33:21.664 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-30 20:33:21.664 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-30 20:33:21.665 +08:00 [DBG] Start key discovery request
+2019-05-30 20:33:21.727 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-05-30 20:33:21.728 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-05-30 20:33:21.728 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-05-30 20:33:21.728 +08:00 [DBG] Start authorize request
+2019-05-30 20:33:21.729 +08:00 [DBG] User in authorize request: af61726e-716b-4170-8c26-6568bf294215
+2019-05-30 20:33:21.729 +08:00 [DBG] Start authorize request protocol validation
+2019-05-30 20:33:23.434 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:33:23.435 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:33:23.436 +08:00 [DBG] Checking for PKCE parameters
+2019-05-30 20:33:23.436 +08:00 [DBG] No PKCE used.
+2019-05-30 20:33:23.761 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:33:23.950 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:33:24.232 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:33:24.419 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:33:24.420 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-05-30 20:33:24.420 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","RedirectUri":"http://localhost:5005/signin-oidc","AllowedRedirectUris":["http://localhost:5005/signin-oidc"],"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"openid profile","State":"CfDJ8F85EO-pYlJKvNXwUT18ba5KvVUDrTV8kSVgbzAtOLRTQmB1xH5sAHt5F2Hvcty11gswnLD5lbdyCc4PEQ42O9jv-PvdzL7_YJz4TioDi8y3vW8rcTp30b9yqHFxNp_nA4wHX0qx14tvnlo9nupf_XrvOfOF7Hx1zCTbnmqHIrGxlbMwEYv0K7GcuWa_sjd6xIFRhIg4a_I7PyFCtbXEu6Jv8FfnPZg2wT70dzETjAyjfm_zVUhkM-9QZDBASc8CXgPXoAZtEh3Hk6ZTpxXHFws6dcF9IaEFSsNbLwLjcGUqRDkeB_173IkNbAgOf-Nqxfo9cJjg92AofdRbSuTMws4","UiLocales":null,"Nonce":"636948164016844110.NGZlNTgzNjMtMGI5Ny00NTE5LWJkMTItM2FlMjVlZjUwYzYyMGY3M2UwZTgtYzkzZi00MWI1LWIyOTQtODFiM2JhNmVjYWY0","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"8115527021d4937e613b0f1d59ccf9e0","Raw":{"client_id":"mvcHybrid","redirect_uri":"http://localhost:5005/signin-oidc","response_type":"code id_token","scope":"openid profile","response_mode":"form_post","nonce":"636948164016844110.NGZlNTgzNjMtMGI5Ny00NTE5LWJkMTItM2FlMjVlZjUwYzYyMGY3M2UwZTgtYzkzZi00MWI1LWIyOTQtODFiM2JhNmVjYWY0","state":"CfDJ8F85EO-pYlJKvNXwUT18ba5KvVUDrTV8kSVgbzAtOLRTQmB1xH5sAHt5F2Hvcty11gswnLD5lbdyCc4PEQ42O9jv-PvdzL7_YJz4TioDi8y3vW8rcTp30b9yqHFxNp_nA4wHX0qx14tvnlo9nupf_XrvOfOF7Hx1zCTbnmqHIrGxlbMwEYv0K7GcuWa_sjd6xIFRhIg4a_I7PyFCtbXEu6Jv8FfnPZg2wT70dzETjAyjfm_zVUhkM-9QZDBASc8CXgPXoAZtEh3Hk6ZTpxXHFws6dcF9IaEFSsNbLwLjcGUqRDkeB_173IkNbAgOf-Nqxfo9cJjg92AofdRbSuTMws4","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-05-30 20:33:24.807 +08:00 [DBG] FiTLcYGBYEV8OnKEgTs+U+128Zy+PdC+Fm2zjauszrc= found in database: false
+2019-05-30 20:33:24.807 +08:00 [DBG] user_consent grant with value: mvcHybrid|af61726e-716b-4170-8c26-6568bf294215 not found in store.
+2019-05-30 20:33:24.808 +08:00 [DBG] Found no prior consent from consent store, consent is required
+2019-05-30 20:33:24.808 +08:00 [INF] Showing consent: User has not yet consented
+2019-05-30 20:33:24.816 +08:00 [DBG] Start authorize request protocol validation
+2019-05-30 20:33:26.540 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:33:26.541 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:33:26.541 +08:00 [DBG] Checking for PKCE parameters
+2019-05-30 20:33:26.542 +08:00 [DBG] No PKCE used.
+2019-05-30 20:33:26.850 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:33:27.045 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:33:27.348 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:33:27.517 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:33:27.518 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-05-30 20:33:29.307 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:33:29.308 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:33:29.664 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:33:29.845 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:33:33.891 +08:00 [DBG] CORS request made for path: /consent from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-05-30 20:33:33.896 +08:00 [DBG] Start authorize request protocol validation
+2019-05-30 20:33:35.706 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:33:35.707 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:33:35.708 +08:00 [DBG] Checking for PKCE parameters
+2019-05-30 20:33:35.709 +08:00 [DBG] No PKCE used.
+2019-05-30 20:33:36.023 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:33:36.196 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:33:36.549 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:33:36.733 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:33:36.735 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-05-30 20:33:36.736 +08:00 [INF] {"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ClientId":"mvcHybrid","RequestedScopes":["openid","profile"],"GrantedScopes":["openid","profile"],"ConsentRemembered":false,"Category":"Grants","Name":"Consent granted","EventType":"Information","Id":4000,"Message":null,"ActivityId":"0HLN4VAJNJGF1:00000008","TimeStamp":"2019-05-30T12:33:36.0000000Z","ProcessId":46241,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ConsentGrantedEvent"}
+2019-05-30 20:33:41.386 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:33:41.389 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:33:41.402 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-05-30 20:33:41.403 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-05-30 20:33:41.403 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-05-30 20:33:41.404 +08:00 [DBG] Start authorize callback request
+2019-05-30 20:33:41.405 +08:00 [DBG] User in authorize request: af61726e-716b-4170-8c26-6568bf294215
+2019-05-30 20:33:41.406 +08:00 [DBG] Start authorize request protocol validation
+2019-05-30 20:33:43.231 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:33:43.232 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:33:43.233 +08:00 [DBG] Checking for PKCE parameters
+2019-05-30 20:33:43.233 +08:00 [DBG] No PKCE used.
+2019-05-30 20:33:43.540 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:33:43.727 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:33:44.033 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:33:44.240 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:33:44.241 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-05-30 20:33:44.242 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","RedirectUri":"http://localhost:5005/signin-oidc","AllowedRedirectUris":["http://localhost:5005/signin-oidc"],"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"openid profile","State":"CfDJ8F85EO-pYlJKvNXwUT18ba5KvVUDrTV8kSVgbzAtOLRTQmB1xH5sAHt5F2Hvcty11gswnLD5lbdyCc4PEQ42O9jv-PvdzL7_YJz4TioDi8y3vW8rcTp30b9yqHFxNp_nA4wHX0qx14tvnlo9nupf_XrvOfOF7Hx1zCTbnmqHIrGxlbMwEYv0K7GcuWa_sjd6xIFRhIg4a_I7PyFCtbXEu6Jv8FfnPZg2wT70dzETjAyjfm_zVUhkM-9QZDBASc8CXgPXoAZtEh3Hk6ZTpxXHFws6dcF9IaEFSsNbLwLjcGUqRDkeB_173IkNbAgOf-Nqxfo9cJjg92AofdRbSuTMws4","UiLocales":null,"Nonce":"636948164016844110.NGZlNTgzNjMtMGI5Ny00NTE5LWJkMTItM2FlMjVlZjUwYzYyMGY3M2UwZTgtYzkzZi00MWI1LWIyOTQtODFiM2JhNmVjYWY0","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"8115527021d4937e613b0f1d59ccf9e0","Raw":{"client_id":"mvcHybrid","redirect_uri":"http://localhost:5005/signin-oidc","response_type":"code id_token","scope":"openid profile","response_mode":"form_post","nonce":"636948164016844110.NGZlNTgzNjMtMGI5Ny00NTE5LWJkMTItM2FlMjVlZjUwYzYyMGY3M2UwZTgtYzkzZi00MWI1LWIyOTQtODFiM2JhNmVjYWY0","state":"CfDJ8F85EO-pYlJKvNXwUT18ba5KvVUDrTV8kSVgbzAtOLRTQmB1xH5sAHt5F2Hvcty11gswnLD5lbdyCc4PEQ42O9jv-PvdzL7_YJz4TioDi8y3vW8rcTp30b9yqHFxNp_nA4wHX0qx14tvnlo9nupf_XrvOfOF7Hx1zCTbnmqHIrGxlbMwEYv0K7GcuWa_sjd6xIFRhIg4a_I7PyFCtbXEu6Jv8FfnPZg2wT70dzETjAyjfm_zVUhkM-9QZDBASc8CXgPXoAZtEh3Hk6ZTpxXHFws6dcF9IaEFSsNbLwLjcGUqRDkeB_173IkNbAgOf-Nqxfo9cJjg92AofdRbSuTMws4","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-05-30 20:33:44.614 +08:00 [DBG] FiTLcYGBYEV8OnKEgTs+U+128Zy+PdC+Fm2zjauszrc= found in database: false
+2019-05-30 20:33:44.614 +08:00 [DBG] user_consent grant with value: mvcHybrid|af61726e-716b-4170-8c26-6568bf294215 not found in store.
+2019-05-30 20:33:44.615 +08:00 [DBG] Found no prior consent from consent store, consent is required
+2019-05-30 20:33:44.617 +08:00 [INF] User consented to scopes: ["openid","profile"]
+2019-05-30 20:33:44.618 +08:00 [DBG] Client allows remembering consent, and no scopes provided. Removing consent from consent store for subject: af61726e-716b-4170-8c26-6568bf294215
+2019-05-30 20:33:44.815 +08:00 [DBG] no FiTLcYGBYEV8OnKEgTs+U+128Zy+PdC+Fm2zjauszrc= persisted grant found in database
+2019-05-30 20:33:44.815 +08:00 [DBG] Creating Hybrid Flow response.
+2019-05-30 20:33:45.006 +08:00 [DBG] obBN7ZRWMcWwNPfFp42ZXJbB5ydR+bL+az2Q3HIT+FE= not found in database
+2019-05-30 20:33:45.343 +08:00 [DBG] Creating Implicit Flow response.
+2019-05-30 20:33:45.343 +08:00 [DBG] Getting claims for identity token for subject: af61726e-716b-4170-8c26-6568bf294215 and client: mvcHybrid
+2019-05-30 20:33:45.344 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-05-30 20:33:45.359 +08:00 [INF] {"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","RedirectUri":"http://localhost:5005/signin-oidc","Endpoint":"Authorize","SubjectId":"af61726e-716b-4170-8c26-6568bf294215","Scopes":"openid profile","GrantType":"hybrid","Tokens":[{"TokenType":"id_token","TokenValue":"****Oxhg","$type":"Token"},{"TokenType":"code","TokenValue":"****571e","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLN4VAJNJGF1:00000009","TimeStamp":"2019-05-30T12:33:45.0000000Z","ProcessId":46241,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-05-30 20:33:45.360 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ClientId":"mvcHybrid","RedirectUri":"http://localhost:5005/signin-oidc","State":"CfDJ8F85EO-pYlJKvNXwUT18ba5KvVUDrTV8kSVgbzAtOLRTQmB1xH5sAHt5F2Hvcty11gswnLD5lbdyCc4PEQ42O9jv-PvdzL7_YJz4TioDi8y3vW8rcTp30b9yqHFxNp_nA4wHX0qx14tvnlo9nupf_XrvOfOF7Hx1zCTbnmqHIrGxlbMwEYv0K7GcuWa_sjd6xIFRhIg4a_I7PyFCtbXEu6Jv8FfnPZg2wT70dzETjAyjfm_zVUhkM-9QZDBASc8CXgPXoAZtEh3Hk6ZTpxXHFws6dcF9IaEFSsNbLwLjcGUqRDkeB_173IkNbAgOf-Nqxfo9cJjg92AofdRbSuTMws4","Scope":"openid profile","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-05-30 20:33:45.556 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-30 20:33:45.557 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-30 20:33:45.557 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-30 20:33:45.557 +08:00 [DBG] Start token request.
+2019-05-30 20:33:45.558 +08:00 [DBG] Start client validation
+2019-05-30 20:33:45.558 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-05-30 20:33:45.558 +08:00 [DBG] Start parsing for secret in post body
+2019-05-30 20:33:45.559 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-05-30 20:33:45.560 +08:00 [DBG] Secret id found: mvcHybrid
+2019-05-30 20:33:47.356 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:33:47.356 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:33:47.358 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-30 20:33:47.358 +08:00 [DBG] Client validation success
+2019-05-30 20:33:47.360 +08:00 [INF] {"ClientId":"mvcHybrid","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLN4VAJNJGF6:00000003","TimeStamp":"2019-05-30T12:33:47.0000000Z","ProcessId":46241,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-05-30 20:33:47.361 +08:00 [DBG] Start token request validation
+2019-05-30 20:33:47.362 +08:00 [DBG] Start validation of authorization code token request
+2019-05-30 20:33:47.536 +08:00 [DBG] obBN7ZRWMcWwNPfFp42ZXJbB5ydR+bL+az2Q3HIT+FE= found in database: true
+2019-05-30 20:33:47.726 +08:00 [DBG] removing obBN7ZRWMcWwNPfFp42ZXJbB5ydR+bL+az2Q3HIT+FE= persisted grant from database
+2019-05-30 20:33:48.258 +08:00 [DBG] Validation of authorization code token request success
+2019-05-30 20:33:48.259 +08:00 [INF] Token request validation success
+{"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"4a62418294d95df18e7ff891c0dbfb4d71027227ab5e3f23571fa33677b0571e","RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"mvcHybrid","client_secret":"***REDACTED***","code":"4a62418294d95df18e7ff891c0dbfb4d71027227ab5e3f23571fa33677b0571e","grant_type":"authorization_code","redirect_uri":"http://localhost:5005/signin-oidc"},"$type":"TokenRequestValidationLog"}
+2019-05-30 20:33:49.979 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:33:49.980 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:33:50.304 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:33:50.526 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:33:50.526 +08:00 [DBG] Getting claims for access token for client: mvcHybrid
+2019-05-30 20:33:50.527 +08:00 [DBG] Getting claims for access token for subject: af61726e-716b-4170-8c26-6568bf294215
+2019-05-30 20:33:50.527 +08:00 [DBG] Claim types from profile service that were filtered: ["sub"]
+2019-05-30 20:33:52.396 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:33:52.397 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:33:52.743 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:33:52.921 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:33:52.922 +08:00 [DBG] Getting claims for identity token for subject: af61726e-716b-4170-8c26-6568bf294215 and client: mvcHybrid
+2019-05-30 20:33:52.923 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-05-30 20:33:52.939 +08:00 [INF] {"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"openid profile","GrantType":"authorization_code","Tokens":[{"TokenType":"id_token","TokenValue":"****ZByw","$type":"Token"},{"TokenType":"access_token","TokenValue":"****ahWA","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLN4VAJNJGF6:00000003","TimeStamp":"2019-05-30T12:33:52.0000000Z","ProcessId":46241,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-05-30 20:33:52.940 +08:00 [DBG] Token request success.
+2019-05-30 20:33:52.953 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-05-30 20:33:52.954 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-05-30 20:33:52.954 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-05-30 20:33:52.955 +08:00 [DBG] Start userinfo request
+2019-05-30 20:33:52.955 +08:00 [DBG] Bearer token found in header
+2019-05-30 20:33:54.711 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:33:54.711 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:33:56.587 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:33:56.588 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:33:56.786 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-05-30 20:33:56.786 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1559219630,"exp":1559219690,"iss":"http://localhost:5000","aud":"http://localhost:5000/resources","client_id":"mvcHybrid","sub":"af61726e-716b-4170-8c26-6568bf294215","auth_time":1559134138,"idp":"local","preferred_username":"1223138295@qq.com","unique_name":"1223138295@qq.com","name":"shawn","last_name":"wong","card_number":"12123","card_holder":"王曉鋒","card_security_number":"2323","card_expiration":"20/12","address_city":"shanghai","address_country":"中国","address_state":"canials","address_street":"shanghai","address_zip_code":"226153","email":"1223138295@qq.com","email_verified":false,"phone_number":"17602180068","phone_number_verified":false,"scope":["openid","profile"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-05-30 20:33:56.787 +08:00 [DBG] Creating userinfo response
+2019-05-30 20:33:56.788 +08:00 [DBG] Scopes in access token: openid profile
+2019-05-30 20:33:56.788 +08:00 [DBG] Scopes in access token: openid profile
+2019-05-30 20:33:57.128 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:33:57.128 +08:00 [DBG] Requested claim types: sub name family_name given_name middle_name nickname preferred_username profile picture website gender birthdate zoneinfo locale updated_at
+2019-05-30 20:33:57.129 +08:00 [DBG] Scopes in access token: openid profile
+2019-05-30 20:33:57.446 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:33:57.447 +08:00 [INF] Profile service returned the following claim types: sub preferred_username unique_name name last_name card_number card_holder card_security_number card_expiration address_city address_country address_state address_street address_zip_code email email_verified phone_number phone_number_verified
+2019-05-30 20:33:57.447 +08:00 [DBG] End userinfo request
+2019-05-30 20:36:31.799 +08:00 [DBG] TaskCanceledException. Exiting.
+2019-05-30 20:36:31.815 +08:00 [DBG] Stopping grant removal
+2019-05-30 20:36:50.877 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-05-30 20:36:50.908 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-05-30 20:36:50.908 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-05-30 20:36:50.908 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-05-30 20:36:50.908 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-05-30 20:36:50.908 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-05-30 20:36:51.110 +08:00 [DBG] Starting grant removal
+2019-05-30 20:36:58.235 +08:00 [DBG] Login Url: /Account/Login
+2019-05-30 20:36:58.238 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-30 20:36:58.238 +08:00 [DBG] Logout Url: /Account/Logout
+2019-05-30 20:36:58.238 +08:00 [DBG] ConsentUrl Url: /consent
+2019-05-30 20:36:58.238 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-30 20:36:58.239 +08:00 [DBG] Error Url: /home/error
+2019-05-30 20:36:58.239 +08:00 [DBG] Error Id Parameter: errorId
+2019-05-30 20:36:58.265 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-30 20:36:58.276 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-30 20:36:58.276 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-30 20:36:58.280 +08:00 [DBG] Start discovery request
+2019-05-30 20:37:00.375 +08:00 [DBG] Found ["openid","profile","api1"] as all scopes in database
+2019-05-30 20:37:00.545 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-30 20:37:00.548 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-30 20:37:00.549 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-30 20:37:00.554 +08:00 [DBG] Start key discovery request
+2019-05-30 20:37:00.646 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-05-30 20:37:00.650 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-05-30 20:37:00.651 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-05-30 20:37:00.655 +08:00 [DBG] Start authorize request
+2019-05-30 20:37:00.668 +08:00 [DBG] User in authorize request: af61726e-716b-4170-8c26-6568bf294215
+2019-05-30 20:37:00.673 +08:00 [DBG] Start authorize request protocol validation
+2019-05-30 20:37:03.135 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:37:03.143 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:37:03.149 +08:00 [DBG] Checking for PKCE parameters
+2019-05-30 20:37:03.152 +08:00 [DBG] No PKCE used.
+2019-05-30 20:37:03.598 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-05-30 20:37:03.875 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:37:03.882 +08:00 [ERR] Invalid scope: email
+2019-05-30 20:37:03.888 +08:00 [ERR] Request validation failed
+2019-05-30 20:37:03.900 +08:00 [INF] {"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","RedirectUri":"http://localhost:5005/signin-oidc","AllowedRedirectUris":["http://localhost:5005/signin-oidc"],"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"openid profile email","State":"CfDJ8F85EO-pYlJKvNXwUT18ba5dXQwO4zH7tMEK7awd-vfksGkEh7pTy-_5StOf4NV1r5n0cnGe32RE5LQ35shPWCbKjtCyBaJjh0vA3G6mVK-pR_LqJe2-u8ilMQzIqFidf1op31BLXTEG5ymthyWjXVJza_NcLQG-cqkMfQGju7pbjdAWLRKXWrTMuRBWwetVmmHUOeFsMbq-EvBwUdtkCl8bUJKsdSlPc8sDVFXZlSCSqhiJigr9GToxsHoNt6q6ohAA6sA4knLQJLXoh0ZY2nEbrAcUThxAKR_VmmvmrWuuTqK722YnUcgBmKB4bovG1DrBl0umx30hM7OaI09phvM","UiLocales":null,"Nonce":null,"AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":null,"Raw":{"client_id":"mvcHybrid","redirect_uri":"http://localhost:5005/signin-oidc","response_type":"code id_token","scope":"openid profile email","response_mode":"form_post","nonce":"636948166205860010.MDYxYzRlNzUtY2I3Ni00NzkzLTkyYzItMjYxYWM4MWFkNzgzNzc2YjVmZjQtM2U5OS00N2NmLTg0ODUtMjc0Zjg5MzU0Yzc4","state":"CfDJ8F85EO-pYlJKvNXwUT18ba5dXQwO4zH7tMEK7awd-vfksGkEh7pTy-_5StOf4NV1r5n0cnGe32RE5LQ35shPWCbKjtCyBaJjh0vA3G6mVK-pR_LqJe2-u8ilMQzIqFidf1op31BLXTEG5ymthyWjXVJza_NcLQG-cqkMfQGju7pbjdAWLRKXWrTMuRBWwetVmmHUOeFsMbq-EvBwUdtkCl8bUJKsdSlPc8sDVFXZlSCSqhiJigr9GToxsHoNt6q6ohAA6sA4knLQJLXoh0ZY2nEbrAcUThxAKR_VmmvmrWuuTqK722YnUcgBmKB4bovG1DrBl0umx30hM7OaI09phvM","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-05-30 20:37:03.918 +08:00 [INF] {"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","RedirectUri":"http://localhost:5005/signin-oidc","Endpoint":"Authorize","SubjectId":"af61726e-716b-4170-8c26-6568bf294215","Scopes":"openid profile email","GrantType":"hybrid","Error":"invalid_scope","ErrorDescription":"Invalid scope","Category":"Token","Name":"Token Issued Failure","EventType":"Failure","Id":2001,"Message":null,"ActivityId":"0HLN4VE0OV6F2:00000001","TimeStamp":"2019-05-30T12:37:03.0000000Z","ProcessId":46497,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedFailureEvent"}
+2019-05-30 20:37:47.978 +08:00 [DBG] TaskCanceledException. Exiting.
+2019-05-30 20:37:48.012 +08:00 [DBG] Stopping grant removal
+2019-05-30 20:38:24.523 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-05-30 20:38:24.569 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-05-30 20:38:24.570 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-05-30 20:38:24.571 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-05-30 20:38:24.571 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-05-30 20:38:24.573 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-05-30 20:38:24.951 +08:00 [DBG] Starting grant removal
+2019-05-30 20:42:13.070 +08:00 [DBG] TaskCanceledException. Exiting.
+2019-05-30 20:42:13.109 +08:00 [DBG] Stopping grant removal
+2019-05-30 20:42:32.826 +08:00 [INF] Using the default authentication scheme Identity.Application for IdentityServer
+2019-05-30 20:42:32.855 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for authentication
+2019-05-30 20:42:32.855 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-in
+2019-05-30 20:42:32.855 +08:00 [DBG] Using Identity.External as default ASP.NET Core scheme for sign-out
+2019-05-30 20:42:32.855 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for challenge
+2019-05-30 20:42:32.855 +08:00 [DBG] Using Identity.Application as default ASP.NET Core scheme for forbid
+2019-05-30 20:42:33.034 +08:00 [DBG] Starting grant removal
+2019-05-30 20:43:29.155 +08:00 [DBG] Login Url: /Account/Login
+2019-05-30 20:43:29.158 +08:00 [DBG] Login Return Url Parameter: ReturnUrl
+2019-05-30 20:43:29.159 +08:00 [DBG] Logout Url: /Account/Logout
+2019-05-30 20:43:29.159 +08:00 [DBG] ConsentUrl Url: /consent
+2019-05-30 20:43:29.159 +08:00 [DBG] Consent Return Url Parameter: returnUrl
+2019-05-30 20:43:29.159 +08:00 [DBG] Error Url: /home/error
+2019-05-30 20:43:29.160 +08:00 [DBG] Error Id Parameter: errorId
+2019-05-30 20:43:29.190 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-05-30 20:43:29.215 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-05-30 20:43:29.216 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-05-30 20:43:29.221 +08:00 [DBG] Start discovery request
+2019-05-30 20:43:30.824 +08:00 [DBG] Found ["openid","profile","email","api1"] as all scopes in database
+2019-05-30 20:43:31.053 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-05-30 20:43:31.056 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-05-30 20:43:31.056 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-05-30 20:43:31.062 +08:00 [DBG] Start key discovery request
+2019-05-30 20:43:31.163 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-05-30 20:43:31.171 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-05-30 20:43:31.171 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-05-30 20:43:31.175 +08:00 [DBG] Start authorize request
+2019-05-30 20:43:31.192 +08:00 [DBG] User in authorize request: af61726e-716b-4170-8c26-6568bf294215
+2019-05-30 20:43:31.199 +08:00 [DBG] Start authorize request protocol validation
+2019-05-30 20:43:33.303 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:43:33.315 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:43:33.320 +08:00 [DBG] Checking for PKCE parameters
+2019-05-30 20:43:33.322 +08:00 [DBG] No PKCE used.
+2019-05-30 20:43:33.735 +08:00 [DBG] Found ["openid","profile","email"] identity scopes in database
+2019-05-30 20:43:33.976 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:43:34.312 +08:00 [DBG] Found ["openid","profile","email"] identity scopes in database
+2019-05-30 20:43:34.515 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:43:34.532 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-05-30 20:43:34.549 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","RedirectUri":"http://localhost:5005/signin-oidc","AllowedRedirectUris":["http://localhost:5005/signin-oidc"],"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"openid profile email","State":"CfDJ8F85EO-pYlJKvNXwUT18ba7UFK9MrX3VlHnYRC72ousSTC5h2YwzCj9JpgkS7zcxx9xoPtRYi0Hu9IP1WyS5y_K_to3T0W-0Nd6E8CPY6_rRN3MPF2Qq7BW0Bd6_C2r8suPSVq2TcYwFEjIigonO5tY55GdSJ23J7y7F7kK51RAmQiReLJn70uvhudJyvKygJUFIkeVxbseje9jC2LeasgZBNdz3JVCIirxlR5knn7nqY4du2FskY7GG8rMHMOMnbzECGnEdMsZrxmZaKZI7HV-l2Gr2pU_6LtFDn2sTmBuIShnZmyG4_zLEcbfLeigWfzHeICAU5_TjWt36wIyK-8Q","UiLocales":null,"Nonce":"636948170111067560.ODE5MDQyYzQtNjM4ZS00MGUxLTkxMGMtMWI0ZDQzMThmZTlkMzAyZjI5NTQtMjE5Ni00NjdmLThhMmQtM2UxZDNkNjYxNDcz","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"8115527021d4937e613b0f1d59ccf9e0","Raw":{"client_id":"mvcHybrid","redirect_uri":"http://localhost:5005/signin-oidc","response_type":"code id_token","scope":"openid profile email","response_mode":"form_post","nonce":"636948170111067560.ODE5MDQyYzQtNjM4ZS00MGUxLTkxMGMtMWI0ZDQzMThmZTlkMzAyZjI5NTQtMjE5Ni00NjdmLThhMmQtM2UxZDNkNjYxNDcz","state":"CfDJ8F85EO-pYlJKvNXwUT18ba7UFK9MrX3VlHnYRC72ousSTC5h2YwzCj9JpgkS7zcxx9xoPtRYi0Hu9IP1WyS5y_K_to3T0W-0Nd6E8CPY6_rRN3MPF2Qq7BW0Bd6_C2r8suPSVq2TcYwFEjIigonO5tY55GdSJ23J7y7F7kK51RAmQiReLJn70uvhudJyvKygJUFIkeVxbseje9jC2LeasgZBNdz3JVCIirxlR5knn7nqY4du2FskY7GG8rMHMOMnbzECGnEdMsZrxmZaKZI7HV-l2Gr2pU_6LtFDn2sTmBuIShnZmyG4_zLEcbfLeigWfzHeICAU5_TjWt36wIyK-8Q","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-05-30 20:43:35.136 +08:00 [DBG] FiTLcYGBYEV8OnKEgTs+U+128Zy+PdC+Fm2zjauszrc= found in database: false
+2019-05-30 20:43:35.136 +08:00 [DBG] user_consent grant with value: mvcHybrid|af61726e-716b-4170-8c26-6568bf294215 not found in store.
+2019-05-30 20:43:35.137 +08:00 [DBG] Found no prior consent from consent store, consent is required
+2019-05-30 20:43:35.138 +08:00 [INF] Showing consent: User has not yet consented
+2019-05-30 20:43:35.409 +08:00 [DBG] Start authorize request protocol validation
+2019-05-30 20:43:37.209 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:43:37.210 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:43:37.211 +08:00 [DBG] Checking for PKCE parameters
+2019-05-30 20:43:37.213 +08:00 [DBG] No PKCE used.
+2019-05-30 20:43:37.540 +08:00 [DBG] Found ["openid","profile","email"] identity scopes in database
+2019-05-30 20:43:37.721 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:43:38.038 +08:00 [DBG] Found ["openid","profile","email"] identity scopes in database
+2019-05-30 20:43:38.220 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:43:38.221 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-05-30 20:43:40.026 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:43:40.027 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:43:40.378 +08:00 [DBG] Found ["openid","profile","email"] identity scopes in database
+2019-05-30 20:43:40.602 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:43:46.413 +08:00 [DBG] CORS request made for path: /consent from origin: null but was ignored because path was not for an allowed IdentityServer CORS endpoint
+2019-05-30 20:43:46.466 +08:00 [DBG] Start authorize request protocol validation
+2019-05-30 20:43:50.171 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:43:50.171 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:43:50.172 +08:00 [DBG] Checking for PKCE parameters
+2019-05-30 20:43:50.173 +08:00 [DBG] No PKCE used.
+2019-05-30 20:43:50.490 +08:00 [DBG] Found ["openid","profile","email"] identity scopes in database
+2019-05-30 20:43:50.685 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:43:51.032 +08:00 [DBG] Found ["openid","profile","email"] identity scopes in database
+2019-05-30 20:43:51.223 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:43:51.224 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-05-30 20:43:51.245 +08:00 [INF] {"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ClientId":"mvcHybrid","RequestedScopes":["openid","profile","email"],"GrantedScopes":["openid","profile","email"],"ConsentRemembered":true,"Category":"Grants","Name":"Consent granted","EventType":"Information","Id":4000,"Message":null,"ActivityId":"0HLN4VHL84K70:00000003","TimeStamp":"2019-05-30T12:43:51.0000000Z","ProcessId":46758,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ConsentGrantedEvent"}
+2019-05-30 20:43:53.161 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:43:53.161 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:43:53.173 +08:00 [DBG] Request path /connect/authorize/callback matched to endpoint type Authorize
+2019-05-30 20:43:53.174 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint
+2019-05-30 20:43:53.175 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeCallbackEndpoint for /connect/authorize/callback
+2019-05-30 20:43:53.181 +08:00 [DBG] Start authorize callback request
+2019-05-30 20:43:53.188 +08:00 [DBG] User in authorize request: af61726e-716b-4170-8c26-6568bf294215
+2019-05-30 20:43:53.188 +08:00 [DBG] Start authorize request protocol validation
+2019-05-30 20:43:55.008 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:43:55.012 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:43:55.013 +08:00 [DBG] Checking for PKCE parameters
+2019-05-30 20:43:55.013 +08:00 [DBG] No PKCE used.
+2019-05-30 20:43:55.337 +08:00 [DBG] Found ["openid","profile","email"] identity scopes in database
+2019-05-30 20:43:55.518 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:43:55.846 +08:00 [DBG] Found ["openid","profile","email"] identity scopes in database
+2019-05-30 20:43:56.038 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:43:56.038 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-05-30 20:43:56.040 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","RedirectUri":"http://localhost:5005/signin-oidc","AllowedRedirectUris":["http://localhost:5005/signin-oidc"],"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ResponseType":"code id_token","ResponseMode":"form_post","GrantType":"hybrid","RequestedScopes":"openid profile email","State":"CfDJ8F85EO-pYlJKvNXwUT18ba7UFK9MrX3VlHnYRC72ousSTC5h2YwzCj9JpgkS7zcxx9xoPtRYi0Hu9IP1WyS5y_K_to3T0W-0Nd6E8CPY6_rRN3MPF2Qq7BW0Bd6_C2r8suPSVq2TcYwFEjIigonO5tY55GdSJ23J7y7F7kK51RAmQiReLJn70uvhudJyvKygJUFIkeVxbseje9jC2LeasgZBNdz3JVCIirxlR5knn7nqY4du2FskY7GG8rMHMOMnbzECGnEdMsZrxmZaKZI7HV-l2Gr2pU_6LtFDn2sTmBuIShnZmyG4_zLEcbfLeigWfzHeICAU5_TjWt36wIyK-8Q","UiLocales":null,"Nonce":"636948170111067560.ODE5MDQyYzQtNjM4ZS00MGUxLTkxMGMtMWI0ZDQzMThmZTlkMzAyZjI5NTQtMjE5Ni00NjdmLThhMmQtM2UxZDNkNjYxNDcz","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"8115527021d4937e613b0f1d59ccf9e0","Raw":{"client_id":"mvcHybrid","redirect_uri":"http://localhost:5005/signin-oidc","response_type":"code id_token","scope":"openid profile email","response_mode":"form_post","nonce":"636948170111067560.ODE5MDQyYzQtNjM4ZS00MGUxLTkxMGMtMWI0ZDQzMThmZTlkMzAyZjI5NTQtMjE5Ni00NjdmLThhMmQtM2UxZDNkNjYxNDcz","state":"CfDJ8F85EO-pYlJKvNXwUT18ba7UFK9MrX3VlHnYRC72ousSTC5h2YwzCj9JpgkS7zcxx9xoPtRYi0Hu9IP1WyS5y_K_to3T0W-0Nd6E8CPY6_rRN3MPF2Qq7BW0Bd6_C2r8suPSVq2TcYwFEjIigonO5tY55GdSJ23J7y7F7kK51RAmQiReLJn70uvhudJyvKygJUFIkeVxbseje9jC2LeasgZBNdz3JVCIirxlR5knn7nqY4du2FskY7GG8rMHMOMnbzECGnEdMsZrxmZaKZI7HV-l2Gr2pU_6LtFDn2sTmBuIShnZmyG4_zLEcbfLeigWfzHeICAU5_TjWt36wIyK-8Q","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-05-30 20:43:56.451 +08:00 [DBG] FiTLcYGBYEV8OnKEgTs+U+128Zy+PdC+Fm2zjauszrc= found in database: false
+2019-05-30 20:43:56.452 +08:00 [DBG] user_consent grant with value: mvcHybrid|af61726e-716b-4170-8c26-6568bf294215 not found in store.
+2019-05-30 20:43:56.452 +08:00 [DBG] Found no prior consent from consent store, consent is required
+2019-05-30 20:43:56.461 +08:00 [INF] User consented to scopes: ["openid","profile","email"]
+2019-05-30 20:43:56.463 +08:00 [DBG] User indicated to remember consent for scopes: ["openid","profile","email"]
+2019-05-30 20:43:56.469 +08:00 [DBG] Client allows remembering consent, and consent given. Updating consent store for subject: af61726e-716b-4170-8c26-6568bf294215
+2019-05-30 20:43:56.676 +08:00 [DBG] FiTLcYGBYEV8OnKEgTs+U+128Zy+PdC+Fm2zjauszrc= not found in database
+2019-05-30 20:43:57.063 +08:00 [DBG] Creating Hybrid Flow response.
+2019-05-30 20:43:57.273 +08:00 [DBG] sl62ISBBzZ6OG8mQGI5Ng1Yr16/UvZBc3BMaEgMZCDI= not found in database
+2019-05-30 20:43:57.622 +08:00 [DBG] Creating Implicit Flow response.
+2019-05-30 20:43:57.635 +08:00 [DBG] Getting claims for identity token for subject: af61726e-716b-4170-8c26-6568bf294215 and client: mvcHybrid
+2019-05-30 20:43:57.639 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-05-30 20:43:57.733 +08:00 [INF] {"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","RedirectUri":"http://localhost:5005/signin-oidc","Endpoint":"Authorize","SubjectId":"af61726e-716b-4170-8c26-6568bf294215","Scopes":"openid profile email","GrantType":"hybrid","Tokens":[{"TokenType":"id_token","TokenValue":"****D8dQ","$type":"Token"},{"TokenType":"code","TokenValue":"****8936","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLN4VHL84K70:00000004","TimeStamp":"2019-05-30T12:43:57.0000000Z","ProcessId":46758,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-05-30 20:43:57.735 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ClientId":"mvcHybrid","RedirectUri":"http://localhost:5005/signin-oidc","State":"CfDJ8F85EO-pYlJKvNXwUT18ba7UFK9MrX3VlHnYRC72ousSTC5h2YwzCj9JpgkS7zcxx9xoPtRYi0Hu9IP1WyS5y_K_to3T0W-0Nd6E8CPY6_rRN3MPF2Qq7BW0Bd6_C2r8suPSVq2TcYwFEjIigonO5tY55GdSJ23J7y7F7kK51RAmQiReLJn70uvhudJyvKygJUFIkeVxbseje9jC2LeasgZBNdz3JVCIirxlR5knn7nqY4du2FskY7GG8rMHMOMnbzECGnEdMsZrxmZaKZI7HV-l2Gr2pU_6LtFDn2sTmBuIShnZmyG4_zLEcbfLeigWfzHeICAU5_TjWt36wIyK-8Q","Scope":"openid profile email","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-05-30 20:43:57.934 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-05-30 20:43:57.939 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-05-30 20:43:57.940 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-05-30 20:43:57.947 +08:00 [DBG] Start token request.
+2019-05-30 20:43:57.955 +08:00 [DBG] Start client validation
+2019-05-30 20:43:57.961 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-05-30 20:43:57.966 +08:00 [DBG] Start parsing for secret in post body
+2019-05-30 20:43:57.967 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-05-30 20:43:57.967 +08:00 [DBG] Secret id found: mvcHybrid
+2019-05-30 20:43:59.756 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:43:59.756 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:43:59.778 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-05-30 20:43:59.778 +08:00 [DBG] Client validation success
+2019-05-30 20:43:59.779 +08:00 [INF] {"ClientId":"mvcHybrid","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLN4VHL84K6V:00000003","TimeStamp":"2019-05-30T12:43:59.0000000Z","ProcessId":46758,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-05-30 20:43:59.788 +08:00 [DBG] Start token request validation
+2019-05-30 20:43:59.801 +08:00 [DBG] Start validation of authorization code token request
+2019-05-30 20:43:59.993 +08:00 [DBG] sl62ISBBzZ6OG8mQGI5Ng1Yr16/UvZBc3BMaEgMZCDI= found in database: true
+2019-05-30 20:44:00.197 +08:00 [DBG] removing sl62ISBBzZ6OG8mQGI5Ng1Yr16/UvZBc3BMaEgMZCDI= persisted grant from database
+2019-05-30 20:44:00.752 +08:00 [DBG] Validation of authorization code token request success
+2019-05-30 20:44:00.759 +08:00 [INF] Token request validation success
+{"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","GrantType":"authorization_code","Scopes":null,"AuthorizationCode":"fb8b51610483d2afaad04f93922e149633d23f6ad37eef49cb5a3a140a678936","RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"client_id":"mvcHybrid","client_secret":"***REDACTED***","code":"fb8b51610483d2afaad04f93922e149633d23f6ad37eef49cb5a3a140a678936","grant_type":"authorization_code","redirect_uri":"http://localhost:5005/signin-oidc"},"$type":"TokenRequestValidationLog"}
+2019-05-30 20:44:02.528 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:44:02.529 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:44:02.839 +08:00 [DBG] Found ["openid","profile","email"] identity scopes in database
+2019-05-30 20:44:03.015 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:44:03.034 +08:00 [DBG] Getting claims for access token for client: mvcHybrid
+2019-05-30 20:44:03.035 +08:00 [DBG] Getting claims for access token for subject: af61726e-716b-4170-8c26-6568bf294215
+2019-05-30 20:44:03.040 +08:00 [DBG] Claim types from profile service that were filtered: ["sub"]
+2019-05-30 20:44:04.821 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:44:04.821 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:44:05.136 +08:00 [DBG] Found ["openid","profile","email"] identity scopes in database
+2019-05-30 20:44:05.340 +08:00 [DBG] Found [] API scopes in database
+2019-05-30 20:44:05.341 +08:00 [DBG] Getting claims for identity token for subject: af61726e-716b-4170-8c26-6568bf294215 and client: mvcHybrid
+2019-05-30 20:44:05.341 +08:00 [DBG] In addition to an id_token, an access_token was requested. No claims other than sub are included in the id_token. To obtain more user claims, either use the user info endpoint or set AlwaysIncludeUserClaimsInIdToken on the client configuration.
+2019-05-30 20:44:05.364 +08:00 [INF] {"ClientId":"mvcHybrid","ClientName":"MVC Client Hybrid","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"openid profile email","GrantType":"authorization_code","Tokens":[{"TokenType":"id_token","TokenValue":"****dtWQ","$type":"Token"},{"TokenType":"access_token","TokenValue":"****_hdg","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLN4VHL84K6V:00000003","TimeStamp":"2019-05-30T12:44:05.0000000Z","ProcessId":46758,"LocalIpAddress":"::1:5000","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-05-30 20:44:05.366 +08:00 [DBG] Token request success.
+2019-05-30 20:44:05.388 +08:00 [DBG] Request path /connect/userinfo matched to endpoint type Userinfo
+2019-05-30 20:44:05.391 +08:00 [DBG] Endpoint enabled: Userinfo, successfully created handler: IdentityServer4.Endpoints.UserInfoEndpoint
+2019-05-30 20:44:05.392 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.UserInfoEndpoint for /connect/userinfo
+2019-05-30 20:44:05.400 +08:00 [DBG] Start userinfo request
+2019-05-30 20:44:05.407 +08:00 [DBG] Bearer token found in header
+2019-05-30 20:44:07.263 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:44:07.264 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:44:09.105 +08:00 [DBG] mvcHybrid found in database: true
+2019-05-30 20:44:09.106 +08:00 [DBG] client configuration validation for client mvcHybrid succeeded.
+2019-05-30 20:44:09.295 +08:00 [DBG] Calling into custom token validator: IdentityServer4.Validation.DefaultCustomTokenValidator
+2019-05-30 20:44:09.298 +08:00 [DBG] Token validation success
+{"ClientId":null,"ClientName":null,"ValidateLifetime":true,"AccessTokenType":"Jwt","ExpectedScope":"openid","TokenHandle":null,"JwtId":null,"Claims":{"nbf":1559220243,"exp":1559220303,"iss":"http://localhost:5000","aud":"http://localhost:5000/resources","client_id":"mvcHybrid","sub":"af61726e-716b-4170-8c26-6568bf294215","auth_time":1559134138,"idp":"local","preferred_username":"1223138295@qq.com","unique_name":"1223138295@qq.com","name":"shawn","last_name":"wong","card_number":"12123","card_holder":"王曉鋒","card_security_number":"2323","card_expiration":"20/12","address_city":"shanghai","address_country":"中国","address_state":"canials","address_street":"shanghai","address_zip_code":"226153","email":"1223138295@qq.com","email_verified":false,"phone_number":"17602180068","phone_number_verified":false,"scope":["openid","profile","email"],"amr":"pwd"},"$type":"TokenValidationLog"}
+2019-05-30 20:44:09.309 +08:00 [DBG] Creating userinfo response
+2019-05-30 20:44:09.315 +08:00 [DBG] Scopes in access token: openid profile email
+2019-05-30 20:44:09.319 +08:00 [DBG] Scopes in access token: openid profile email
+2019-05-30 20:44:09.658 +08:00 [DBG] Found ["openid","profile","email"] identity scopes in database
+2019-05-30 20:44:09.660 +08:00 [DBG] Requested claim types: sub updated_at locale zoneinfo birthdate gender website picture preferred_username nickname middle_name given_name family_name name profile email email_verified
+2019-05-30 20:44:09.661 +08:00 [DBG] Scopes in access token: openid profile email
+2019-05-30 20:44:09.993 +08:00 [DBG] Found ["openid","profile","email"] identity scopes in database
+2019-05-30 20:44:09.994 +08:00 [INF] Profile service returned the following claim types: sub preferred_username unique_name name last_name card_number card_holder card_security_number card_expiration address_city address_country address_state address_street address_zip_code email email_verified phone_number phone_number_verified
+2019-05-30 20:44:09.995 +08:00 [DBG] End userinfo request
+2019-05-30 20:44:24.046 +08:00 [DBG] TaskCanceledException. Exiting.
+2019-05-30 20:44:24.085 +08:00 [DBG] Stopping grant removal

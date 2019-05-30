@@ -128,19 +128,7 @@ namespace IdentityCenter
                     },
                     RedirectUris           = { "http://localhost:5005/signin-oidc" },
                     PostLogoutRedirectUris = { "http://localhost:5005/signout-callback-oidc" },
-                    AllowedScopes = new List<string>
-                    {
-                        IdentityServerConstants.StandardScopes.OpenId,
-                        IdentityServerConstants.StandardScopes.Profile,
-                        IdentityServerConstants.StandardScopes.Email,
-                        "orders",
-                        "basket",
-                        "locations",
-                        "marketing",
-                        "webshoppingagg",
-                        "orders.signalrhub",
-                        "webhooks"
-                    },
+                    AllowedScopes = { "openid", "profile", "api1","email"},
                     AccessTokenLifetime = 60, // 60s
                     IdentityTokenLifetime= 60,
                     AllowOfflineAccess=true,

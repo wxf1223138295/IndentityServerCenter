@@ -22,7 +22,7 @@ namespace MVCClientHybrid.Controllers
 
             var client = new HttpClient();
             client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-            var content = await client.GetStringAsync("http://localhost:5003/identity");
+            var content = await client.GetStringAsync("http://localhost:5003/api/identity");
 
 
 

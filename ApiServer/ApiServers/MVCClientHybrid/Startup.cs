@@ -44,7 +44,7 @@ namespace MVCClientHybrid
                     options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
                 })
                 .AddCookie("Cookies", o => o.ExpireTimeSpan = TimeSpan.FromMinutes(1))
-                .AddOpenIdConnect("oidc",options =>
+                .AddOpenIdConnect(options =>
                 {
                     options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
                     options.Authority = "http://localhost:5000";
@@ -58,7 +58,7 @@ namespace MVCClientHybrid
                     
                     options.Scope.Add("openid");
                     options.Scope.Add("profile");
-                    options.Scope.Add("Email");
+                    options.Scope.Add("email");
                 });
         }
 
