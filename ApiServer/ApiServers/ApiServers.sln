@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCClient", "MVCClient\MVCC
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCClientOPID", "MVCClientOPID\MVCClientOPID.csproj", "{76E3DDB9-A920-4255-960F-ED5A27683013}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCClientHybrid", "MVCClientHybrid\MVCClientHybrid.csproj", "{AB71E38B-9715-41A3-B377-3ADE620A7152}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{76E3DDB9-A920-4255-960F-ED5A27683013}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76E3DDB9-A920-4255-960F-ED5A27683013}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{76E3DDB9-A920-4255-960F-ED5A27683013}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AB71E38B-9715-41A3-B377-3ADE620A7152}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AB71E38B-9715-41A3-B377-3ADE620A7152}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AB71E38B-9715-41A3-B377-3ADE620A7152}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AB71E38B-9715-41A3-B377-3ADE620A7152}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
