@@ -8,8 +8,10 @@ using IdentityServer4.EntityFramework.Mappers;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using IdentityServer4.EntityFramework.Storage;
+using Microsoft.Extensions.Configuration;
 
 namespace IdentityCenter
 {
@@ -43,10 +45,15 @@ namespace IdentityCenter
         {
             Console.WriteLine("Seeding database...");
 
+            var clientUrls = new Dictionary<string, string>();
+
+
+            //不会执行seeddata  clientUrls为null
+
             if (!context.Clients.Any())
             {
                 Console.WriteLine("Clients being populated");
-                foreach (var client in Config.GetClients().ToList())
+                foreach (var client in Config.GetClients(clientUrls).ToList())
                 {
                     context.Clients.Add(client.ToEntity());
                 }

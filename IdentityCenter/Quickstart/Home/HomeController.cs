@@ -36,6 +36,7 @@ namespace IdentityServer4.Quickstart.UI
                 // only show in development
                 return View();
             }
+            return View();
 
             _logger.LogInformation("Homepage is disabled in production. Returning 404.");
             return NotFound();

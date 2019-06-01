@@ -5,6 +5,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Reflection;
 using IdentityCenter.Data;
@@ -93,14 +94,9 @@ namespace IdentityCenter
                     options.ClientSecret = "copy client secret from Google here";
                 });
             identityServer.Services.AddTransient<IProfileService, ProfileService>();
-            if (Environment.IsDevelopment())
-            {
-                identityServer.AddDeveloperSigningCredential();
-            }
-            else
-            {
-                throw new Exception("need to configure key material");
-            }
+
+            identityServer.AddDeveloperSigningCredential(true,"tempkey.rsa");
+
         }
 
         public void Configure(IApplicationBuilder app)
@@ -132,9 +128,16 @@ namespace IdentityCenter
 
                 var context = serviceScope.ServiceProvider.GetRequiredService<ConfigurationDbContext>();
                 context.Database.Migrate();
+
+                var clientUrls = new Dictionary<string, string>();
+
+                clientUrls.Add("mvcImp", Configuration.GetValue<string>("mvcImp"));
+                clientUrls.Add("mvcHybrid", Configuration.GetValue<string>("mvcHybrid"));
+
+
                 if (!context.Clients.Any())
                 {
-                    foreach (var client in Config.GetClients())
+                    foreach (var client in Config.GetClients(clientUrls))
                     {
                         context.Clients.Add(client.ToEntity());
                     }

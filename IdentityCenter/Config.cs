@@ -5,11 +5,13 @@
 using IdentityServer4.Models;
 using System.Collections.Generic;
 using IdentityServer4;
+using Microsoft.Extensions.Configuration;
 
 namespace IdentityCenter
 {
     public static class Config
     {
+       
         public static IEnumerable<IdentityResource> GetIdentityResources()
         {
             return new IdentityResource[]
@@ -28,8 +30,11 @@ namespace IdentityCenter
             };
         }
 
-        public static IEnumerable<Client> GetClients()
+        public static IEnumerable<Client> GetClients(Dictionary<string, string> clientsUrl)
         {
+            var mvcHybrid = clientsUrl["mvcHybrid"];
+            var mvcImp = clientsUrl["mvcImp"];
+
             return new[]
             {
                 // client credentials flow client
@@ -57,46 +62,46 @@ namespace IdentityCenter
                     AllowedScopes = { "api1" }
                 },
 
-                // MVC client using hybrid flow
-                new Client
-                {
-                    ClientId = "mvc",
-                    ClientName = "MVC Client",
+                //// MVC client using hybrid flow
+                //new Client
+                //{
+                //    ClientId = "mvc",
+                //    ClientName = "MVC Client",
 
-                    AllowedGrantTypes = GrantTypes.HybridAndClientCredentials,
-                    ClientSecrets = { new Secret("49C1A7E1-0C79-4A89-A3D6-A37998FB86B0".Sha256()) },
+                //    AllowedGrantTypes = GrantTypes.HybridAndClientCredentials,
+                //    ClientSecrets = { new Secret("49C1A7E1-0C79-4A89-A3D6-A37998FB86B0".Sha256()) },
 
-                    RedirectUris = { "http://localhost:5001/signin-oidc" },
-                    FrontChannelLogoutUri = "http://localhost:5001/signout-oidc",
-                    PostLogoutRedirectUris = { "http://localhost:5001/signout-callback-oidc" },
+                //    RedirectUris = { "http://localhost:5001/signin-oidc" },
+                //    FrontChannelLogoutUri = "http://localhost:5001/signout-oidc",
+                //    PostLogoutRedirectUris = { "http://localhost:5001/signout-callback-oidc" },
 
-                    AllowOfflineAccess = true,
-                    AllowedScopes = { "openid", "profile", "api1" }
-                },
+                //    AllowOfflineAccess = true,
+                //    AllowedScopes = { "openid", "profile", "api1" }
+                //},
 
-                // SPA client using implicit flow
-                new Client
-                {
-                    ClientId = "spa",
-                    ClientName = "SPA Client",
-                    ClientUri = "http://identityserver.io",
+                //// SPA client using implicit flow
+                //new Client
+                //{
+                //    ClientId = "spa",
+                //    ClientName = "SPA Client",
+                //    ClientUri = "http://identityserver.io",
 
-                    AllowedGrantTypes = GrantTypes.Implicit,
-                    AllowAccessTokensViaBrowser = true,
+                //    AllowedGrantTypes = GrantTypes.Implicit,
+                //    AllowAccessTokensViaBrowser = true,
 
-                    RedirectUris =
-                    {
-                        "http://localhost:5002/index.html",
-                        "http://localhost:5002/callback.html",
-                        "http://localhost:5002/silent.html",
-                        "http://localhost:5002/popup.html",
-                    },
+                //    RedirectUris =
+                //    {
+                //        "http://localhost:5002/index.html",
+                //        "http://localhost:5002/callback.html",
+                //        "http://localhost:5002/silent.html",
+                //        "http://localhost:5002/popup.html",
+                //    },
 
-                    PostLogoutRedirectUris = { "http://localhost:5002/index.html" },
-                    AllowedCorsOrigins = { "http://localhost:5002" },
+                //    PostLogoutRedirectUris = { "http://localhost:5002/index.html" },
+                //    AllowedCorsOrigins = { "http://localhost:5002" },
 
-                    AllowedScopes = { "openid", "profile", "api1" }
-                },
+                //    AllowedScopes = { "openid", "profile", "api1" }
+                //},
                 new Client()
                 {
                     ClientId = "mvcImp",
@@ -104,10 +109,10 @@ namespace IdentityCenter
                     AllowedGrantTypes = GrantTypes.Implicit,
 
                     // 登录成功回调处理地址，处理回调返回的数据
-                    RedirectUris = { "http://localhost:5004/signin-oidc" },
+                    RedirectUris = { $"{mvcImp}/signin-oidc" },
 
                     // where to redirect to after logout
-                    PostLogoutRedirectUris = { "http://localhost:5004/signout-callback-oidc" },
+                    PostLogoutRedirectUris = {  $"{mvcImp}/signout-callback-oidc" },
                     ClientSecrets = { new Secret("shawn".Sha256()) },
                     RequireConsent = true,
                     AllowedScopes = new List<string>
@@ -120,14 +125,14 @@ namespace IdentityCenter
                 {
                     ClientId = "mvcHybrid",
                     ClientName = "MVC Client Hybrid",
-                    ClientUri="http://localhost:5005",
+                    ClientUri=$"{mvcHybrid}",
                     AllowedGrantTypes = GrantTypes.Hybrid,
                     ClientSecrets =
                     {
                         new Secret("secret".Sha256())
                     },
-                    RedirectUris           = { "http://localhost:5005/signin-oidc" },
-                    PostLogoutRedirectUris = { "http://localhost:5005/signout-callback-oidc" },
+                    RedirectUris           = { $"{mvcHybrid}/signin-oidc" },
+                    PostLogoutRedirectUris = { $"{mvcHybrid}/signout-callback-oidc" },
                     AllowedScopes = { "openid", "profile", "api1","email"},
                     AccessTokenLifetime = 60, // 60s
                     IdentityTokenLifetime= 60,
