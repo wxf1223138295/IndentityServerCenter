@@ -1,0 +1,32 @@
+@model MVCClient.Models.Input.BirthModel
+@{
+    ViewData["Title"] = "Lee'tools";
+}
+
+<!DOCTYPE html>
+ 
+<html>
+<head>
+ 
+    <title>首页</title>
+ 
+</head>
+<div>
+     <form asp-controller="Tools" asp-action="Index" method="post">
+     <div class="row">
+            <div class="form-group col-sm-6">
+                <label asp-for="birthday" class="control-label form-label">出生日期</label>
+                <input asp-for="birthday" class="form-control form-input" />
+                <span asp-validation-for="birthday" class="text-danger" ></span>
+            </div>
+     </div>
+     <div class="form-group">
+            <button type="submit" class="btn btn-default btn-brand">&nbsp;提交&nbsp;</button>
+        </div>    
+     </form>
+   <div>
+    结 果：<input type="text" name="password" value="@ViewData["result"]" />
+   </div>
+                       
+ 
+</div>
