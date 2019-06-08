@@ -1,14 +1,14 @@
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
-using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Polly;
 using Polly.Extensions.Http;
 
@@ -30,18 +30,17 @@ namespace MVCClient
             {
                 // This lambda determines whether user consent for non-essential cookies is needed for a given request.
                 options.CheckConsentNeeded = context => true;
+                options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
-
-            services.AddControllersWithViews()
-                .AddNewtonsoftJson();
-            services.AddRazorPages();
+            services.AddAuthentication();
 
             services.AddHttpClientServices(Configuration);
+            services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
-        public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
+        public void Configure(IApplicationBuilder app, IHostingEnvironment env)
         {
             if (env.IsDevelopment())
             {
@@ -50,30 +49,23 @@ namespace MVCClient
             else
             {
                 app.UseExceptionHandler("/Home/Error");
-                // The default HSTS value is 30 days. You may want to change this for production scenarios, see https://aka.ms/aspnetcore-hsts.
-                app.UseHsts();
             }
 
-            app.UseHttpsRedirection();
             app.UseStaticFiles();
-
             app.UseCookiePolicy();
 
-            app.UseRouting();
 
-            app.UseAuthorization();
+            app.UseAuthentication();
 
-            app.UseEndpoints(endpoints =>
+            app.UseMvc(routes =>
             {
-                endpoints.MapControllerRoute(
+                routes.MapRoute(
                     name: "default",
-                    pattern: "{controller=Home}/{action=Index}/{id?}");
-                endpoints.MapRazorPages();
+                    template: "{controller=Home}/{action=Index}/{id?}");
             });
         }
-      
-    }
 
+    }
     public static class ServiceCollectionExtensions
     {
         static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
@@ -99,8 +91,16 @@ namespace MVCClient
         public static IServiceCollection AddHttpClientServices(this IServiceCollection services, IConfiguration configuration)
         {
             services.AddHttpClient("getjwt",
-                    c => { c.BaseAddress = new Uri("http://localhost:5000"); })
-                .SetHandlerLifetime(TimeSpan.FromMinutes(5)); //Sample. Default lifetime is 2 minutes 
+                    c => { c.BaseAddress = new Uri(configuration["IdentityServerCenterUrl"]); })
+                .SetHandlerLifetime(TimeSpan.FromMinutes(5))
+                      .ConfigurePrimaryHttpMessageHandler(() =>
+                      {
+                          return new HttpClientHandler()
+                          {
+                              ServerCertificateCustomValidationCallback = (message, cert, chain, error) => true
+                          };
+                      }
+                ); //Sample. Default lifetime is 2 minutes 
                                                               //.AddPolicyHandler(GetRetryPolicy())
                                                               //.AddPolicyHandler(GetCircuitBreakerPolicy());
 
@@ -130,7 +130,7 @@ namespace MVCClient
 
 
             services.AddHttpClient("getapiserverone",
-                    c => { c.BaseAddress = new Uri("http://localhost:5003/api/Identity"); })
+                    c => { c.BaseAddress = new Uri(configuration["apiserviceoneurl"]); })
                 .SetHandlerLifetime(TimeSpan.FromMinutes(5));
 
             return services;

@@ -1,6 +1,6 @@
-using Microsoft.AspNetCore.Mvc;
 using MVCClient.common;
-using MVCClient.Models.Input;
+using MVCClient.Models;
+using Microsoft.AspNetCore.Mvc;
 
 namespace MVCClient.Controllers
 {

@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.28917.182
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiServerOne", "ApiServerOne\ApiServerOne.csproj", "{45701279-5A14-416A-A5A2-19359C1AFCBE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCClientOPID", "MVCClientOPID\MVCClientOPID.csproj", "{76E3DDB9-A920-4255-960F-ED5A27683013}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCClient", "MVCClient\MVCClient.csproj", "{ED032AE6-F3A5-4417-84C2-4A7BCB2B2EBF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCClientHybrid", "MVCClientHybrid\MVCClientHybrid.csproj", "{AB71E38B-9715-41A3-B377-3ADE620A7152}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCClientOPID", "MVCClientOPID\MVCClientOPID.csproj", "{76E3DDB9-A920-4255-960F-ED5A27683013}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCClient", "MVCClient\MVCClient.csproj", "{2FC20CFA-CAD8-42C1-86DB-52C3FBB645A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MVCClientHybrid", "MVCClientHybrid\MVCClientHybrid.csproj", "{AB71E38B-9715-41A3-B377-3ADE620A7152}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolClient", "ToolClient\ToolClient.csproj", "{9357D065-FB83-45C9-9404-8AD234B94251}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiServerOneNew", "ApiServerOneNew\ApiServerOneNew.csproj", "{B56AB397-8846-4D89-B179-AB50CF02AFD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,14 +19,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{45701279-5A14-416A-A5A2-19359C1AFCBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{45701279-5A14-416A-A5A2-19359C1AFCBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{45701279-5A14-416A-A5A2-19359C1AFCBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{45701279-5A14-416A-A5A2-19359C1AFCBE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{ED032AE6-F3A5-4417-84C2-4A7BCB2B2EBF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{ED032AE6-F3A5-4417-84C2-4A7BCB2B2EBF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{ED032AE6-F3A5-4417-84C2-4A7BCB2B2EBF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{ED032AE6-F3A5-4417-84C2-4A7BCB2B2EBF}.Release|Any CPU.Build.0 = Release|Any CPU
 		{76E3DDB9-A920-4255-960F-ED5A27683013}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{76E3DDB9-A920-4255-960F-ED5A27683013}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{76E3DDB9-A920-4255-960F-ED5A27683013}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -33,6 +27,18 @@ Global
 		{AB71E38B-9715-41A3-B377-3ADE620A7152}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AB71E38B-9715-41A3-B377-3ADE620A7152}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AB71E38B-9715-41A3-B377-3ADE620A7152}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FC20CFA-CAD8-42C1-86DB-52C3FBB645A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FC20CFA-CAD8-42C1-86DB-52C3FBB645A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FC20CFA-CAD8-42C1-86DB-52C3FBB645A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FC20CFA-CAD8-42C1-86DB-52C3FBB645A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9357D065-FB83-45C9-9404-8AD234B94251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9357D065-FB83-45C9-9404-8AD234B94251}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9357D065-FB83-45C9-9404-8AD234B94251}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9357D065-FB83-45C9-9404-8AD234B94251}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B56AB397-8846-4D89-B179-AB50CF02AFD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B56AB397-8846-4D89-B179-AB50CF02AFD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B56AB397-8846-4D89-B179-AB50CF02AFD7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B56AB397-8846-4D89-B179-AB50CF02AFD7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

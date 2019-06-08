@@ -17,7 +17,7 @@ namespace ApiServerOne.Controllers
         [HttpGet]
         public ActionResult<IEnumerable<string>> Get()
         {
-            return new string[] { "value1", "value2" };
+            return new string[] { "我是api的返回结果" };
         }
         // GET api/values/5
         [HttpGet("{id}")]

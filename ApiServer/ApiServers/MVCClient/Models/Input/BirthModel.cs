@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace MVCClient.Models.Input
+namespace MVCClient.Models
 {
     public class BirthModel
     {

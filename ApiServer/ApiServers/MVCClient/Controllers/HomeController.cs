@@ -4,9 +4,9 @@ using System.Diagnostics;
 using System.Linq;
 using System.Net.Http;
 using System.Threading.Tasks;
+using MVCClient.Models;
 using IdentityModel.Client;
 using Microsoft.AspNetCore.Mvc;
-using MVCClient.Models;
 
 namespace MVCClient.Controllers
 {
