@@ -1,0 +1,32 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>客户端模式</title>
+</head>
+<body>
+    @if ((bool)ViewData["IsSuccess"] == true)
+    {
+        <div class="form-group">
+            <label for="exampleInputEmail1">AccessToken:</label>
+            <label id="exampleInputEmail1" >@ViewData["AccessToken"]</label>
+        </div>
+        <br/>
+        <div class="form-group">
+            <label for="exampleInputPassword1">RresultResponse:</label>
+            <label id="exampleInputPassword1" >@ViewData["RresultResponse"]</label>
+        </div>
+    }
+    else
+    {
+        <label>@ViewData["ErrorInfo"]</label>
+    }
+
+</body>
+</html>

@@ -1,8 +1,49 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    Layout = null;
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>首页</title>
+    <meta property="og:title" content="BYTON" />
+    <meta name="description" content="It is not about refining cars. It is about refining life. We will transform cars and traffic into places of well-being for you to make every single minute count, even on the move." />
+    <meta property="og:description" content="It is not about refining cars. It is about refining life. We will transform cars and traffic into places of well-being for you to make every single minute count, even on the move." />
+    <meta name="keywords" content="" />
+    <meta property="og:image" content="https://www.byton.com/img/2.9/tile_job1_job2.jpg" />
+    <meta property="og:image:url" content="https://www.byton.com/img/2.9/tile_job1_job2.jpg" />
+    <meta property="og:image:width" content="1920" />
+    <meta property="og:image:height" content="1080" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.byton.com/" />
+    <link href="https://www.byton.com/" rel="canonical">
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name="version" content="1.2.2" />
+    <meta name="baidu-site-verification" content="Afh9PZYTcz" />
+
+
+    <link rel="stylesheet" href="/lib/bootstrap/dist/css/bootstrap.css" />
+    <script src="lib/bootstrap/dist/js/bootstrap.js"></script>
+</head>
+<body>
+<div class="container-fluid">
+    <div class="row">
+        <div class="container">
+            <a href="~/Home/ClientModel">客户端模式</a>
+        </div>
+        <div  class="container">
+            <a href="~/Home/PasswordModel">密码模式</a>
+        </div>
+        <div  class="container">
+            <a href="~/Home/ClientModel">简化模式</a>
+        </div>
+        <div  class="container">
+            <a href="~/Home/ClientModel">授权码模式</a>
+        </div>
+    </div>
 </div>
+</body>
+</html>

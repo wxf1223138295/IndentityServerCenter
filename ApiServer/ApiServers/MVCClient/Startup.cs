@@ -54,7 +54,7 @@ namespace MVCClient
             app.UseStaticFiles();
             app.UseCookiePolicy();
 
-
+            app.UseHttpsRedirection();
             app.UseAuthentication();
 
             app.UseMvc(routes =>
@@ -93,14 +93,15 @@ namespace MVCClient
             services.AddHttpClient("getjwt",
                     c => { c.BaseAddress = new Uri(configuration["IdentityServerCenterUrl"]); })
                 .SetHandlerLifetime(TimeSpan.FromMinutes(5))
-                      .ConfigurePrimaryHttpMessageHandler(() =>
-                      {
-                          return new HttpClientHandler()
-                          {
-                              ServerCertificateCustomValidationCallback = (message, cert, chain, error) => true
-                          };
-                      }
-                ); //Sample. Default lifetime is 2 minutes 
+                //      .ConfigurePrimaryHttpMessageHandler(() =>
+                //      {
+                //          return new HttpClientHandler()
+                //          {
+                //              ServerCertificateCustomValidationCallback = (message, cert, chain, error) => true
+                //          };
+                //      }
+                //)
+                ; //Sample. Default lifetime is 2 minutes 
                                                               //.AddPolicyHandler(GetRetryPolicy())
                                                               //.AddPolicyHandler(GetCircuitBreakerPolicy());
 

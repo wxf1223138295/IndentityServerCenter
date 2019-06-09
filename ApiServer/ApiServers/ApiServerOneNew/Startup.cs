@@ -61,14 +61,19 @@ namespace ApiServerOneNew
             }
 
             app.UseHttpsRedirection();
-                  app.UseAuthentication();
+            app.UseAuthentication();
+
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute("default", "{controller=api}/{action=values}/{id?}");
+            });
             //app.UseMvc(op =>
             //{
             //    op.MapRoute
             //}
-                
 
-        
+
+
         }
     }
 }

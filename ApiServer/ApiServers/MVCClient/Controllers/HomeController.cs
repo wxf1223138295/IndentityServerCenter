@@ -19,12 +19,20 @@ namespace MVCClient.Controllers
         {
             _clientFactory = clientFactory;
         }
-
-        public async Task<ActionResult<string>> Index2()
+        public IActionResult Index()
+        {
+            return View();
+        }
+        public async Task<ActionResult<string>> PasswordModel()
         {
             var client = _clientFactory.CreateClient("getjwt");
 
-            var disco = await client.GetDiscoveryDocumentAsync("");
+            var disco = await client.GetDiscoveryDocumentAsync(new DiscoveryDocumentRequest
+            {
+                Policy ={
+                    RequireHttps = false
+                }
+            });
 
             var result = await client.RequestPasswordTokenAsync(new PasswordTokenRequest
             {
@@ -46,15 +54,20 @@ namespace MVCClient.Controllers
                 var tr = t.StatusCode;
             }
 
-            return "客户端模式-账号密码";
+            return View();
         }
 
-        public async Task<ActionResult<string>> Index()
+        public async Task<ActionResult<string>> ClientModel()
         {
             var client = _clientFactory.CreateClient("getjwt");
 
-            var disco = await client.GetDiscoveryDocumentAsync("");
 
+            var disco = await client.GetDiscoveryDocumentAsync(new DiscoveryDocumentRequest
+            {
+                Policy ={
+                RequireHttps = false
+            }
+            });
 
             var result = await client.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
             {
@@ -67,14 +80,23 @@ namespace MVCClient.Controllers
             var client1 = _clientFactory.CreateClient("getapiserverone");
             client1.SetBearerToken(result.AccessToken);
 
-            var t=await client1.GetAsync("");
 
-            if (!t.IsSuccessStatusCode)
+            var t = await client1.GetAsync("");
+
+
+            ViewData["IsSuccess"] = t.IsSuccessStatusCode;
+            var resultResponse = await t.Content.ReadAsStringAsync();
+            if (t.IsSuccessStatusCode)
             {
-                var tr=t.StatusCode;
+                ViewData["AccessToken"] = result.AccessToken;
+                ViewData["RresultResponse"] = resultResponse;
+            }
+            else
+            {
+                ViewData["ErrorInfo"] = t.StatusCode;
             }
 
-            return "客户端模式-id";
+            return View();
         }
 
         public IActionResult Privacy()

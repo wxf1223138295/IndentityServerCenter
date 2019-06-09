@@ -10,7 +10,7 @@ namespace ApiServerOneNew.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    //[Authorize]
+    [Authorize]
     public class IdentityController : ControllerBase
     {
         // GET api/values
