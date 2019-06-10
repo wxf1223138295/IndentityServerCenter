@@ -9,9 +9,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCClientHybrid", "MVCClien
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MVCClient", "MVCClient\MVCClient.csproj", "{2FC20CFA-CAD8-42C1-86DB-52C3FBB645A7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ToolClient", "ToolClient\ToolClient.csproj", "{9357D065-FB83-45C9-9404-8AD234B94251}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiServerOneNew", "ApiServerOneNew\ApiServerOneNew.csproj", "{B56AB397-8846-4D89-B179-AB50CF02AFD7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ApiServerOneNew", "ApiServerOneNew\ApiServerOneNew.csproj", "{B56AB397-8846-4D89-B179-AB50CF02AFD7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -31,10 +29,6 @@ Global
 		{2FC20CFA-CAD8-42C1-86DB-52C3FBB645A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2FC20CFA-CAD8-42C1-86DB-52C3FBB645A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2FC20CFA-CAD8-42C1-86DB-52C3FBB645A7}.Release|Any CPU.Build.0 = Release|Any CPU
-		{9357D065-FB83-45C9-9404-8AD234B94251}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{9357D065-FB83-45C9-9404-8AD234B94251}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{9357D065-FB83-45C9-9404-8AD234B94251}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{9357D065-FB83-45C9-9404-8AD234B94251}.Release|Any CPU.Build.0 = Release|Any CPU
 		{B56AB397-8846-4D89-B179-AB50CF02AFD7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{B56AB397-8846-4D89-B179-AB50CF02AFD7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B56AB397-8846-4D89-B179-AB50CF02AFD7}.Release|Any CPU.ActiveCfg = Release|Any CPU

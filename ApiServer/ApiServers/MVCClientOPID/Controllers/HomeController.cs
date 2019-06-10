@@ -2,8 +2,12 @@
 using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using MVCClientOPID.Models;
 
@@ -11,10 +15,20 @@ namespace MVCClientOPID.Controllers
 {
     public class HomeController : Controller
     {
-        [Authorize]
-        public ActionResult<string> Index2()
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly IIdentityParser<ApplicationUser> _appUserParser;
+
+        public HomeController(IHttpContextAccessor httpContextAccessor, IIdentityParser<ApplicationUser> appUserParser)
         {
-            return "简易模式";
+            _httpContextAccessor = httpContextAccessor;
+            _appUserParser = appUserParser;
+        }
+
+        [Authorize]
+        public async Task<ActionResult<string>> Index2()
+        {
+            var use=_appUserParser.Parse(_httpContextAccessor.HttpContext.User);
+            return $"简易模式---access_token:";
         }
         public IActionResult Index()
         {

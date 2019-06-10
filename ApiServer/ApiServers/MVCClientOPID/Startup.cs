@@ -9,9 +9,11 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.HttpsPolicy;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MVCClientOPID.Models;
 
 namespace MVCClientOPID
 {
@@ -48,7 +50,7 @@ namespace MVCClientOPID
                 .AddCookie("Cookies",o=>o.ExpireTimeSpan=TimeSpan.FromMinutes(1))
                 .AddOpenIdConnect(options =>
                 {
-                    options.Authority = "http://localhost:5000";
+                    options.Authority = Configuration["IdentityServerCenterUrl"];
                     options.RequireHttpsMetadata = false;
                     options.GetClaimsFromUserInfoEndpoint = true;
                     options.ClientId = "mvcImp";
@@ -57,6 +59,9 @@ namespace MVCClientOPID
                     options.Scope.Add("openid");
                     options.Scope.Add("profile");
                 });
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+
+            services.AddTransient<IIdentityParser<ApplicationUser>, IdentityParser>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -83,6 +88,8 @@ namespace MVCClientOPID
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+
+
         }
     }
 }
