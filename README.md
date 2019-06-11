@@ -9,8 +9,13 @@
 > 用于docker中sqlserver要求3g以前才能允许运行，我换成了mysql，土豪随意。
 > mysql中和sqlserver有很多区别，具体查看授权中心代码
 
+4. ` identityServer.AddDeveloperSigningCredential(true,"tempkey.rsa");`
+> 每次重启项目的时候，都会重新生成一个新的证书，这时候就会导致一个问题，重启之前生成的access_token，在重启之后，就不适用了，因为证书改变了，对应的加密方式也改变了
+
 建议使用aspnetcore2.2   3.0存在扩展方法不存在的bug。
 
 ## 客户端模式
 ### 客户端id
 ### 客户端id加上账号密码
+### OPenid
+### Hybrid 授权码模式
