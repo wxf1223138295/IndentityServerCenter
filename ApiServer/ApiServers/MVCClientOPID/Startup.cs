@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
@@ -14,6 +15,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using MVCClientOPID.Models;
+using Polly;
+using Polly.Extensions.Http;
 
 namespace MVCClientOPID
 {
@@ -60,7 +63,7 @@ namespace MVCClientOPID
                     options.Scope.Add("profile");
                 });
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
-
+            services.AddHttpClientServices(Configuration);
             services.AddTransient<IIdentityParser<ApplicationUser>, IdentityParser>();
         }
 
@@ -90,6 +93,77 @@ namespace MVCClientOPID
             });
 
 
+        }
+    }
+    public static class ServiceCollectionExtensions
+    {
+        static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
+        {
+            return HttpPolicyExtensions
+                .HandleTransientHttpError()
+                .OrResult(msg => msg.StatusCode == System.Net.HttpStatusCode.NotFound)
+                .WaitAndRetryAsync(6, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)));
+
+        }
+        static IAsyncPolicy<HttpResponseMessage> GetCircuitBreakerPolicy()
+        {
+            return HttpPolicyExtensions
+                .HandleTransientHttpError()
+                .CircuitBreakerAsync(5, TimeSpan.FromSeconds(30));
+        }
+        /// <summary>
+        /// HttpClient
+        /// </summary>
+        /// <param name="services"></param>
+        /// <param name="configuration"></param>
+        /// <returns></returns>
+        public static IServiceCollection AddHttpClientServices(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddHttpClient("getjwt",
+                    c => { c.BaseAddress = new Uri(configuration["IdentityServerCenterUrl"]); })
+                .SetHandlerLifetime(TimeSpan.FromMinutes(5))
+                //      .ConfigurePrimaryHttpMessageHandler(() =>
+                //      {
+                //          return new HttpClientHandler()
+                //          {
+                //              ServerCertificateCustomValidationCallback = (message, cert, chain, error) => true
+                //          };
+                //      }
+                //)
+                ; //Sample. Default lifetime is 2 minutes 
+                  //.AddPolicyHandler(GetRetryPolicy())
+                  //.AddPolicyHandler(GetCircuitBreakerPolicy());
+
+            //services.AddHttpClient("getreports", c =>
+            //{
+            //    c.BaseAddress = new Uri(configuration["Urls:GetReportListUrl"]);
+            //}).SetHandlerLifetime(TimeSpan.FromMinutes(7))  //Sample. Default lifetime is 2 minutes
+            //       .AddPolicyHandler(GetRetryPolicy())
+            //       .AddPolicyHandler(GetCircuitBreakerPolicy());
+
+            //services.AddHttpClient("downLoadReport", c =>
+            //{
+            //    c.BaseAddress = new Uri(configuration["Urls:DownLoadReportUrl"]);
+            //    c.DefaultRequestHeaders.Add("token", "");
+            //    //c.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
+            //}).SetHandlerLifetime(TimeSpan.FromMinutes(5))  //Sample. Default lifetime is 2 minutes
+            //                                                //.AddHttpMessageHandler<HttpReportDelegatingHandler>()
+            //      .ConfigurePrimaryHttpMessageHandler(() =>
+            //      {
+            //          return new HttpClientHandler()
+            //          {
+            //              ServerCertificateCustomValidationCallback = (message, cert, chain, error) => true
+            //          };
+            //      });
+            //.AddPolicyHandler(GetRetryPolicy())
+            //.AddPolicyHandler(GetCircuitBreakerPolicy());
+
+
+            services.AddHttpClient("getapiserverone",
+                    c => { c.BaseAddress = new Uri(configuration["apiserviceoneurl"]); })
+                .SetHandlerLifetime(TimeSpan.FromMinutes(5));
+
+            return services;
         }
     }
 }

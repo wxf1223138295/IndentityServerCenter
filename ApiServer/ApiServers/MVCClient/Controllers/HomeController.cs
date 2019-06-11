@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 using MVCClient.Models;
 using IdentityModel.Client;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 
 namespace MVCClient.Controllers
 {
@@ -14,13 +15,18 @@ namespace MVCClient.Controllers
     public class HomeController : Controller
     {
         private readonly IHttpClientFactory _clientFactory;
+        private readonly IConfiguration _configuration;
 
-        public HomeController(IHttpClientFactory clientFactory)
+        public HomeController(IHttpClientFactory clientFactory, IConfiguration configuration)
         {
             _clientFactory = clientFactory;
+            _configuration = configuration;
         }
         public IActionResult Index()
         {
+            ViewData["OpenidUrl"] = _configuration["OPenidurl"];
+            ViewData["HybridUrl"] = _configuration["HybridUrl"];
+
             return View();
         }
         public async Task<ActionResult<string>> PasswordModel()

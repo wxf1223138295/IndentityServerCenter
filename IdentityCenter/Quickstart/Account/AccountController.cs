@@ -18,7 +18,9 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
+using Microsoft.Extensions.Logging;
 
 namespace IdentityServer4.Quickstart.UI
 {
@@ -38,6 +40,7 @@ namespace IdentityServer4.Quickstart.UI
         private readonly IEventService _events;
         private readonly UserManager<ApplicationUser> _userManager;
          private readonly ILoginService<ApplicationUser> _loginService;
+         private readonly ILogger<AccountController> _logger;
 
         public AccountController(
             IIdentityServerInteractionService interaction,
@@ -268,6 +271,9 @@ namespace IdentityServer4.Quickstart.UI
                 // delete local authentication cookie
                 await HttpContext.SignOutAsync();
 
+                await HttpContext.SignOutAsync(IdentityServerConstants.DefaultCheckSessionCookieName);
+
+                await HttpContext.SignOutAsync(IdentityConstants.ApplicationScheme);
                 // raise the logout event
                 await _events.RaiseAsync(new UserLogoutSuccessEvent(User.GetSubjectId(), User.GetDisplayName()));
             }

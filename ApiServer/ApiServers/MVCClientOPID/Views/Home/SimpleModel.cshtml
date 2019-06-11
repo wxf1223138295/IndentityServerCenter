@@ -1,0 +1,39 @@
+﻿@model MVCClientOPID.Models.ViewModelSimple
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>SimpleModel</title>
+</head>
+<body>
+<p>
+    Openid授权模式
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>姓名</th>
+            <th>电话</th>
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr>
+            <td>
+                @Model.UserName
+            </td>
+            <td>
+                @Model.TelNum
+            </td>
+        </tr>
+
+    </tbody>
+</table>
+</body>
+</html>

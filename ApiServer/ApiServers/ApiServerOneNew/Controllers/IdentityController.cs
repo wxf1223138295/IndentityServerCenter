@@ -2,6 +2,8 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using ApiServerOneNew.Model;
+using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -10,14 +12,43 @@ namespace ApiServerOneNew.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+   // [Authorize]
     public class IdentityController : ControllerBase
     {
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly IIdentityParser<ApplicationUser> _appUserParser;
         // GET api/values
-        [HttpGet]
-        public ActionResult<IEnumerable<string>> Get()
+
+
+        public IdentityController(IHttpContextAccessor httpContextAccessor, IIdentityParser<ApplicationUser> appUserParser)
         {
-            return new string[] { "我是api的返回结果" };
+            _httpContextAccessor = httpContextAccessor;
+            _appUserParser = appUserParser;
+        }
+
+        [HttpGet]
+        public async Task<ActionResult> Get()
+        {
+            var user=_appUserParser.Parse(_httpContextAccessor.HttpContext.User);
+
+            var requestHost=_httpContextAccessor.HttpContext.Request.Host;
+
+            var prop = await _httpContextAccessor.HttpContext.AuthenticateAsync();
+
+            var identityToken= prop.Properties.GetTokenValue("id_token");
+
+            var accseetokem=await _httpContextAccessor.HttpContext.GetTokenAsync("access_token");
+
+            ReturnModel model = new ReturnModel
+            {
+                Accseetoken = accseetokem,
+                IdentityToken = identityToken,
+                RequestHost = requestHost.ToString(),
+                UserName = user.CardHolderName
+            };
+
+
+            return new JsonResult(model);
         }
         // GET api/values/5
         [HttpGet("{id}")]
