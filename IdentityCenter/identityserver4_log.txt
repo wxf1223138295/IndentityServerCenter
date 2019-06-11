@@ -5833,3 +5833,315 @@ System.InvalidOperationException: No sign-out authentication handler is register
 2019-06-11 17:36:47.629 +08:00 [INF] {"ClientId":"mvcImp","ClientName":"MVC ClientImp","RedirectUri":"http://localhost:5004/signin-oidc","Endpoint":"Authorize","SubjectId":"af61726e-716b-4170-8c26-6568bf294215","Scopes":"openid profile","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****YKtw","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLNEA0OU33A5:00000003","TimeStamp":"2019-06-11T09:36:47.0000000Z","ProcessId":39564,"LocalIpAddress":"127.0.0.1:11593","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
 2019-06-11 17:36:47.632 +08:00 [INF] Authorize endpoint response
 {"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ClientId":"mvcImp","RedirectUri":"http://localhost:5004/signin-oidc","State":"CfDJ8Okx1kBrY49Hn4K6S7x-_IqpGxNIrwa6rlkEwjnkpx7Bb0k7kVV7ezewtiSMte9YmUrMWpvYOnhF5GfU5q9WmzRvH0TL2ePgUq48YrfK-H94haN4rAxmZg_FtwnxdudCbwUxTsLCreWFKXlkShXmF5ouw26fXJePqcWuOkgEp-3O-kN7e5KxDzCMDhsbleEleT1u9NxRgUIdp_0B0INIaiBLvwcffpWyyEPr_HBbllRtxR4wrNmJTNbhmhO8fBXZtmnLKONU8cW25Qd4JuVlWNmqq0PBpAZV5rJhoWCd2Ngcd49X4YepOlh8L0sHxkGURNAgpkKKj9fuXUO4Wu4R_gE","Scope":"openid profile","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-06-11 17:41:59.069 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-11 17:41:59.070 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-11 17:41:59.075 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-11 17:41:59.076 +08:00 [DBG] Start discovery request
+2019-06-11 17:41:59.892 +08:00 [DBG] Found ["openid","profile","email","api1"] as all scopes in database
+2019-06-11 17:42:00.084 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-06-11 17:42:00.085 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-06-11 17:42:00.085 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-06-11 17:42:00.085 +08:00 [DBG] Start key discovery request
+2019-06-11 17:42:00.163 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-06-11 17:42:00.165 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-06-11 17:42:00.165 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-06-11 17:42:00.165 +08:00 [DBG] Start authorize request
+2019-06-11 17:42:00.166 +08:00 [DBG] User in authorize request: af61726e-716b-4170-8c26-6568bf294215
+2019-06-11 17:42:00.166 +08:00 [DBG] Start authorize request protocol validation
+2019-06-11 17:42:01.183 +08:00 [DBG] mvcImp found in database: true
+2019-06-11 17:42:01.183 +08:00 [DBG] client configuration validation for client mvcImp succeeded.
+2019-06-11 17:42:01.355 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-06-11 17:42:01.468 +08:00 [DBG] Found [] API scopes in database
+2019-06-11 17:42:01.639 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-06-11 17:42:01.751 +08:00 [DBG] Found [] API scopes in database
+2019-06-11 17:42:01.752 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-06-11 17:42:01.752 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"mvcImp","ClientName":"MVC ClientImp","RedirectUri":"http://localhost:5004/signin-oidc","AllowedRedirectUris":["http://localhost:5004/signin-oidc"],"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ResponseType":"id_token","ResponseMode":"form_post","GrantType":"implicit","RequestedScopes":"openid profile","State":"CfDJ8Okx1kBrY49Hn4K6S7x-_IrdXjCNrFuW4YX6RPUXlI5aeHkuUi3apxgxOllANQdeYuR1WXVqPxS_NTsSmMFXsDEa5d6zyFnTGKcMLN9lZJTn_LytYF9tzd3NoVgD07szWJjWlu8YXxciw8ULmQFBMUa2qEJvzFRvSd4upMFHYTPTvck9glm-chmECO7QqX5bJtb_2eVNxTFB58a9AKg19uSEW-aShgGm7r5X79MKVZJqqWOsdG1WyfmWm6iUEiajQu7By-izVCRA9YjSFL2HW3xC5WxeCsW44ufBgieCS3Gux2umwAoGC0BtWIxVH859W1YfnserTqlj8wn7_Lpd5Bw","UiLocales":null,"Nonce":"636958429201276198.MDllY2I0NTMtZGUwNi00NDNlLWFiNTQtMmFmYTkzNDkzOTczMThjNDU2NWYtZTgzYy00MGJlLThiNjgtM2VlYTI1MGY3MjA2","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"a1e32b0d81a0efc321fe7cd0d7743f24","Raw":{"client_id":"mvcImp","redirect_uri":"http://localhost:5004/signin-oidc","response_type":"id_token","scope":"openid profile","response_mode":"form_post","nonce":"636958429201276198.MDllY2I0NTMtZGUwNi00NDNlLWFiNTQtMmFmYTkzNDkzOTczMThjNDU2NWYtZTgzYy00MGJlLThiNjgtM2VlYTI1MGY3MjA2","state":"CfDJ8Okx1kBrY49Hn4K6S7x-_IrdXjCNrFuW4YX6RPUXlI5aeHkuUi3apxgxOllANQdeYuR1WXVqPxS_NTsSmMFXsDEa5d6zyFnTGKcMLN9lZJTn_LytYF9tzd3NoVgD07szWJjWlu8YXxciw8ULmQFBMUa2qEJvzFRvSd4upMFHYTPTvck9glm-chmECO7QqX5bJtb_2eVNxTFB58a9AKg19uSEW-aShgGm7r5X79MKVZJqqWOsdG1WyfmWm6iUEiajQu7By-izVCRA9YjSFL2HW3xC5WxeCsW44ufBgieCS3Gux2umwAoGC0BtWIxVH859W1YfnserTqlj8wn7_Lpd5Bw","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-06-11 17:42:01.970 +08:00 [DBG] VHwV9SWfzW/EQXuBTL6MQ//T5xXc1u82LMCGIn0Ko/U= found in database: true
+2019-06-11 17:42:01.974 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-06-11 17:42:01.974 +08:00 [DBG] Creating Implicit Flow response.
+2019-06-11 17:42:01.974 +08:00 [DBG] Getting claims for identity token for subject: af61726e-716b-4170-8c26-6568bf294215 and client: mvcImp
+2019-06-11 17:42:01.974 +08:00 [DBG] Claim types from profile service that were filtered: ["sub"]
+2019-06-11 17:42:01.978 +08:00 [INF] {"ClientId":"mvcImp","ClientName":"MVC ClientImp","RedirectUri":"http://localhost:5004/signin-oidc","Endpoint":"Authorize","SubjectId":"af61726e-716b-4170-8c26-6568bf294215","Scopes":"openid profile","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****2LAQ","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLNEA0OU33A6:00000003","TimeStamp":"2019-06-11T09:42:01.0000000Z","ProcessId":39564,"LocalIpAddress":"127.0.0.1:11593","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-06-11 17:42:01.978 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ClientId":"mvcImp","RedirectUri":"http://localhost:5004/signin-oidc","State":"CfDJ8Okx1kBrY49Hn4K6S7x-_IrdXjCNrFuW4YX6RPUXlI5aeHkuUi3apxgxOllANQdeYuR1WXVqPxS_NTsSmMFXsDEa5d6zyFnTGKcMLN9lZJTn_LytYF9tzd3NoVgD07szWJjWlu8YXxciw8ULmQFBMUa2qEJvzFRvSd4upMFHYTPTvck9glm-chmECO7QqX5bJtb_2eVNxTFB58a9AKg19uSEW-aShgGm7r5X79MKVZJqqWOsdG1WyfmWm6iUEiajQu7By-izVCRA9YjSFL2HW3xC5WxeCsW44ufBgieCS3Gux2umwAoGC0BtWIxVH859W1YfnserTqlj8wn7_Lpd5Bw","Scope":"openid profile","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-06-11 17:42:06.501 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-11 17:42:06.501 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-11 17:42:06.502 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-11 17:42:06.502 +08:00 [DBG] Start discovery request
+2019-06-11 17:42:07.126 +08:00 [DBG] Found ["openid","profile","email","api1"] as all scopes in database
+2019-06-11 17:42:07.261 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-06-11 17:42:07.261 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-06-11 17:42:07.262 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-06-11 17:42:07.262 +08:00 [DBG] Start key discovery request
+2019-06-11 17:44:12.247 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-11 17:44:12.255 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-11 17:44:12.255 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-11 17:44:12.255 +08:00 [DBG] Start discovery request
+2019-06-11 17:44:12.943 +08:00 [DBG] Found ["openid","profile","email","api1"] as all scopes in database
+2019-06-11 17:44:13.075 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-06-11 17:44:13.075 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-06-11 17:44:13.076 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-06-11 17:44:13.076 +08:00 [DBG] Start key discovery request
+2019-06-11 17:44:13.252 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-06-11 17:44:13.256 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-06-11 17:44:13.256 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-06-11 17:44:13.271 +08:00 [DBG] Start token request.
+2019-06-11 17:44:13.280 +08:00 [DBG] Start client validation
+2019-06-11 17:44:13.285 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-06-11 17:44:13.288 +08:00 [DBG] Start parsing for secret in post body
+2019-06-11 17:44:13.309 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-06-11 17:44:13.309 +08:00 [DBG] Secret id found: client
+2019-06-11 17:44:14.327 +08:00 [DBG] client found in database: true
+2019-06-11 17:44:14.327 +08:00 [DBG] client configuration validation for client client succeeded.
+2019-06-11 17:44:14.338 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-06-11 17:44:14.338 +08:00 [DBG] Client validation success
+2019-06-11 17:44:14.339 +08:00 [INF] {"ClientId":"client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLNEA0OU33A7:00000003","TimeStamp":"2019-06-11T09:44:14.0000000Z","ProcessId":39564,"LocalIpAddress":"127.0.0.1:11593","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-06-11 17:44:14.345 +08:00 [DBG] Start token request validation
+2019-06-11 17:44:14.352 +08:00 [DBG] Start client credentials token request validation
+2019-06-11 17:44:14.462 +08:00 [DBG] Found [] identity scopes in database
+2019-06-11 17:44:14.976 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-06-11 17:44:15.090 +08:00 [DBG] Found [] identity scopes in database
+2019-06-11 17:44:15.577 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-06-11 17:44:15.580 +08:00 [DBG] client credentials token request validation success
+2019-06-11 17:44:15.582 +08:00 [INF] Token request validation success
+{"ClientId":"client","ClientName":"Client Credentials Client","GrantType":"client_credentials","Scopes":"api1","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","scope":"api1","client_id":"client","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-06-11 17:44:15.602 +08:00 [DBG] Getting claims for access token for client: client
+2019-06-11 17:44:15.609 +08:00 [INF] {"ClientId":"client","ClientName":"Client Credentials Client","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"api1","GrantType":"client_credentials","Tokens":[{"TokenType":"access_token","TokenValue":"****bafw","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLNEA0OU33A7:00000003","TimeStamp":"2019-06-11T09:44:15.0000000Z","ProcessId":39564,"LocalIpAddress":"127.0.0.1:11593","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-06-11 17:44:15.610 +08:00 [DBG] Token request success.
+2019-06-11 17:44:15.896 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-11 17:44:15.898 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-11 17:44:15.898 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-11 17:44:15.898 +08:00 [DBG] Start discovery request
+2019-06-11 17:44:16.524 +08:00 [DBG] Found ["openid","profile","email","api1"] as all scopes in database
+2019-06-11 17:44:16.716 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-06-11 17:44:16.717 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-06-11 17:44:16.717 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-06-11 17:44:16.717 +08:00 [DBG] Start key discovery request
+2019-06-11 17:44:50.819 +08:00 [DBG] CORS request made for path: /.well-known/openid-configuration from origin: https://jwt.io
+2019-06-11 17:44:50.940 +08:00 [DBG] Origin https://jwt.io is allowed: false
+2019-06-11 17:44:50.940 +08:00 [WRN] CorsPolicyService did not allow origin: https://jwt.io
+2019-06-11 17:44:50.940 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-11 17:44:50.940 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-11 17:44:50.940 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-11 17:44:50.941 +08:00 [DBG] Start discovery request
+2019-06-11 17:44:51.625 +08:00 [DBG] Found ["openid","profile","email","api1"] as all scopes in database
+2019-06-11 17:47:43.034 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-11 17:47:43.035 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-11 17:47:43.035 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-11 17:47:43.035 +08:00 [DBG] Start discovery request
+2019-06-11 17:47:43.713 +08:00 [DBG] Found ["openid","profile","email","api1"] as all scopes in database
+2019-06-11 17:47:43.915 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-06-11 17:47:43.915 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-06-11 17:47:43.916 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-06-11 17:47:43.916 +08:00 [DBG] Start key discovery request
+2019-06-11 17:47:43.995 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-06-11 17:47:43.995 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-06-11 17:47:43.996 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-06-11 17:47:43.996 +08:00 [DBG] Start authorize request
+2019-06-11 17:47:43.996 +08:00 [DBG] User in authorize request: af61726e-716b-4170-8c26-6568bf294215
+2019-06-11 17:47:43.996 +08:00 [DBG] Start authorize request protocol validation
+2019-06-11 17:47:45.014 +08:00 [DBG] mvcImp found in database: true
+2019-06-11 17:47:45.014 +08:00 [DBG] client configuration validation for client mvcImp succeeded.
+2019-06-11 17:47:45.191 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-06-11 17:47:45.312 +08:00 [DBG] Found [] API scopes in database
+2019-06-11 17:47:45.487 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-06-11 17:47:45.591 +08:00 [DBG] Found [] API scopes in database
+2019-06-11 17:47:45.591 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-06-11 17:47:45.592 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"mvcImp","ClientName":"MVC ClientImp","RedirectUri":"http://localhost:5004/signin-oidc","AllowedRedirectUris":["http://localhost:5004/signin-oidc"],"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ResponseType":"id_token","ResponseMode":"form_post","GrantType":"implicit","RequestedScopes":"openid profile","State":"CfDJ8Okx1kBrY49Hn4K6S7x-_IoV1ITqDYG0zgIMTKDRoYYnQx0xNt50Exhv4HGZyrWnifj39jUuPq76Y7KKI8Yy8r34HNDfpDWz21km5pFMtyRh_z2yFtQCHpEbq-Ycp0P04U2bpJOorAcrth6E-apmWy2EFOHmMmL1OJ6E8sd3vpnZpZ_x6RjaUTUPBoOIG-ckdFHBABKbwt7-HtSHBOo2oeiezWhOPTRgHFMxNi3JA857rWsd-ddZusMOhfpsc57ZNjphOrxO5bv92RTSGnq2KvcKx7wEyPM7JOa9CPm0gNYJlkM2gONVW5P-6UbvhedZlmm-pgpY4z6NDS0VOGlnRWw","UiLocales":null,"Nonce":"636958432639473174.YzhjNGI0MGYtYjEyNi00ZGI2LWJjZWUtZjNlOWE5NDI5MzE3MzhmM2RhMDAtZTk4NC00MTcxLWIwYzgtZjE2NjI2NWEwMGQ3","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"a1e32b0d81a0efc321fe7cd0d7743f24","Raw":{"client_id":"mvcImp","redirect_uri":"http://localhost:5004/signin-oidc","response_type":"id_token","scope":"openid profile","response_mode":"form_post","nonce":"636958432639473174.YzhjNGI0MGYtYjEyNi00ZGI2LWJjZWUtZjNlOWE5NDI5MzE3MzhmM2RhMDAtZTk4NC00MTcxLWIwYzgtZjE2NjI2NWEwMGQ3","state":"CfDJ8Okx1kBrY49Hn4K6S7x-_IoV1ITqDYG0zgIMTKDRoYYnQx0xNt50Exhv4HGZyrWnifj39jUuPq76Y7KKI8Yy8r34HNDfpDWz21km5pFMtyRh_z2yFtQCHpEbq-Ycp0P04U2bpJOorAcrth6E-apmWy2EFOHmMmL1OJ6E8sd3vpnZpZ_x6RjaUTUPBoOIG-ckdFHBABKbwt7-HtSHBOo2oeiezWhOPTRgHFMxNi3JA857rWsd-ddZusMOhfpsc57ZNjphOrxO5bv92RTSGnq2KvcKx7wEyPM7JOa9CPm0gNYJlkM2gONVW5P-6UbvhedZlmm-pgpY4z6NDS0VOGlnRWw","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-06-11 17:47:45.829 +08:00 [DBG] VHwV9SWfzW/EQXuBTL6MQ//T5xXc1u82LMCGIn0Ko/U= found in database: true
+2019-06-11 17:47:45.833 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-06-11 17:47:45.833 +08:00 [DBG] Creating Implicit Flow response.
+2019-06-11 17:47:45.833 +08:00 [DBG] Getting claims for identity token for subject: af61726e-716b-4170-8c26-6568bf294215 and client: mvcImp
+2019-06-11 17:47:45.833 +08:00 [DBG] Claim types from profile service that were filtered: ["sub"]
+2019-06-11 17:47:45.836 +08:00 [INF] {"ClientId":"mvcImp","ClientName":"MVC ClientImp","RedirectUri":"http://localhost:5004/signin-oidc","Endpoint":"Authorize","SubjectId":"af61726e-716b-4170-8c26-6568bf294215","Scopes":"openid profile","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****_8Lw","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLNEA0OU33A8:00000003","TimeStamp":"2019-06-11T09:47:45.0000000Z","ProcessId":39564,"LocalIpAddress":"127.0.0.1:11593","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-06-11 17:47:45.837 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ClientId":"mvcImp","RedirectUri":"http://localhost:5004/signin-oidc","State":"CfDJ8Okx1kBrY49Hn4K6S7x-_IoV1ITqDYG0zgIMTKDRoYYnQx0xNt50Exhv4HGZyrWnifj39jUuPq76Y7KKI8Yy8r34HNDfpDWz21km5pFMtyRh_z2yFtQCHpEbq-Ycp0P04U2bpJOorAcrth6E-apmWy2EFOHmMmL1OJ6E8sd3vpnZpZ_x6RjaUTUPBoOIG-ckdFHBABKbwt7-HtSHBOo2oeiezWhOPTRgHFMxNi3JA857rWsd-ddZusMOhfpsc57ZNjphOrxO5bv92RTSGnq2KvcKx7wEyPM7JOa9CPm0gNYJlkM2gONVW5P-6UbvhedZlmm-pgpY4z6NDS0VOGlnRWw","Scope":"openid profile","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-06-11 17:48:09.737 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-11 17:48:09.738 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-11 17:48:09.738 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-11 17:48:09.738 +08:00 [DBG] Start discovery request
+2019-06-11 17:48:10.369 +08:00 [DBG] Found ["openid","profile","email","api1"] as all scopes in database
+2019-06-11 17:48:10.631 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-06-11 17:48:10.632 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-06-11 17:48:10.632 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-06-11 17:48:10.633 +08:00 [DBG] Start key discovery request
+2019-06-11 17:52:14.520 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-11 17:52:14.521 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-11 17:52:14.521 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-11 17:52:14.521 +08:00 [DBG] Start discovery request
+2019-06-11 17:52:15.363 +08:00 [DBG] Found ["openid","profile","email","api1"] as all scopes in database
+2019-06-11 17:52:15.505 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-06-11 17:52:15.506 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-06-11 17:52:15.506 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-06-11 17:52:15.506 +08:00 [DBG] Start key discovery request
+2019-06-11 17:52:15.590 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-06-11 17:52:15.591 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-06-11 17:52:15.591 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-06-11 17:52:15.591 +08:00 [DBG] Start authorize request
+2019-06-11 17:52:15.591 +08:00 [DBG] User in authorize request: af61726e-716b-4170-8c26-6568bf294215
+2019-06-11 17:52:15.591 +08:00 [DBG] Start authorize request protocol validation
+2019-06-11 17:52:16.647 +08:00 [DBG] mvcImp found in database: true
+2019-06-11 17:52:16.647 +08:00 [DBG] client configuration validation for client mvcImp succeeded.
+2019-06-11 17:52:16.825 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-06-11 17:52:16.936 +08:00 [DBG] Found [] API scopes in database
+2019-06-11 17:52:17.110 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-06-11 17:52:17.228 +08:00 [DBG] Found [] API scopes in database
+2019-06-11 17:52:17.228 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-06-11 17:52:17.228 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"mvcImp","ClientName":"MVC ClientImp","RedirectUri":"http://localhost:5004/signin-oidc","AllowedRedirectUris":["http://localhost:5004/signin-oidc"],"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ResponseType":"id_token","ResponseMode":"form_post","GrantType":"implicit","RequestedScopes":"openid profile","State":"CfDJ8Okx1kBrY49Hn4K6S7x-_Iq2av30wnHTMTPC50he9XLJ_kVnM0My3hniBNpgnJ9GBBDqssPIUfljwCq9PbqmcGXZQ_7qKEMv2tMi2pRzogiL-MJueWIUsdFDA_EWeffXRKa5ugqzvctSZ4P-lCf1_p3HF4FM1G8WaJ5OjNUGgaqd_Z_ZrWL1h8nQ-xpj3XUlq0Vk83KanphRzwj96vaz7BiBLNx4Rn1KRGl8zRyNjtLi0G-0zmpBtT_U985PDb1WVeVt3a45UctM7le1vGUb20GSR9S5AwN82AnmED2iSARQap2Num9_7Df_SEhWdzZQi-FJX1xmQDzMZhy2avNM7pI","UiLocales":null,"Nonce":"636958435355377913.NjY0NzRkZjgtZDEyZS00NWM0LWE0NzUtNzJkMjg1YmZlYWYyMzk1OGJiNTYtOTJjMi00ODM0LWJmMTEtYmUxNzI3OTM5YTUx","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"a1e32b0d81a0efc321fe7cd0d7743f24","Raw":{"client_id":"mvcImp","redirect_uri":"http://localhost:5004/signin-oidc","response_type":"id_token","scope":"openid profile","response_mode":"form_post","nonce":"636958435355377913.NjY0NzRkZjgtZDEyZS00NWM0LWE0NzUtNzJkMjg1YmZlYWYyMzk1OGJiNTYtOTJjMi00ODM0LWJmMTEtYmUxNzI3OTM5YTUx","state":"CfDJ8Okx1kBrY49Hn4K6S7x-_Iq2av30wnHTMTPC50he9XLJ_kVnM0My3hniBNpgnJ9GBBDqssPIUfljwCq9PbqmcGXZQ_7qKEMv2tMi2pRzogiL-MJueWIUsdFDA_EWeffXRKa5ugqzvctSZ4P-lCf1_p3HF4FM1G8WaJ5OjNUGgaqd_Z_ZrWL1h8nQ-xpj3XUlq0Vk83KanphRzwj96vaz7BiBLNx4Rn1KRGl8zRyNjtLi0G-0zmpBtT_U985PDb1WVeVt3a45UctM7le1vGUb20GSR9S5AwN82AnmED2iSARQap2Num9_7Df_SEhWdzZQi-FJX1xmQDzMZhy2avNM7pI","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-06-11 17:52:17.441 +08:00 [DBG] VHwV9SWfzW/EQXuBTL6MQ//T5xXc1u82LMCGIn0Ko/U= found in database: true
+2019-06-11 17:52:17.444 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-06-11 17:52:17.444 +08:00 [DBG] Creating Implicit Flow response.
+2019-06-11 17:52:17.444 +08:00 [DBG] Getting claims for identity token for subject: af61726e-716b-4170-8c26-6568bf294215 and client: mvcImp
+2019-06-11 17:52:17.444 +08:00 [DBG] Claim types from profile service that were filtered: ["sub"]
+2019-06-11 17:52:17.449 +08:00 [INF] {"ClientId":"mvcImp","ClientName":"MVC ClientImp","RedirectUri":"http://localhost:5004/signin-oidc","Endpoint":"Authorize","SubjectId":"af61726e-716b-4170-8c26-6568bf294215","Scopes":"openid profile","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****CGsw","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLNEA0OU33A9:00000003","TimeStamp":"2019-06-11T09:52:17.0000000Z","ProcessId":39564,"LocalIpAddress":"127.0.0.1:11593","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-06-11 17:52:17.449 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ClientId":"mvcImp","RedirectUri":"http://localhost:5004/signin-oidc","State":"CfDJ8Okx1kBrY49Hn4K6S7x-_Iq2av30wnHTMTPC50he9XLJ_kVnM0My3hniBNpgnJ9GBBDqssPIUfljwCq9PbqmcGXZQ_7qKEMv2tMi2pRzogiL-MJueWIUsdFDA_EWeffXRKa5ugqzvctSZ4P-lCf1_p3HF4FM1G8WaJ5OjNUGgaqd_Z_ZrWL1h8nQ-xpj3XUlq0Vk83KanphRzwj96vaz7BiBLNx4Rn1KRGl8zRyNjtLi0G-0zmpBtT_U985PDb1WVeVt3a45UctM7le1vGUb20GSR9S5AwN82AnmED2iSARQap2Num9_7Df_SEhWdzZQi-FJX1xmQDzMZhy2avNM7pI","Scope":"openid profile","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-06-11 17:54:35.920 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-11 17:54:35.921 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-11 17:54:35.921 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-11 17:54:35.921 +08:00 [DBG] Start discovery request
+2019-06-11 17:54:36.559 +08:00 [DBG] Found ["openid","profile","email","api1"] as all scopes in database
+2019-06-11 17:54:36.764 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-06-11 17:54:36.765 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-06-11 17:54:36.765 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-06-11 17:54:36.765 +08:00 [DBG] Start key discovery request
+2019-06-11 17:55:08.021 +08:00 [DBG] Request path /connect/authorize matched to endpoint type Authorize
+2019-06-11 17:55:08.021 +08:00 [DBG] Endpoint enabled: Authorize, successfully created handler: IdentityServer4.Endpoints.AuthorizeEndpoint
+2019-06-11 17:55:08.021 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.AuthorizeEndpoint for /connect/authorize
+2019-06-11 17:55:08.021 +08:00 [DBG] Start authorize request
+2019-06-11 17:55:08.022 +08:00 [DBG] User in authorize request: af61726e-716b-4170-8c26-6568bf294215
+2019-06-11 17:55:08.022 +08:00 [DBG] Start authorize request protocol validation
+2019-06-11 17:55:09.021 +08:00 [DBG] mvcImp found in database: true
+2019-06-11 17:55:09.022 +08:00 [DBG] client configuration validation for client mvcImp succeeded.
+2019-06-11 17:55:09.191 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-06-11 17:55:09.295 +08:00 [DBG] Found [] API scopes in database
+2019-06-11 17:55:09.496 +08:00 [DBG] Found ["openid","profile"] identity scopes in database
+2019-06-11 17:55:09.608 +08:00 [DBG] Found [] API scopes in database
+2019-06-11 17:55:09.608 +08:00 [DBG] Calling into custom validator: IdentityServer4.Validation.DefaultCustomAuthorizeRequestValidator
+2019-06-11 17:55:09.609 +08:00 [INF] ValidatedAuthorizeRequest
+{"ClientId":"mvcImp","ClientName":"MVC ClientImp","RedirectUri":"http://localhost:5004/signin-oidc","AllowedRedirectUris":["http://localhost:5004/signin-oidc"],"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ResponseType":"id_token","ResponseMode":"form_post","GrantType":"implicit","RequestedScopes":"openid profile","State":"CfDJ8Okx1kBrY49Hn4K6S7x-_IqUjqV1raEvC_Ucstcr9nDKQblsZ9y7GhcTl8ucpIbYaroFntgehGjuWhCxjqY8qAyzvGdb6So3hsVRIbteVSSl1LEtoVBaHeievuIWXxcnIkVoGPIu46buuGi4gPaUluZIXqoV4zpym59JDGLU7B-VbsgTp1wuL5b0_I7yMTmNuDRT4cEKY-8OKP2ncNQEwbroeacMMvLIls_rOUcFtKMzMEWOX5uc5vufPW0Rb5WIsT-VP56_53N03ITiTRFaZtrhln9rwi3TqgPAoGnZjkoogmacA5R-B58NbTx3_xG8gOmLOEIMSjadApGTrxY1TAo","UiLocales":null,"Nonce":"636958437080009488.NTkyNDQyMTQtMTllZi00NjAwLThmZTUtZGQwYzAzYThlZTZmYmNkZjlhNDMtOTZmZi00ODgxLTkzNzktNTVhZmQ4YTFlNmEx","AuthenticationContextReferenceClasses":null,"DisplayMode":null,"PromptMode":null,"MaxAge":null,"LoginHint":null,"SessionId":"a1e32b0d81a0efc321fe7cd0d7743f24","Raw":{"client_id":"mvcImp","redirect_uri":"http://localhost:5004/signin-oidc","response_type":"id_token","scope":"openid profile","response_mode":"form_post","nonce":"636958437080009488.NTkyNDQyMTQtMTllZi00NjAwLThmZTUtZGQwYzAzYThlZTZmYmNkZjlhNDMtOTZmZi00ODgxLTkzNzktNTVhZmQ4YTFlNmEx","state":"CfDJ8Okx1kBrY49Hn4K6S7x-_IqUjqV1raEvC_Ucstcr9nDKQblsZ9y7GhcTl8ucpIbYaroFntgehGjuWhCxjqY8qAyzvGdb6So3hsVRIbteVSSl1LEtoVBaHeievuIWXxcnIkVoGPIu46buuGi4gPaUluZIXqoV4zpym59JDGLU7B-VbsgTp1wuL5b0_I7yMTmNuDRT4cEKY-8OKP2ncNQEwbroeacMMvLIls_rOUcFtKMzMEWOX5uc5vufPW0Rb5WIsT-VP56_53N03ITiTRFaZtrhln9rwi3TqgPAoGnZjkoogmacA5R-B58NbTx3_xG8gOmLOEIMSjadApGTrxY1TAo","x-client-SKU":"ID_NETSTANDARD2_0","x-client-ver":"5.3.0.0"},"$type":"AuthorizeRequestValidationLog"}
+2019-06-11 17:55:09.823 +08:00 [DBG] VHwV9SWfzW/EQXuBTL6MQ//T5xXc1u82LMCGIn0Ko/U= found in database: true
+2019-06-11 17:55:09.827 +08:00 [DBG] Consent found in consent store is same as current request, consent is not required
+2019-06-11 17:55:09.827 +08:00 [DBG] Creating Implicit Flow response.
+2019-06-11 17:55:09.827 +08:00 [DBG] Getting claims for identity token for subject: af61726e-716b-4170-8c26-6568bf294215 and client: mvcImp
+2019-06-11 17:55:09.827 +08:00 [DBG] Claim types from profile service that were filtered: ["sub"]
+2019-06-11 17:55:09.830 +08:00 [INF] {"ClientId":"mvcImp","ClientName":"MVC ClientImp","RedirectUri":"http://localhost:5004/signin-oidc","Endpoint":"Authorize","SubjectId":"af61726e-716b-4170-8c26-6568bf294215","Scopes":"openid profile","GrantType":"implicit","Tokens":[{"TokenType":"id_token","TokenValue":"****vU3g","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLNEA0OU33AA:00000003","TimeStamp":"2019-06-11T09:55:09.0000000Z","ProcessId":39564,"LocalIpAddress":"127.0.0.1:11593","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-06-11 17:55:09.831 +08:00 [INF] Authorize endpoint response
+{"SubjectId":"af61726e-716b-4170-8c26-6568bf294215","ClientId":"mvcImp","RedirectUri":"http://localhost:5004/signin-oidc","State":"CfDJ8Okx1kBrY49Hn4K6S7x-_IqUjqV1raEvC_Ucstcr9nDKQblsZ9y7GhcTl8ucpIbYaroFntgehGjuWhCxjqY8qAyzvGdb6So3hsVRIbteVSSl1LEtoVBaHeievuIWXxcnIkVoGPIu46buuGi4gPaUluZIXqoV4zpym59JDGLU7B-VbsgTp1wuL5b0_I7yMTmNuDRT4cEKY-8OKP2ncNQEwbroeacMMvLIls_rOUcFtKMzMEWOX5uc5vufPW0Rb5WIsT-VP56_53N03ITiTRFaZtrhln9rwi3TqgPAoGnZjkoogmacA5R-B58NbTx3_xG8gOmLOEIMSjadApGTrxY1TAo","Scope":"openid profile","Error":null,"ErrorDescription":null,"$type":"AuthorizeResponseLog"}
+2019-06-11 17:58:33.642 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-11 17:58:33.643 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-11 17:58:33.643 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-11 17:58:33.643 +08:00 [DBG] Start discovery request
+2019-06-11 17:58:34.268 +08:00 [DBG] Found ["openid","profile","email","api1"] as all scopes in database
+2019-06-11 17:58:34.328 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-06-11 17:58:34.329 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-06-11 17:58:34.329 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-06-11 17:58:34.329 +08:00 [DBG] Start key discovery request
+2019-06-11 17:58:34.464 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-06-11 17:58:34.465 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-06-11 17:58:34.465 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-06-11 17:58:34.465 +08:00 [DBG] Start token request.
+2019-06-11 17:58:34.465 +08:00 [DBG] Start client validation
+2019-06-11 17:58:34.466 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-06-11 17:58:34.466 +08:00 [DBG] Start parsing for secret in post body
+2019-06-11 17:58:34.466 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-06-11 17:58:34.466 +08:00 [DBG] Secret id found: client
+2019-06-11 17:58:35.531 +08:00 [DBG] client found in database: true
+2019-06-11 17:58:35.531 +08:00 [DBG] client configuration validation for client client succeeded.
+2019-06-11 17:58:35.532 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-06-11 17:58:35.532 +08:00 [DBG] Client validation success
+2019-06-11 17:58:35.532 +08:00 [INF] {"ClientId":"client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLNEA0OU33AB:00000003","TimeStamp":"2019-06-11T09:58:35.0000000Z","ProcessId":39564,"LocalIpAddress":"127.0.0.1:11593","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-06-11 17:58:35.532 +08:00 [DBG] Start token request validation
+2019-06-11 17:58:35.532 +08:00 [DBG] Start client credentials token request validation
+2019-06-11 17:58:35.651 +08:00 [DBG] Found [] identity scopes in database
+2019-06-11 17:58:36.164 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-06-11 17:58:36.277 +08:00 [DBG] Found [] identity scopes in database
+2019-06-11 17:58:36.811 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-06-11 17:58:36.811 +08:00 [DBG] client credentials token request validation success
+2019-06-11 17:58:36.811 +08:00 [INF] Token request validation success
+{"ClientId":"client","ClientName":"Client Credentials Client","GrantType":"client_credentials","Scopes":"api1","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","scope":"api1","client_id":"client","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-06-11 17:58:36.812 +08:00 [DBG] Getting claims for access token for client: client
+2019-06-11 17:58:36.815 +08:00 [INF] {"ClientId":"client","ClientName":"Client Credentials Client","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"api1","GrantType":"client_credentials","Tokens":[{"TokenType":"access_token","TokenValue":"****CD0g","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLNEA0OU33AB:00000003","TimeStamp":"2019-06-11T09:58:36.0000000Z","ProcessId":39564,"LocalIpAddress":"127.0.0.1:11593","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-06-11 17:58:36.815 +08:00 [DBG] Token request success.
+2019-06-11 17:58:37.125 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-11 17:58:37.126 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-11 17:58:37.126 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-11 17:58:37.127 +08:00 [DBG] Start discovery request
+2019-06-11 17:58:37.734 +08:00 [DBG] Found ["openid","profile","email","api1"] as all scopes in database
+2019-06-11 17:58:37.927 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-06-11 17:58:37.927 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-06-11 17:58:37.927 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-06-11 17:58:37.928 +08:00 [DBG] Start key discovery request
+2019-06-11 17:58:54.940 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-11 17:58:54.941 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-11 17:58:54.941 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-11 17:58:54.941 +08:00 [DBG] Start discovery request
+2019-06-11 17:58:55.567 +08:00 [DBG] Found ["openid","profile","email","api1"] as all scopes in database
+2019-06-11 17:58:55.590 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-06-11 17:58:55.591 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-06-11 17:58:55.591 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-06-11 17:58:55.591 +08:00 [DBG] Start key discovery request
+2019-06-11 17:58:55.602 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-06-11 17:58:55.604 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-06-11 17:58:55.605 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-06-11 17:58:55.605 +08:00 [DBG] Start token request.
+2019-06-11 17:58:55.605 +08:00 [DBG] Start client validation
+2019-06-11 17:58:55.605 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-06-11 17:58:55.605 +08:00 [DBG] Start parsing for secret in post body
+2019-06-11 17:58:55.605 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-06-11 17:58:55.606 +08:00 [DBG] Secret id found: client
+2019-06-11 17:58:56.612 +08:00 [DBG] client found in database: true
+2019-06-11 17:58:56.612 +08:00 [DBG] client configuration validation for client client succeeded.
+2019-06-11 17:58:56.612 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-06-11 17:58:56.612 +08:00 [DBG] Client validation success
+2019-06-11 17:58:56.612 +08:00 [INF] {"ClientId":"client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLNEA0OU33AB:00000008","TimeStamp":"2019-06-11T09:58:56.0000000Z","ProcessId":39564,"LocalIpAddress":"127.0.0.1:11593","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-06-11 17:58:56.613 +08:00 [DBG] Start token request validation
+2019-06-11 17:58:56.613 +08:00 [DBG] Start client credentials token request validation
+2019-06-11 17:58:56.714 +08:00 [DBG] Found [] identity scopes in database
+2019-06-11 17:58:57.602 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-06-11 17:58:57.705 +08:00 [DBG] Found [] identity scopes in database
+2019-06-11 17:58:58.188 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-06-11 17:58:58.188 +08:00 [DBG] client credentials token request validation success
+2019-06-11 17:58:58.188 +08:00 [INF] Token request validation success
+{"ClientId":"client","ClientName":"Client Credentials Client","GrantType":"client_credentials","Scopes":"api1","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","scope":"api1","client_id":"client","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-06-11 17:58:58.188 +08:00 [DBG] Getting claims for access token for client: client
+2019-06-11 17:58:58.191 +08:00 [INF] {"ClientId":"client","ClientName":"Client Credentials Client","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"api1","GrantType":"client_credentials","Tokens":[{"TokenType":"access_token","TokenValue":"****TVIQ","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLNEA0OU33AB:00000008","TimeStamp":"2019-06-11T09:58:58.0000000Z","ProcessId":39564,"LocalIpAddress":"127.0.0.1:11593","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-06-11 17:58:58.191 +08:00 [DBG] Token request success.
+2019-06-11 18:03:31.297 +08:00 [DBG] Request path /.well-known/openid-configuration matched to endpoint type Discovery
+2019-06-11 18:03:31.297 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryEndpoint
+2019-06-11 18:03:31.297 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryEndpoint for /.well-known/openid-configuration
+2019-06-11 18:03:31.297 +08:00 [DBG] Start discovery request
+2019-06-11 18:03:32.100 +08:00 [DBG] Found ["openid","profile","email","api1"] as all scopes in database
+2019-06-11 18:03:32.143 +08:00 [DBG] Request path /.well-known/openid-configuration/jwks matched to endpoint type Discovery
+2019-06-11 18:03:32.144 +08:00 [DBG] Endpoint enabled: Discovery, successfully created handler: IdentityServer4.Endpoints.DiscoveryKeyEndpoint
+2019-06-11 18:03:32.144 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.DiscoveryKeyEndpoint for /.well-known/openid-configuration/jwks
+2019-06-11 18:03:32.144 +08:00 [DBG] Start key discovery request
+2019-06-11 18:03:32.178 +08:00 [DBG] Request path /connect/token matched to endpoint type Token
+2019-06-11 18:03:32.179 +08:00 [DBG] Endpoint enabled: Token, successfully created handler: IdentityServer4.Endpoints.TokenEndpoint
+2019-06-11 18:03:32.181 +08:00 [INF] Invoking IdentityServer endpoint: IdentityServer4.Endpoints.TokenEndpoint for /connect/token
+2019-06-11 18:03:32.182 +08:00 [DBG] Start token request.
+2019-06-11 18:03:32.182 +08:00 [DBG] Start client validation
+2019-06-11 18:03:32.182 +08:00 [DBG] Start parsing Basic Authentication secret
+2019-06-11 18:03:32.182 +08:00 [DBG] Start parsing for secret in post body
+2019-06-11 18:03:32.182 +08:00 [DBG] Parser found secret: PostBodySecretParser
+2019-06-11 18:03:32.183 +08:00 [DBG] Secret id found: client
+2019-06-11 18:03:33.201 +08:00 [DBG] client found in database: true
+2019-06-11 18:03:33.201 +08:00 [DBG] client configuration validation for client client succeeded.
+2019-06-11 18:03:33.201 +08:00 [DBG] Secret validator success: HashedSharedSecretValidator
+2019-06-11 18:03:33.201 +08:00 [DBG] Client validation success
+2019-06-11 18:03:33.202 +08:00 [INF] {"ClientId":"client","AuthenticationMethod":"SharedSecret","Category":"Authentication","Name":"Client Authentication Success","EventType":"Success","Id":1010,"Message":null,"ActivityId":"0HLNEA0OU33AC:00000003","TimeStamp":"2019-06-11T10:03:33.0000000Z","ProcessId":39564,"LocalIpAddress":"127.0.0.1:11593","RemoteIpAddress":"::1","$type":"ClientAuthenticationSuccessEvent"}
+2019-06-11 18:03:33.202 +08:00 [DBG] Start token request validation
+2019-06-11 18:03:33.202 +08:00 [DBG] Start client credentials token request validation
+2019-06-11 18:03:33.302 +08:00 [DBG] Found [] identity scopes in database
+2019-06-11 18:03:33.812 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-06-11 18:03:33.912 +08:00 [DBG] Found [] identity scopes in database
+2019-06-11 18:03:34.408 +08:00 [DBG] Found ["api1"] API scopes in database
+2019-06-11 18:03:34.408 +08:00 [DBG] client credentials token request validation success
+2019-06-11 18:03:34.408 +08:00 [INF] Token request validation success
+{"ClientId":"client","ClientName":"Client Credentials Client","GrantType":"client_credentials","Scopes":"api1","AuthorizationCode":null,"RefreshToken":null,"UserName":null,"AuthenticationContextReferenceClasses":null,"Tenant":null,"IdP":null,"Raw":{"grant_type":"client_credentials","scope":"api1","client_id":"client","client_secret":"***REDACTED***"},"$type":"TokenRequestValidationLog"}
+2019-06-11 18:03:34.408 +08:00 [DBG] Getting claims for access token for client: client
+2019-06-11 18:03:34.411 +08:00 [INF] {"ClientId":"client","ClientName":"Client Credentials Client","RedirectUri":null,"Endpoint":"Token","SubjectId":null,"Scopes":"api1","GrantType":"client_credentials","Tokens":[{"TokenType":"access_token","TokenValue":"****kt_A","$type":"Token"}],"Category":"Token","Name":"Token Issued Success","EventType":"Success","Id":2000,"Message":null,"ActivityId":"0HLNEA0OU33AC:00000003","TimeStamp":"2019-06-11T10:03:34.0000000Z","ProcessId":39564,"LocalIpAddress":"127.0.0.1:11593","RemoteIpAddress":"::1","$type":"TokenIssuedSuccessEvent"}
+2019-06-11 18:03:34.411 +08:00 [DBG] Token request success.

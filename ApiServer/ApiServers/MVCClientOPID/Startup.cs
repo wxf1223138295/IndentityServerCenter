@@ -46,11 +46,11 @@ namespace MVCClientOPID
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
             services.AddAuthentication(options =>
-                {
-                    options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-                    options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
-                })
-                .AddCookie("Cookies",o=>o.ExpireTimeSpan=TimeSpan.FromMinutes(1))
+            {
+                options.DefaultScheme = CookieAuthenticationDefaults.AuthenticationScheme;
+                options.DefaultChallengeScheme = OpenIdConnectDefaults.AuthenticationScheme;
+            })
+                .AddCookie("Cookies", o => o.ExpireTimeSpan = TimeSpan.FromMinutes(1))
                 .AddOpenIdConnect(options =>
                 {
                     options.Authority = Configuration["IdentityServerCenterUrl"];
