@@ -134,10 +134,10 @@ namespace IdentityCenter
                 clientUrls.Add("mvcImp", Configuration.GetValue<string>("mvcImp"));
                 clientUrls.Add("mvcHybrid", Configuration.GetValue<string>("mvcHybrid"));
 
-                var clients = context.Clients.Where(p => p.Id > 0).ToList();
+                // var clients = context.Clients.Where(p => p.Id > 0).ToList();
 
-                context.Clients.RemoveRange(clients);
-                context.SaveChanges();
+                // context.Clients.RemoveRange(clients);
+                // context.SaveChanges();
 
                 if (!context.Clients.Any())
                 {
