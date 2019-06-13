@@ -18,4 +18,14 @@
 ### 客户端id
 ### 客户端id加上账号密码
 ### OPenid
-### Hybrid 授权码模式
+### Hybrid 授权码模式 
+
+
+http://shawnwonglee.cn:5001/    客户端模式和密码模式  在这边
+http://shawnwonglee.cn:5003/     api资源服务器
+http://shawnwonglee.cn:5004/Home/SimpleModel   简化模式 opid
+http://shawnwonglee.cn:5005/Home/HybridModel   授权码模式
+
+
+账号 1223138295@qq.com
+密码 Pass@word123
