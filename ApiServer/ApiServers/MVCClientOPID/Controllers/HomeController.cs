@@ -40,8 +40,6 @@ namespace MVCClientOPID.Controllers
             var userInfoClient = new UserInfoClient(_configuration["Userinfourl"]);
 
 
-            
-
             var prop=await _httpContextAccessor.HttpContext.AuthenticateAsync();
 
             ViewModelSimple simple=new ViewModelSimple();
