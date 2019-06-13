@@ -94,8 +94,7 @@ namespace IdentityServer4.Quickstart.UI
         public async Task<IActionResult> Register(RegisterViewModel model, string returnUrl = null)
         {
             ViewData["ReturnUrl"] = returnUrl;
-            if (ModelState.IsValid)
-            {
+          
                 var user = new ApplicationUser
                 {
                     UserName = model.Email,
@@ -121,7 +120,7 @@ namespace IdentityServer4.Quickstart.UI
                     // If we got this far, something failed, redisplay form
                     return View(model);
                 }
-            }
+           
 
             if (returnUrl != null)
             {
@@ -271,7 +270,6 @@ namespace IdentityServer4.Quickstart.UI
                 // delete local authentication cookie
                 await HttpContext.SignOutAsync();
 
-                await HttpContext.SignOutAsync(IdentityServerConstants.DefaultCheckSessionCookieName);
 
                 await HttpContext.SignOutAsync(IdentityConstants.ApplicationScheme);
                 // raise the logout event

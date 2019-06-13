@@ -21,6 +21,7 @@ namespace IdentityCenter.Model.AccountViewModels
         [Compare("Password", ErrorMessage = "The password and confirmation password do not match.")]
         public string ConfirmPassword { get; set; }
 
+        [Display(Name = "User")]
         public ApplicationUser User { get; set; }
     }
 }

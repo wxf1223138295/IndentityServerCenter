@@ -134,10 +134,10 @@ namespace IdentityCenter
                 clientUrls.Add("mvcImp", Configuration.GetValue<string>("mvcImp"));
                 clientUrls.Add("mvcHybrid", Configuration.GetValue<string>("mvcHybrid"));
 
-               var clients= context.Clients.Where(p => p.Id > 0).ToList();
+                var clients = context.Clients.Where(p => p.Id > 0).ToList();
 
-               context.Clients.RemoveRange(clients);
-               context.SaveChanges();
+                context.Clients.RemoveRange(clients);
+                context.SaveChanges();
 
                 if (!context.Clients.Any())
                 {
@@ -149,6 +149,10 @@ namespace IdentityCenter
                     context.SaveChanges();
                 }
 
+                //var IdentityResources = context.IdentityResources.Where(p => p.Id > 0).ToList();
+                //context.IdentityResources.RemoveRange(IdentityResources);
+                //context.SaveChanges();
+
                 if (!context.IdentityResources.Any())
                 {
                     foreach (var resource in Config.GetIdentityResources())
@@ -159,6 +163,10 @@ namespace IdentityCenter
                     context.SaveChanges();
                 }
 
+
+                //var ApiResources = context.ApiResources.Where(p => p.Id > 0).ToList();
+                //context.ApiResources.RemoveRange(ApiResources);
+                //context.SaveChanges();
                 if (!context.ApiResources.Any())
                 {
                     foreach (var resource in Config.GetApis())

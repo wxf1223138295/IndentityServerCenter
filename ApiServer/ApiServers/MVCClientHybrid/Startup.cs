@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Net.Http;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authentication.Cookies;
 using Microsoft.AspNetCore.Authentication.OpenIdConnect;
@@ -12,6 +13,9 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using MVCClientHybrid.Models;
+using Polly;
+using Polly.Extensions.Http;
 
 namespace MVCClientHybrid
 {
@@ -36,7 +40,9 @@ namespace MVCClientHybrid
 
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2);
-
+            services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
+            services.AddHttpClientServices(Configuration);
+            services.AddTransient<IIdentityParser<ApplicationUser>, IdentityParser>();
             //  JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
             services.AddAuthentication(options =>
                 {
@@ -47,7 +53,7 @@ namespace MVCClientHybrid
                 .AddOpenIdConnect(options =>
                 {
                     options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
-                    options.Authority = "http://localhost:5000";
+                    options.Authority = Configuration["IdentityServerCenterUrl"];
                     options.RequireHttpsMetadata = false;
                     options.SaveTokens = true;
                     options.GetClaimsFromUserInfoEndpoint = true;
@@ -55,10 +61,13 @@ namespace MVCClientHybrid
                     //options.SignedOutRedirectUri = callBackUrl.ToString();
                     options.ClientId = "mvcHybrid";
                     options.ClientSecret = "secret";
-                    
+
+                    options.Scope.Add("api1");
                     options.Scope.Add("openid");
                     options.Scope.Add("profile");
                     options.Scope.Add("email");
+                    options.Scope.Add("offline_access");
+                    options.GetClaimsFromUserInfoEndpoint = true;
                 });
         }
 
@@ -86,6 +95,38 @@ namespace MVCClientHybrid
                     name: "default",
                     template: "{controller=Home}/{action=Index}/{id?}");
             });
+        }
+    }
+    public static class ServiceCollectionExtensions
+    {
+        static IAsyncPolicy<HttpResponseMessage> GetRetryPolicy()
+        {
+            return HttpPolicyExtensions
+                .HandleTransientHttpError()
+                .OrResult(msg => msg.StatusCode == System.Net.HttpStatusCode.NotFound)
+                .WaitAndRetryAsync(6, retryAttempt => TimeSpan.FromSeconds(Math.Pow(2, retryAttempt)));
+
+        }
+        static IAsyncPolicy<HttpResponseMessage> GetCircuitBreakerPolicy()
+        {
+            return HttpPolicyExtensions
+                .HandleTransientHttpError()
+                .CircuitBreakerAsync(5, TimeSpan.FromSeconds(30));
+        }
+        /// <summary>
+        /// HttpClient
+        /// </summary>
+        /// <param name="services"></param>
+        /// <param name="configuration"></param>
+        /// <returns></returns>
+        public static IServiceCollection AddHttpClientServices(this IServiceCollection services, IConfiguration configuration)
+        {
+
+            services.AddHttpClient("getapiserverone",
+                    c => { c.BaseAddress = new Uri(configuration["apiserviceoneurl"]); })
+                .SetHandlerLifetime(TimeSpan.FromMinutes(5));
+
+            return services;
         }
     }
 }

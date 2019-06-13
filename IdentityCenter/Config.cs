@@ -4,6 +4,7 @@
 
 using IdentityServer4.Models;
 using System.Collections.Generic;
+using IdentityModel;
 using IdentityServer4;
 using Microsoft.Extensions.Configuration;
 
@@ -118,8 +119,11 @@ namespace IdentityCenter
                     AllowedScopes = new List<string>
                     {
                         IdentityServerConstants.StandardScopes.OpenId,
-                        IdentityServerConstants.StandardScopes.Profile
-                    }
+                        IdentityServerConstants.StandardScopes.Profile,
+                        "api1"
+                    },
+                    AccessTokenType = AccessTokenType.Jwt,
+                    AllowAccessTokensViaBrowser = true
                 },
                 new Client()
                 {
@@ -133,11 +137,14 @@ namespace IdentityCenter
                     },
                     RedirectUris           = { $"{mvcHybrid}/signin-oidc" },
                     PostLogoutRedirectUris = { $"{mvcHybrid}/signout-callback-oidc" },
-                    AllowedScopes = { "openid", "profile", "api1","email"},
-                    AccessTokenLifetime = 60, // 60s
-                    IdentityTokenLifetime= 60,
+                    //如果要获取refresh_tokens ,必须在scopes中加上OfflineAccess
+                    AllowedScopes = { "openid", "profile", "api1","email", OidcConstants.StandardScopes.OfflineAccess},
+                    AccessTokenLifetime = 600, // 60s
+                    IdentityTokenLifetime= 600,
                     AllowOfflineAccess=true,
-                    AllowAccessTokensViaBrowser = false
+                    AllowAccessTokensViaBrowser = false,
+                    AbsoluteRefreshTokenLifetime = 2592000,//RefreshToken的最长生命周期,默认30天
+                    RefreshTokenExpiration = TokenExpiration.Sliding,//刷新令牌时，将刷新RefreshToken的生命周期。RefreshToken的总生命周期不会超过AbsoluteRefreshTokenLifetime。
                 }
             };
         }

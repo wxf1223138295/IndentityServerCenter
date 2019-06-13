@@ -59,8 +59,10 @@ namespace MVCClientOPID
                     options.ClientId = "mvcImp";
                     options.SaveTokens = true;
                     options.ClientSecret = "shawn";
+                    options.ResponseType = "id_token token";
                     options.Scope.Add("openid");
                     options.Scope.Add("profile");
+                    options.Scope.Add("api1");
                 });
             services.AddSingleton<IHttpContextAccessor, HttpContextAccessor>();
             services.AddHttpClientServices(Configuration);
@@ -119,45 +121,6 @@ namespace MVCClientOPID
         /// <returns></returns>
         public static IServiceCollection AddHttpClientServices(this IServiceCollection services, IConfiguration configuration)
         {
-            services.AddHttpClient("getjwt",
-                    c => { c.BaseAddress = new Uri(configuration["IdentityServerCenterUrl"]); })
-                .SetHandlerLifetime(TimeSpan.FromMinutes(5))
-                //      .ConfigurePrimaryHttpMessageHandler(() =>
-                //      {
-                //          return new HttpClientHandler()
-                //          {
-                //              ServerCertificateCustomValidationCallback = (message, cert, chain, error) => true
-                //          };
-                //      }
-                //)
-                ; //Sample. Default lifetime is 2 minutes 
-                  //.AddPolicyHandler(GetRetryPolicy())
-                  //.AddPolicyHandler(GetCircuitBreakerPolicy());
-
-            //services.AddHttpClient("getreports", c =>
-            //{
-            //    c.BaseAddress = new Uri(configuration["Urls:GetReportListUrl"]);
-            //}).SetHandlerLifetime(TimeSpan.FromMinutes(7))  //Sample. Default lifetime is 2 minutes
-            //       .AddPolicyHandler(GetRetryPolicy())
-            //       .AddPolicyHandler(GetCircuitBreakerPolicy());
-
-            //services.AddHttpClient("downLoadReport", c =>
-            //{
-            //    c.BaseAddress = new Uri(configuration["Urls:DownLoadReportUrl"]);
-            //    c.DefaultRequestHeaders.Add("token", "");
-            //    //c.DefaultRequestHeaders.Accept.Add(new MediaTypeWithQualityHeaderValue("application/json"));
-            //}).SetHandlerLifetime(TimeSpan.FromMinutes(5))  //Sample. Default lifetime is 2 minutes
-            //                                                //.AddHttpMessageHandler<HttpReportDelegatingHandler>()
-            //      .ConfigurePrimaryHttpMessageHandler(() =>
-            //      {
-            //          return new HttpClientHandler()
-            //          {
-            //              ServerCertificateCustomValidationCallback = (message, cert, chain, error) => true
-            //          };
-            //      });
-            //.AddPolicyHandler(GetRetryPolicy())
-            //.AddPolicyHandler(GetCircuitBreakerPolicy());
-
 
             services.AddHttpClient("getapiserverone",
                     c => { c.BaseAddress = new Uri(configuration["apiserviceoneurl"]); })

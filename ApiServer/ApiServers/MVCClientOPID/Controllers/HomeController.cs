@@ -5,6 +5,7 @@ using System.Linq;
 using System.Net.Http;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using IdentityModel.Client;
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
@@ -34,28 +35,39 @@ namespace MVCClientOPID.Controllers
         [Authorize]
         public async Task<ActionResult<ViewModelSimple>> SimpleModel()
         {
-            var use=_appUserParser.Parse(_httpContextAccessor.HttpContext.User);
+
+
+            var userInfoClient = new UserInfoClient(_configuration["Userinfourl"]);
+
+
+            
 
             var prop=await _httpContextAccessor.HttpContext.AuthenticateAsync();
 
             ViewModelSimple simple=new ViewModelSimple();
-            simple.UserName = use.CardHolderName;
+            simple.AccessToken = prop.Properties.GetTokenValue("access_token");
+            var userInfo = await userInfoClient.GetAsync(simple.AccessToken);
+
+            ClaimsIdentity claimsIdentity = new ClaimsIdentity(userInfo.Claims);
+            ClaimsPrincipal principal = new ClaimsPrincipal(claimsIdentity);
+            var use = _appUserParser.Parse(principal);
+
+          
+            simple.UserName = use.Name;
             simple.TelNum = use.PhoneNumber;
-            simple.Token = prop.Properties.GetTokenValue("id_token");
-            //var rer= prop.Properties.GetTokenValue("access_token");
-
-
+            simple.IdToken= prop.Properties.GetTokenValue("id_token");
+            
+            var accessToken = await HttpContext.GetTokenAsync("access_token");
 
             var client1 = _clientFactory.CreateClient("getapiserverone");
 
-            client1.SetBearerToken(simple.Token);
+            client1.SetBearerToken(simple.AccessToken);
 
-            var t = await client1.GetAsync("");
+            var responseMessage = await client1.GetAsync("");
 
-            if (!t.IsSuccessStatusCode)
-            {
-                var tr = t.StatusCode;
-            }
+
+            var resultResponse = await responseMessage.Content.ReadAsStringAsync();
+            simple.ResponseMessage = resultResponse;
 
             return View(simple);
         }

@@ -17,23 +17,39 @@
 </p>
 <table class="table">
     <thead>
-        <tr>
-            <th>姓名</th>
-            <th>电话</th>
-        </tr>
+    <tr>
+        <th>姓名</th>
+        <th>电话</th>
+    </tr>
     </thead>
     <tbody>
 
-        <tr>
-            <td>
-                @Model.UserName
-            </td>
-            <td>
-                @Model.TelNum
-            </td>
-        </tr>
-
+    <tr>
+        <td>
+            @Model.UserName
+        </td>
+        <td>
+            @Model.TelNum
+        </td>
+    </tr>
     </tbody>
 </table>
+<div>
+    Id_Token:
+    <label> @Model.IdToken </label>
+    
+</div>
+<br/>
+<div>
+    Access_Token：
+    <label> @Model.AccessToken</label>
+   
+</div>
+<br/>
+<div>
+    Api返回结果：
+    <label> @Model.ResponseMessage</label>
+
+</div>
 </body>
 </html>

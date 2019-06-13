@@ -1,32 +1,77 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Diagnostics;
-using System.Linq;
-using System.Net.Http;
-using System.Net.Http.Headers;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authentication;
+﻿using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Configuration;
 using MVCClientHybrid.Models;
-using Newtonsoft.Json.Linq;
+using System.Diagnostics;
+using System.IdentityModel.Tokens.Jwt;
+using System.Net.Http;
+using System.Security.Claims;
+using System.Threading.Tasks;
+using IdentityModel.Client;
 
 namespace MVCClientHybrid.Controllers
 {
     public class HomeController : Controller
     {
-        [Authorize]
-        public async Task<ActionResult<string>> Index2()
+        private readonly IHttpClientFactory _clientFactory;
+        private readonly IConfiguration _configuration;
+
+        private readonly IHttpContextAccessor _httpContextAccessor;
+        private readonly IIdentityParser<ApplicationUser> _appUserParser;
+
+        public HomeController(IHttpClientFactory clientFactory, IConfiguration configuration, IHttpContextAccessor httpContextAccessor, IIdentityParser<ApplicationUser> appUserParser)
         {
+            _clientFactory = clientFactory;
+            _configuration = configuration;
+            _httpContextAccessor = httpContextAccessor;
+            _appUserParser = appUserParser;
+        }
+
+        [Authorize]
+        public async Task<ActionResult<ViewModelSimple>> HybridModel()
+        {
+            var prop = await _httpContextAccessor.HttpContext.AuthenticateAsync();
+
+           
+            var userInfoClient = new UserInfoClient(_configuration["Userinfourl"]);
+
+            
+
+            ViewModelSimple simple = new ViewModelSimple();
+           
+            simple.AccessToken = prop.Properties.GetTokenValue("access_token");
+
+            var userInfo =await userInfoClient.GetAsync(simple.AccessToken);
+           
+
+        
+            ClaimsIdentity claimsIdentity=new ClaimsIdentity(userInfo.Claims);
+            ClaimsPrincipal principal = new ClaimsPrincipal(claimsIdentity);
+            var use = _appUserParser.Parse(principal);
+
+            simple.UserName = use.Name;
+            simple.TelNum = use.PhoneNumber;
+            simple.IdToken = prop.Properties.GetTokenValue("id_token");
+            simple.Refreshtoken = prop.Properties.GetTokenValue("refresh_token");
+            //var rer= prop.Properties.GetTokenValue("access_token");
+            // var tt=prop.Properties.GetTokens();
             var accessToken = await HttpContext.GetTokenAsync("access_token");
+            var idToken = await HttpContext.GetTokenAsync("id_token");
+            var reToken = await HttpContext.GetTokenAsync("refresh_token");
 
-            var client = new HttpClient();
-            client.DefaultRequestHeaders.Authorization = new AuthenticationHeaderValue("Bearer", accessToken);
-            var content = await client.GetStringAsync("http://localhost:5003/api/identity");
+            var client1 = _clientFactory.CreateClient("getapiserverone");
+
+            client1.SetBearerToken(simple.AccessToken);
+
+            var responseMessage = await client1.GetAsync("");
 
 
+            var resultResponse = await responseMessage.Content.ReadAsStringAsync();
+            simple.ResponseMessage = resultResponse;
 
-            return $"混合模式-授权码模式:{content}";
+            return View(simple);
         }
         public IActionResult Index()
         {

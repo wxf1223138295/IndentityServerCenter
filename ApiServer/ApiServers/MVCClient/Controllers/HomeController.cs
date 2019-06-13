@@ -51,13 +51,25 @@ namespace MVCClient.Controllers
             });
 
             var client1 = _clientFactory.CreateClient("getapiserverone");
+
+            
+
+
             client1.SetBearerToken(result.AccessToken);
 
             var t = await client1.GetAsync("");
 
-            if (!t.IsSuccessStatusCode)
+
+            ViewData["IsSuccess"] = t.IsSuccessStatusCode;
+            var resultResponse = await t.Content.ReadAsStringAsync();
+            if (t.IsSuccessStatusCode)
             {
-                var tr = t.StatusCode;
+                ViewData["AccessToken"] = result.AccessToken;
+                ViewData["RresultResponse"] = resultResponse;
+            }
+            else
+            {
+                ViewData["ErrorInfo"] = t.StatusCode;
             }
 
             return View();

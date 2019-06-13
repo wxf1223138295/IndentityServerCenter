@@ -4,7 +4,7 @@ using System.Linq;
 using System.Security.Policy;
 using System.Threading.Tasks;
 
-namespace MVCClientOPID.Models
+namespace MVCClientHybrid.Models
 {
     public class ViewModelSimple
     {
@@ -14,5 +14,7 @@ namespace MVCClientOPID.Models
 
         public string AccessToken { get; set; }
         public string ResponseMessage { get; set; }
+        public string Refreshtoken { get; set; }
+        
     }
 }

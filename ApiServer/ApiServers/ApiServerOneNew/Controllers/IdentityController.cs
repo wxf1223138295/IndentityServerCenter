@@ -12,7 +12,7 @@ namespace ApiServerOneNew.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-   // [Authorize]
+  
     public class IdentityController : ControllerBase
     {
         private readonly IHttpContextAccessor _httpContextAccessor;
@@ -27,6 +27,7 @@ namespace ApiServerOneNew.Controllers
         }
 
         [HttpGet]
+        [Authorize]
         public async Task<ActionResult> Get()
         {
             var user=_appUserParser.Parse(_httpContextAccessor.HttpContext.User);
@@ -44,7 +45,7 @@ namespace ApiServerOneNew.Controllers
                 Accseetoken = accseetokem,
                 IdentityToken = identityToken,
                 RequestHost = requestHost.ToString(),
-                UserName = user.CardHolderName
+                UserName = user.Name
             };
 
 
