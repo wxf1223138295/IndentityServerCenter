@@ -1,0 +1,18 @@
+﻿{
+  "ReRoutes": [
+    {
+      "DownstreamPathTemplate": "/api/posts/{postId}",
+      "DownstreamScheme": "http",
+      "DownstreamHostAndPorts": [
+        {
+          "Host": "129.204.217.190",
+          "Port": 5000
+        }
+      ],
+      "UpstreamPathTemplate": "/posts/{postId}",
+      "UpstreamHttpMethod": [ "Put", "Delete" ]
+    }
+  ],
+  "GlobalConfiguration": {
+  }
+}
