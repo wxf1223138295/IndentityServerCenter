@@ -21,7 +21,7 @@ namespace IdentityCenter.Servers
             _userManager = userManager;
         }
 
-        async public Task GetProfileDataAsync(ProfileDataRequestContext context)
+        public async Task GetProfileDataAsync(ProfileDataRequestContext context)
         {
             var subject = context.Subject ?? throw new ArgumentNullException(nameof(context.Subject));
 
